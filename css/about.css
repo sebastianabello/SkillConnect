@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@import url('/css/cards_about.css');
+
+/*Importo libreria y mis otros archivos CSS*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Guia para maquetear*/
+
+html{
+    height: 100%;
+}
+
+/*Guia para maquetear, nos ayuda a darle cuerpo a los elementos, cuando terminemos hay que borrarlo el body > */
+
+body > * {
+    border: 2px black solid;
+    width: 100%;
+    text-align: center;
+}
+
+/*Declaro colores (desde el :root)*/
+
+:root{
+    --color1: #fff;
+    --color2: #fff;
+    --color3: #fff;
+    --color4: #fff;
+
+}
+
+/*Creo grilla en todo el body*/
+
+#container{
+    display: grid;
+    min-height: 100vh; /*Tome el ancho del archivo*/
+    gap: 10px;
+    /*grid-template-areas: */
+    grid-template-areas: 
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+}
+
+.container__header{
+    grid-area: header;
+}
+.navBar{
+    grid-area: sidebar;
+    border-bottom-right-radius: 40px;
+}
+
+
+.mainContent{
+    grid-area: main;
+}
+.mainFooter{
+    grid-area: footer;
+}
+
+/*Responsive, por ahora pc*/
+
+@media (min-width: 900px){
+    #container{
+        grid-template:
+        "sidebar   header"        100px
+        "sidebar  main"          auto
+        "footer   footer"        100px/
+      /*Acomodar sidebar, then*/  
+         200px    auto /*dos columnas*/
+
+        ;
+    }
+}
