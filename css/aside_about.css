@@ -1,0 +1,92 @@
+ /*
+    Estilo para todo el navBar
+    */
+
+.navBar{
+    display: flex;  
+    gap: 5px;
+    flex-direction: column;
+    height: 100%;  
+}
+
+  /*
+    Estilo para el nav  y addServices mini card
+    */
+
+.navBar__style {
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+
+ /*
+   Estilo para los elementos li y lo que contenga
+ */
+
+.navBar__style__li{
+    padding:20px;
+    list-style: none;
+   
+}
+
+    /*
+    Estilo para los iconos
+    */
+
+.navBar__style__li > img{
+    
+    height: 30px;
+    width: 30px;
+    margin-bottom: -10px;
+    
+   
+}
+
+    /*
+    Estilo para el article 
+    */
+.navBar__style > article{
+    text-align: center;
+    width: auto;
+    height: 300px;
+    box-shadow:1px 1px gray;
+    border-radius: 20px;
+    margin: 15px;
+    display: block;
+    background-color: #F7DC6F;
+}
+
+
+   /*
+   Estilos para el p y button mientras ingreso el icono despues lo borro xd
+   */
+   
+.navBar__style  p, button {
+    margin:30px 0;
+    
+}
+   /**
+   Estilo para el figure que va a contener el logo amarillo de agregar que no vi
+   */
+.navBar__style > article > figure{
+    background: orange;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 40%;
+    
+}
+
+    /*
+    Estilo al botonoso
+    */
+.navBar__style > article > button{
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    background-color: #F6DDCC;
+    border: none;
+    box-shadow:1px 1px gray;
+}
+
+

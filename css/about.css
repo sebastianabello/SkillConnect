@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 @import url('/css/cards_about.css');
+@import url('/css/aside_about.css');
 
 /*Importo libreria y mis otros archivos CSS*/
 
@@ -21,16 +22,14 @@ html{
 
 body > * {
     border: 2px black solid;
-    width: 100%;
-    text-align: center;
 }
 
 /*Declaro colores (desde el :root)*/
 
 :root{
-    --color1: #fff;
-    --color2: #fff;
-    --color3: #fff;
+    --color1: #007BFF;
+    --color2: #FF5722;
+    --color3: #003671;
     --color4: #fff;
 
 }
@@ -74,7 +73,7 @@ body > * {
         "sidebar  main"          auto
         "footer   footer"        100px/
       /*Acomodar sidebar, then*/  
-         200px    auto /*dos columnas*/
+         300px    auto /*dos columnas*/
 
         ;
     }
