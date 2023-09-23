@@ -20,9 +20,7 @@ html{
 
 /*Guia para maquetear, nos ayuda a darle cuerpo a los elementos, cuando terminemos hay que borrarlo el body > */
 
-body > * {
-    border: 2px black solid;
-}
+
 
 /*Declaro colores (desde el :root)*/
 
@@ -39,7 +37,8 @@ body > * {
 #container{
     display: grid;
     min-height: 100vh; /*Tome el ancho del archivo*/
-    gap: 10px;
+    background-color: #007BFF;
+    border-right: var(--color1) solid 50px;
     /*grid-template-areas: */
     grid-template-areas: 
       "header"
@@ -50,18 +49,30 @@ body > * {
 
 .container__header{
     grid-area: header;
+    background-color: var(--color1);
+    
 }
 .navBar{
     grid-area: sidebar;
-    border-bottom-right-radius: 40px;
+   
 }
 
 
 .mainContent{
     grid-area: main;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    background-color: #fff;
+    
 }
 .mainFooter{
     grid-area: footer;
+    background-color: var(--color3);
+    bottom:0;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+   
 }
 
 /*Responsive, por ahora pc*/

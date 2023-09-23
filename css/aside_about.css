@@ -7,7 +7,9 @@
     gap: 5px;
     flex-direction: column;
     height: 100%;  
-}
+    background-color: var(--color1);
+    
+} 
 
   /*
     Estilo para el nav  y addServices mini card
@@ -15,8 +17,12 @@
 
 .navBar__style {
     display: inline-block;
-    margin-left: 30px;
-    
+    margin-left: 50px;
+    background-color:#fff;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+    gap:10px;
 }
 
  /*
@@ -26,7 +32,8 @@
 .navBar__style__li{
     padding:20px;
     list-style: none;
-   
+    margin-left: 0;
+    
 }
 
     /*
@@ -68,25 +75,43 @@
    /**
    Estilo para el figure que va a contener el logo amarillo de agregar que no vi
    */
-.navBar__style > article > figure{
+.navBar__style--switchTag  > figure{
     background: orange;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     margin-left: 40%;
+    margin-top: 1rem;
     
 }
 
     /*
     Estilo al botonoso
     */
-.navBar__style > article > button{
-    border-radius: 5px;
+.navBar__style--switchTag > button{
+    border-radius: 10px;
     height: 40px;
     width: 150px;
-    background-color: #F6DDCC;
+    color: #fff;
+    background-color: var(--color2);
     border: none;
-    box-shadow:1px 1px gray;
+    box-shadow:1px 1px black;
 }
 
+.navBar__style--switchTag{
+    width: 200px;
+    display: inline-block;
+    margin-left: 50px;
+    border-radius: 10px;
+    text-align: center; 
+    background-color: #fff;
+    margin: 20px auto 20px auto;
+    
+}
 
+.mainContent > section{
+    border-radius: 800px;
+    width: auto;
+
+    
+}
