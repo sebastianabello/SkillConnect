@@ -80,7 +80,7 @@ html{
 @media (min-width: 900px){
     #container{
         grid-template:
-        "sidebar   header"        100px
+        "header   header"        100px
         "sidebar  main"          auto
         "footer   footer"        100px/
       /*Acomodar sidebar, then*/  
