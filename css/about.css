@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 @import url('/css/cards_about.css');
+@import url('/css/header_about.css');
 @import url('/css/aside_about.css');
 
 /*Importo libreria y mis otros archivos CSS*/
@@ -37,8 +38,9 @@ html{
 #container{
     display: grid;
     min-height: 100vh; /*Tome el ancho del archivo*/
-    background-color: #007BFF;
+    background-color: var(--color1);
     border-right: var(--color1) solid 50px;
+    
     /*grid-template-areas: */
     grid-template-areas: 
       "header"
@@ -70,9 +72,9 @@ html{
     background-color: var(--color3);
     bottom:0;
     width: 100%;
+    position:relative;
     height: 100px;
-    position: absolute;
-   
+    border-right: var(--color3) -50px;
 }
 
 /*Responsive, por ahora pc*/
@@ -89,3 +91,4 @@ html{
         ;
     }
 }
+

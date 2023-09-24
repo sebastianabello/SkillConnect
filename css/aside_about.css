@@ -2,116 +2,133 @@
     Estilo para todo el navBar
     */
 
-.navBar{
-    display: flex;  
-    gap: 5px;
-    flex-direction: column;
-    height: 100%;  
-    background-color: var(--color1);
+
+    .navBar__aside{
+        display: flex;  
+        gap: 5px;
+        flex-direction: column;
+        height: 100%;  
+        background-color: var(--color1);
+        width: 300px;
+        
+    } 
     
-} 
-
-  /*
-    Estilo para el nav  y addServices mini card
-    */
-
-.navBar__style {
-    display: inline-block;
-    margin-left: 50px;
-    background-color:#fff;
-    text-align: center;
-    width: 200px;
-    border-radius: 10px;
-    gap:10px;
-}
-
- /*
-   Estilo para los elementos li y lo que contenga
- */
-
-.navBar__style__li{
-    padding:20px;
-    list-style: none;
-    margin-left: 0;
+      /*
+        Estilo para el nav  y addServices mini card
+        */
     
-}
-
-    /*
-    Estilo para los iconos
-    */
-
-.navBar__style__li > img{
+    .navBar__style {
+        display: inline-block;
+        justify-content: space-between;
+        margin:30px 30px ;
+        background-color:#fff;
+        text-align: center;
+        width: auto;
+        border-radius: 10px;
+       
+    }
     
-    height: 30px;
-    width: 30px;
-    margin-bottom: -10px;
+     /*
+       Estilo para los elementos li y lo que contenga
+     
+      */
     
-   
-}
+    .navBar__style__li{
+       
+        padding-left: auto;
+        text-decoration: none;
+        display: block;    
+        color: black;
+        padding: 20px;
+        font-size: 15px;
+        margin: 20px auto 20px 30px;
 
-    /*
-    Estilo para el article 
-    */
-.navBar__style > article{
-    text-align: center;
-    width: auto;
-    height: 300px;
-    box-shadow:1px 1px gray;
-    border-radius: 20px;
-    margin: 15px;
-    display: block;
-    background-color: #F7DC6F;
-}
-
-
-   /*
-   Estilos para el p y button mientras ingreso el icono despues lo borro xd
-   */
-   
-.navBar__style  p, button {
-    margin:30px 0;
+    }
     
-}
-   /**
-   Estilo para el figure que va a contener el logo amarillo de agregar que no vi
-   */
-.navBar__style--switchTag  > figure{
-    background: orange;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin-left: 40%;
-    margin-top: 1rem;
     
-}
-
-    /*
-    Estilo al botonoso
-    */
-.navBar__style--switchTag > button{
-    border-radius: 10px;
-    height: 40px;
-    width: 150px;
-    color: #fff;
-    background-color: var(--color2);
-    border: none;
-    box-shadow:1px 1px black;
-}
-
-.navBar__style--switchTag{
-    width: 200px;
-    display: inline-block;
-    margin-left: 50px;
-    border-radius: 10px;
-    text-align: center; 
-    background-color: #fff;
-    margin: 20px auto 20px auto;
+        /*
+        Estilo para los iconos
+        */
     
-}
-
-.mainContent > section{
-    border-radius: 800px;
-    width: auto;
-
+    .navBar__style__li > img{
+        justify-content: flex-end;
+        margin-right: 20px;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        display: flex;
     
-}
+        
+    }
+    
+    .navBar__style__li > a{
+        
+        height: 30px;
+        width: 30px;
+        display: flex;
+        position: absolute;
+        
+    }
+    
+    
+    
+        /*
+        Estilo para el article 
+        */
+    .navBar__style > article{
+        text-align: center;
+        width: auto;
+        height: 300px;
+        box-shadow:1px 1px gray;
+        border-radius: 20px;
+        margin: 15px;
+        display: block;
+        background-color: #F7DC6F;
+    }
+    
+    
+       /*
+       Estilos para el p y button mientras ingreso el icono despues lo borro xd
+       */
+       
+    .navBar__style  p, button {
+        margin:30px 0;
+        
+    }
+       /**
+       Estilo para el figure que va a contener el logo amarillo de agregar que no vi
+       */
+    .navBar__style--switchTag  > figure{
+        background: orange;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-left: 40%;
+        margin-top: 1rem;
+        
+    }
+    
+        /*
+        Estilo al botonoso
+        */
+    .navBar__style--switchTag > button{
+        border-radius: 10px;
+        height: 40px;
+        width: 150px;
+        color: #fff;
+        background-color: var(--color2);
+        border: none;
+        box-shadow:1px 1px black;
+    }
+    
+    .navBar__style--switchTag{
+        width: auto;
+        display: inline-block;
+        border-radius: 10px;
+        text-align: center; 
+        background-color: #fff;
+        margin: 20px 30px 20px 30px;
+        
+    }
+    
+    
