@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Simplificamos el calculo de pixeles a rem, con la asignación de: */
+
+html {
+    font-size: 62.5%;
+}
+
+/* Establecemos el espacio que sera ocupado en el body, para que no genere conflictos con el footer*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* PERSONALIZACIÓN DEL PIE DE PAGINA (FOOTER) */
+
+/* Definimos estilos generales del contenido dentro del footer */
+.footer {
+    padding: 1rem 0;
+    width: 100%;
+    background-color: #003671;
+    color: white;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+/* Modificamos estilos prederterminados de las listas como estructura, tamaño u espaciado*/
+.footer__list {
+    display: flex;
+    font-size: 1.5rem;
+    list-style: none;
+    gap: 5rem;
+}
+/* Editamos los links*/
+.footer__link {
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color: white;
+}
+/* Establecemos que cuando el cursor se posicione sobre un enlace, cambia de color*/
+.footer__link:hover {
+    color: #FF5722;
+}
