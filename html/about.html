@@ -6,12 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="../css/about.css">
+    <script src="https://kit.fontawesome.com/c11e788422.js" crossorigin="anonymous"></script>
 </head>
-
-<body id="container">
-    <header class="container__header">Your Profile
-
+<body>
+    <!--Personalizacion del encabezado. Asignamos clase "container__header"-->
+    <header class="container__header">
+        <!-- Contenedor del nombre R.S y logo -->
+        <div class="name_pag">
+            <img src="Logo.svg" alt="Logo" class="logo">
+            <h2 class="name_title">SkillConnect</h2>
+        </div>
+        <!-- Contenedor de los subtitulos -->
+        <div class="first_text">
+            <h1 class="first_title">Conecta con habilidades</h1>
+            <h3 class="second_title">Descubre y contrata el mejor talento</h3>
+        </div>
+        <!-- Contenedor de la barra de busqueda. Incluyen dos iconos importados de: fontawesome. -->
+        <div class="navBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search here..." class="navBar_input">
+            <i class="fa-solid fa-sliders"></i>
+        </div>
+        <!-- Enlace direto a: mensajes, alertas y perfil e iconos de fontawesome.-->
+        <div class="container_log">
+            <!-- Icono: Mensaje -->
+            <div class="icon-container">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <!-- Icono: Alerta -->
+            <div class="icon-container">
+                <i class="fas fa-bell"></i>
+            </div>
+            <!-- Icono: Perfil -->
+            <div><img src="perfil.jpg" alt=""></div>
+        </div>
     </header>
+
+    
     <aside class="navBar">
         
         <nav>
