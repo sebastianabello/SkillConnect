@@ -21,8 +21,30 @@ html {
 }
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem;
     background-color: #5e5b5b;
+}
+.container {
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+        
+    /*grid-template-areas: */
+    grid-template-areas: "header header"
+                         "sidebar main"    
+                         "footer footer";
+}
+.header{
+    grid-area: header;
+}
+.aside{
+    grid-area: sidebar;
+}
+.main{
+    grid-area: main;
+    background-color: yellow;
+}
+.footer{
+    grid-area: footer;
+    background-color: green;
 }
 
  @media screen and (min-width: 1440px) {
@@ -135,6 +157,206 @@ body {
         height: 100%;
         border-radius: 10%;
      }
+
+     /* Aside */
+      /*
+        Estilo para el nav  y addServices mini card
+        */
+    .aside__container {
+        width: 100%;
+        height: 86vh;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-color);
+    }
+    .aside__nav {
+        width: 80%;
+        height: 60%;
+        margin: 2rem auto;
+        border: var(--black-color) solid 0.3rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--white-color);
+    }
+    .aside__link {
+        width: 60%;
+        height: auto;
+        padding-left: 2rem;
+        color: var(--text-icons-color);
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    .aside-icon {
+        width: 2rem;
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    .aside__card {
+        height: 35%;
+        width: 80%;
+        margin: 0 auto 2rem auto;
+        border: var(--black-color) solid 0.3rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: var(--white-color);
+    }
+    .card__add {
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: var(--black-color) solid 0.2rem;
+        border-radius: 50%;
+        background-color:var(--highlight-color);
+    }
+    .card__add:hover {
+        box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+    }
+    .logo-add {
+        color: var(--white-color);
+        font-size: 2.5rem;
+    }
+    .card__title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--text-icons-color);
+    }
+    .card__subtitle {
+        padding: 0 2rem;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        color: var(--secondary-text-color);
+    }
+    .card__button {
+        width: 60%;
+        height: 3.5rem;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--white-color);
+        background-color: var(--highlight-color);
+        border: var(--black-color) solid 0.2rem;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    
+     /*
+       Estilo para los elementos li y lo que contenga
+     
+      */
+    
+    /* .navBar__style__li{
+       
+        padding-left: auto;
+        text-decoration: none;
+        display: block;    
+        color: black;
+        padding: 20px;
+        font-size: 15px;
+        margin: 20px auto 20px 30px;
+
+    } */
+    
+    
+        /*
+        Estilo para los iconos
+        */
+    
+    /* .navBar__style__li > img{
+        justify-content: flex-end;
+        margin-right: 20px;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        display: flex;
+    
+        
+    } */
+    
+    /* .navBar__style__li > a{
+        
+        height: 30px;
+        width: 30px;
+        display: flex;
+        position: absolute;
+        
+    } */
+    
+    
+    
+        /*
+        Estilo para el article 
+        */
+    /* .navBar__style > article{
+        text-align: center;
+        width: auto;
+        height: 300px;
+        box-shadow:1px 1px gray;
+        border-radius: 20px;
+        margin: 15px;
+        display: block;
+        background-color: #F7DC6F;
+    } */
+    
+    
+       /*
+       Estilos para el p y button mientras ingreso el icono despues lo borro xd
+       */
+       
+    /* .navBar__style  p{
+        margin:1.5rem 0;
+        font-size: x-large;
+        
+    } */
+       /**
+       Estilo para el figure que va a contener el logo amarillo de agregar que no vi
+       */
+    /* .navBar__style--switchTag  > figure > img{
+        background: #fff;
+        border: 0.5rem black solid;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-top: 2rem;
+        justify-content: center;
+        filter: invert(40%) sepia(29%) saturate(3314%) hue-rotate(346deg) brightness(102%) contrast(100%);
+        cursor: pointer;    
+    } */
+    
+        /*
+        Estilo al botonoso
+        */
+    /* .navBar__style--switchTag > button{
+        margin:1.5rem 0;
+        border-radius: 10px;
+        height: 40px;
+        width: 150px;
+        color: #fff;
+        background-color: var(--color2);
+        border: none;
+        box-shadow:1px 1px black;
+        cursor: pointer;
+    } */
+    
+    /* .navBar__style--switchTag{
+        width: auto;
+        display: inline-block;
+        border-radius: 10px;
+        text-align: center; 
+        background-color: #fff;
+        margin: 0 30px 20px 30px;
+        
+    } */
   }
 
   
