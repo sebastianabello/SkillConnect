@@ -357,6 +357,8 @@ body {
     /* Footer */
     .footer {
         background-color: var(--secondary-color);
+        border: var(--black-color) solid 0.3rem;
+        border-bottom: none;
         border-radius: 3rem 3rem 0 0;
     }
     .footer__list {
