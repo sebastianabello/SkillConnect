@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@import url('/css/footer_about.css');
 @import url('/css/cards_about.css');
 @import url('/css/header_about.css');
 @import url('/css/aside_about.css');
@@ -37,7 +38,7 @@ html{
 
 #container{
     display: grid;
-    min-height: 100vh; /*Tome el ancho del archivo*/
+    min-height: 100%;
     background-color: var(--color1);
     border-right: var(--color1) solid 50px;
     
@@ -59,6 +60,80 @@ html{
    
 }
 
+/* Personalización del texto del ABOUT */
+/* Contenedor principal */
+.about__text {
+    text-align: justify;
+    margin: 2rem 5rem 2rem 5rem;
+}
+
+/* Estilos del titulo principal */
+.about__title {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+    color: #333333;
+}
+
+/* Estilos del primer parrafo */
+.about__paragraph {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Estilos del segundo parrafo */
+.about__paragraph2 {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PERSONALIZACIÓN DEL PIE DE PAGINA (FOOTER) */
+
+/* Definimos estilos generales del contenido dentro del footer */
+.footer {
+    padding: 1rem 0;
+    width: 100%;
+    background-color: #003671;
+    color: white;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+/* Modificamos estilos prederterminados de las listas como estructura, tamaño u espaciado*/
+.footer__list {
+    display: flex;
+    font-size: 1.5rem;
+    list-style: none;
+    gap: 5rem;
+}
+/* Editamos los links*/
+.footer__link {
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color: white;
+}
+/* Establecemos que cuando el cursor se posicione sobre un enlace, cambia de color*/
+.footer__link:hover {
+    color: #FF5722;
+}
+
 
 .mainContent{
     grid-area: main;
@@ -70,11 +145,10 @@ html{
 .mainFooter{
     grid-area: footer;
     background-color: var(--color3);
-    bottom:0;
+    bottom:0; 
     width: 100%;
-    position:relative;
-    height: 100px;
-    border-right: var(--color3) -50px;
+    position:absolute;
+    height: 50px;
 }
 
 /*Responsive, por ahora pc*/

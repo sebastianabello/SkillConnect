@@ -23,7 +23,7 @@ body {
 /* PERSONALIZACIÓN DEL PIE DE PAGINA (FOOTER) */
 
 /* Definimos estilos generales del contenido dentro del footer */
-.footer {
+.mainFooter {
     padding: 1rem 0;
     width: 100%;
     background-color: #003671;
@@ -49,3 +49,5 @@ body {
 .footer__link:hover {
     color: #FF5722;
 }
+
+
