@@ -1,161 +1,378 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
-@import url('/css/footer_about.css');
-@import url('/css/cards_about.css');
-@import url('/css/header_about.css');
-@import url('/css/aside_about.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/*Importo libreria y mis otros archivos CSS*/
-
-*{
-    margin:0;
-    padding:0;
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #003671;
+    --text-icons-color: #333333;
+    --secondary-text-color: #666666;
+    --white-color: #ffffff;
+    --highlight-color: #ff5722;
+    --primary-color-opacity: rgba(#007bff 0.2);
+    --secondary-color-opacity: rgba(#007bff 0.2);
+    --black-color: #000000;
+}
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
-
-
-/*Guia para maquetear*/
-
-html{
-    height: 100%;
+html {
+    font-size: 62.5%;
 }
-
-/*Guia para maquetear, nos ayuda a darle cuerpo a los elementos, cuando terminemos hay que borrarlo el body > */
-/*6.25rem = 100px
- *300px = 18.75 rem
- *50px = 3.2rem 
-
-*/
 body {
-    background-color: var(--color1);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
 }
-
-/*Declaro colores (desde el :root)*/
-
-:root{
-    --color1: #007BFF;
-    --color2: #FF5722;
-    --color3: #003671;
-    --color4: #fff;
-
-}
-
-/*Creo grilla en todo el body*/
-
-#container{
+.container {
     display: grid;
-    min-height: 100%;
-    background-color: var(--color1);  
-    min-width: 100%;
-    
-    
+    grid-template-columns: 20vw 1fr;
+    grid-template-rows: 14vh 1fr auto;
+        
     /*grid-template-areas: */
-    grid-template-areas: 
-      "header"
-      "sidebar"
-      "main"
-      "footer";
+    grid-template-areas: "header header"
+                         "sidebar main"    
+                         "sidebar footer";
 }
-
-.container__header{
+.header{
     grid-area: header;
-    background-color: var(--color1);
-    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
-.navBar{
+.aside{
     grid-area: sidebar;
-   
+    position: fixed;
+    top: 14vh;
+    left: 0;
+    bottom: 0;
 }
-
-/* Personalización del texto del ABOUT */
-/* Contenedor principal */
-.about__text {
-    text-align: justify;
-    margin: 5rem 5rem 2rem 5rem;
-}
-
-/* Estilos del titulo principal */
-.about__title {
-    text-align: center;
-    margin: 2rem;
-    font-size: 2rem;
-    color: #333333;
-}
-
-/* Estilos del primer parrafo */
-.about__paragraph {
-    font-size: 1.5rem;
-    color: black;
-}
-
-/* Estilos del segundo parrafo */
-.about__paragraph2 {
-    text-align: center;
-    margin-top: 1rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-/* PERSONALIZACIÓN DEL PIE DE PAGINA (FOOTER) */
-
-/* Definimos estilos generales del contenido dentro del footer */
-.footer {
-    padding: 1rem 0;
-    width: 100%;
-    background-color: var(--color3);
-    color: #fff;
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-}
-/* Modificamos estilos prederterminados de las listas como estructura, tamaño u espaciado*/
-.footer__list {
-    display: flex;
-    font-size: 1.5rem;
-    list-style: none;
-    gap: 5rem;
-}
-/* Editamos los links*/
-.footer__link {
-    text-decoration: none;
-    padding: 2px 1px 0;
-    color: white;
-}
-/* Establecemos que cuando el cursor se posicione sobre un enlace, cambia de color*/
-.footer__link:hover {
-    color: var(--color2);
-}
-
-
-.mainContent{
+.main{
     grid-area: main;
-    border-top-right-radius:6rem;
-    border-top-left-radius: 3.75rem;
-    background-color: #fff;
-    margin-top: 30px;
-    border-right: var(--color1) solid 3rem;   
-    
 }
-.mainFooter{
-    grid-area: footer;   
-    bottom:0; 
-    position:relative;
-    height:9rem;
-    align-items: center;
+.footer{
+    grid-area: footer;
 }
 
-/*Responsive, por ahora pc*/
-
-@media (min-width: 900px){
-    #container{
-        grid-template:
-        "header   header"        6.25rem
-        "sidebar  main"          auto
-        "footer   footer"        6.25rem/
-      /*Acomodar sidebar, then*/  
-         300px    auto /*dos columnas*/
-
-        ;
+ @media screen and (min-width: 1440px) {
+    .header__nav {
+        display: grid;
+        grid-template-columns:1fr 2fr 2fr 1fr;
+        grid-template-rows: 14vh;
+        grid-template-areas: "logo navigation-text search-bar alerts";
+        column-gap: 0.5rem;
+        justify-content:center;
+        align-items: center;
+        background-color: var(--primary-color);
     }
-}
+    .header__logo {
+        width: 100%;
+        height: 100%;
+        padding: 0 5rem;
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pag__image { 
+        width: 6rem;
+        height: 6rem;
+        border: var(--black-color) solid 0.3rem;
+        border-radius: 10%;
+    }
+    a {
+        text-decoration: none;
+    }
+    .pag__name {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--white-color);
+        margin-left: 1rem;
+    } 
+    .header__navigation-text {
+        grid-area: navigation-text;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header__title {
+        font-size: 2.6rem;
+        font-weight: 600;
+        color: var(--white-color);
+    }
+    .header__subtitle {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--text-icons-color);
+    }
+    .header__search-bar {
+        padding-right: 3rem;
+        grid-area: search-bar;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .search-input {
+        width: 100%;
+        height: 4.5rem;
+        font-family: 'Poppins', sans-serif;
+        outline: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--secondary-text-color);
+        border: var(--black-color) solid 0.3rem;
+        border-radius: 1.5rem;
+        padding: 0 3rem;
+    }
+    .icon-search {
+        position: absolute;
+        padding-right: 4rem;
+        color: var(--text-icons-color);
+        font-size: 1.8rem;
+    }
+    .header__alerts {
+        padding-right: 3rem ;
+        grid-area: alerts;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+     .alerts__icon {
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: var(--black-color) solid 0.3rem;
+        border-radius: 10%;
+        background-color: var(--highlight-color);
+     }
+     .alerts-icon{
+        color: var(--white-color);
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .cc {
+        width: 4rem;
+        height: 4rem;
+        padding: 0.2rem;
+     }
+     .picture-user {
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+     }
 
+     /* Diseño Aside */
+    .aside__container {
+        width: 20vw;
+        height: 100%;
+        background-color: var(--primary-color);
+    }
+    .aside__nav {
+        width: 80%;
+        height: 60%;
+        margin: 0 auto 2rem auto;
+        border: var(--black-color) solid 0.3rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--white-color);
+    }
+    .aside__link {
+        width: 60%;
+        height: auto;
+        padding-left: 2rem;
+        color: var(--text-icons-color);
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    .aside-icon {
+        width: 2rem;
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    .aside__card {
+        height: 35%;
+        width: 80%;
+        margin: 0 auto 2rem auto;
+        border: var(--black-color) solid 0.3rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: var(--white-color);
+    }
+    .card__add {
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: var(--black-color) solid 0.2rem;
+        border-radius: 50%;
+        background-color:var(--highlight-color);
+    }
+    .card__add:hover {
+        box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+    }
+    .logo-add {
+        color: var(--white-color);
+        font-size: 2.5rem;
+    }
+    .card__title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--text-icons-color);
+    }
+    .card__subtitle {
+        padding: 0 2rem;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        color: var(--secondary-text-color);
+    }
+    .card__button {
+        width: 60%;
+        height: 3.5rem;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--white-color);
+        background-color: var(--highlight-color);
+        border: var(--black-color) solid 0.2rem;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    /* Diseño Main */
+    .main {
+        background-color: var(--primary-color);
+    }
+    .main__container {
+        width: 95%;
+        height: 100%;
+        margin: auto;
+        padding: 0 4rem;
+        border: var(--black-color) solid 0.3rem;
+        border-bottom: none;
+        border-radius: 4rem 4rem 0 0;
+        background-color: var(--white-color);
+    }
+    .main__text {
+        width: 94%;
+        height: auto;
+        margin: auto;
+    }
+    .about__title {
+        width: 100%;
+        padding: 2rem 0;
+        margin-top: 3rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--text-icons-color);
+        text-align: center;
+    }
+
+    .about__paragraph {
+        width: 100%;
+        padding: 2rem 0;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: var(--text-icons-color);
+    }
+    .main__card {
+        width: 94%;
+        height: auto;
+        margin: auto;
+    }
+    .team__title {
+        width: 100%;
+        margin: 2rem 0;
+        margin-bottom: 4rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--text-icons-color);
+        text-align: center;
+    }
+    .container__cards{
+        width: 100%;
+        height: 25rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .card {
+        width: 20rem;
+        height: 25rem;
+        display: flex;
+        border: var(--black-color) solid 0.2rem;
+        border-radius: 1.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--highlight-color);
+    }
+    .card:hover {
+        box-shadow: var(--secondary-text-color) 1rem 1rem 0.3rem;
+    }
+    .card__image {
+        width: 10rem;
+        height: 10rem;
+        border: var(--black-color) solid 0.3rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card__image-a{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    .name {
+        width: 80%;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--white-color);
+        text-align: center;
+    }
+    .rols {
+        width: 70%;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--white-color);
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: var(--secondary-color);
+        border-radius: 3rem 3rem 0 0;
+    }
+    .footer__list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem 0;
+        list-style: none;
+    }
+    
+    .footer__link {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--white-color);
+    }
+
+}

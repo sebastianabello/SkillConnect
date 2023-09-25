@@ -1,149 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="/css/about.css">
-    <script src="https://kit.fontawesome.com/c11e788422.js" crossorigin="anonymous"></script>
-</head>
-<body id="container">
-    <!--Personalizacion del encabezado. Asignamos clase "container__header"-->
-    <header class="container__header">
-        <!-- Contenedor del nombre R.S y logo -->
-        <div class="name_pag">
-            <img src="/img/Logo.svg" alt="Logo" class="logo">
-            <h2 class="name_title">SkillConnect</h2>
-        </div>
-        <!-- Contenedor de los subtitulos -->
-        <div class="first_text">
-            <h1 class="first_title">Conecta con habilidades</h1>
-            <h3 class="second_title">Descubre y contrata el mejor talento</h3>
-        </div>
-        <!-- Contenedor de la barra de busqueda. Incluyen dos iconos importados de: fontawesome. -->
-        <div class="navBar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search here..." class="navBar_input">
-            <i class="fa-solid fa-sliders"></i>
-        </div>
-        <!-- Enlace direto a: mensajes, alertas y perfil e iconos de fontawesome.-->
-        <div class="container_log">
-            <!-- Icono: Mensaje -->
-            <div class="icon-container">
-                <i class="fas fa-envelope"></i>
-            </div>
-            <!-- Icono: Alerta -->
-            <div class="icon-container">
-                <i class="fas fa-bell"></i>
-            </div>
-            <!-- Icono: Perfil -->
-            <div><img src="/img/icons/header/categorias/business.svg" alt=""></div>
-        </div>
-    </header>
+    <title>About</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
+
 
     
-    <aside class="navBar__aside">
-
-        <nav class="navBar__style">
-              
-                <a href="#" class="navBar__style__li"><img src="/img/icons/aside/home.svg"
-                        alt="home__icon__list">Home</a>
-                <a href="#" class="navBar__style__li"><img src="/img/icons/aside/explore.svg"
-                        alt="explore__icon__list">Explore
-                </a>
-                <a href="#" class="navBar__style__li"><img src="/img/icons/aside/save.svg"
-                        alt="save__icon__list">Saved</a>
-                <a href="#" class="navBar__style__li"><img src="/img/icons/aside/crown.svg"
-                        alt="plans__icon__list">Plans</a>
-                <a href="#" class="navBar__style__li"><img src="/img/icons/aside/profile.svg"
-                        alt="profile__icon__list">Profile
-                </a>
-                <a href="#" class="navBar__style__li"><img src="/img/icons/aside/history.svg"
-                        alt="history__icon__list">History
-                </a>
-                <a href="#" class="navBar__style__li"><img src="/img/icons/aside/about.svg"
-                        alt="support__icon__list">About us
-                </a>
-                
+</head>
+<body class="container">
+    <!-- Container Header -->
+    <header class="header">
+        <nav class="header__nav">
+            <!--logo-->
+            <div class="header__logo">
+                <img class="pag__image" src="../img/logo.png" alt="logopag">
+                <a href="../index.html"><span class="pag__name">SkillConnect</span></a>
+            </div>
+            <!--text navigation-->
+            <div class="header__navigation-text">
+                <h1 class="header__title">Sobre nosotros</h1>
+                <h2 class="header__subtitle">Aqui conoceras un poco mas sobre el proyecto</h2>
+            </div>
+            <!--service search bar-->
+            <div class="header__search-bar">
+                <input class="search-input" type="text" placeholder="Buscar">
+                <i class="fa-solid fa-magnifying-glass icon-search"></i>
+            </div> 
+            <!--alerts and profile picture-->
+            <div class="header__alerts">
+                <div class="alerts__icon">
+                    <a href="#"><i class="fa-regular fa-bell alerts-icon"></i></a>
+                </div>
+                <div class="alerts__icon">
+                    <a href="#"><i class="fa-regular fa-envelope alerts-icon"></i></a>
+                </div>
+                <div class="alerts__icon">
+                    <a class="cc" href="../html/profile.html"><img class="picture-user" src="../img/pexels-joão-jesus-1080213.jpg" alt="foto de usuario"></a>
+                </div> 
+            </div>
         </nav>
-        <section class="navBar__style--switchTag">
+    </header>
 
-            <figure>
-                
-                <img src="/img/icons/aside/add.svg" alt="add__aside">
-            
-            </figure>
-            <h4> Share Your Skills</h4>
-            <p>Share your services, experience and rates. In this way other users can find you and work together using your talents.</p>
-            <button>Add Publication</button>
-
-        </section>
+    <aside class="aside">
+        <div class="aside__container">
+            <nav class="aside__nav">
+                <a href="../index.html" class="aside__link"><i class="fa-solid fa-house aside-icon"></i>Home</a>
+                <a href="explore.html" class="aside__link"><i class="fa-solid fa-compass aside-icon"></i>Explore</a>
+                <a href="saved.html" class="aside__link"><i class="fa-solid fa-bookmark aside-icon"></i>Saved</a>
+                <a href="plans.html" class="aside__link"><i class="fa-solid fa-crown aside-icon"></i>Plans</a>
+                <a href="profile.html" class="aside__link"><i class="fa-solid fa-user-gear aside-icon"></i>Profile</a>
+                <a href="history.html" class="aside__link"><i class="fa-solid fa-clock-rotate-left aside-icon"></i>History</a>
+                <a href="about.html" class="aside__link"><i class="fa-solid fa-users aside-icon"></i>About</a>  
+            </nav>
+    
+            <section class="aside__card">
+                <figure class="card__add">
+                    <a href="../html/profile.html"><i class="fa-solid fa-plus logo-add"></i></a>
+                </figure>
+                <h2 class="card__title"> Share Your Skills</h2>
+                <p class="card__subtitle">Share your services, experience and rates. In this way other users can find you and work together using your talents.</p>
+                <button class="card__button">Add Publication</button>
+            </section>
+        </div>
     </aside>
-    <main class="mainContent">
-        <section class="about__text">
-            <h2 class="about__title">¿Por qué escoger a SkillConnect?</h2>
-            <p class="about__paragraph">
-                En un mundo en constante evolución, SkillConnect se erige como un faro de oportunidades. Creemos en el poder de conectar a las personas y en la creación de un ecosistema próspero donde todos pueden tener éxito. El objetivo es hacerlo de manera transparente, al tiempo que fomentamos una comunidad basada en la confianza, la excelencia y la colaboración. En SkillConnect, nos impulsa un único propósito: marcar la diferencia, al promover las conexiones significativas, el crecimiento personal y profesional a través de soluciones innovadoras.
-            </p>
-            <p class="about__paragraph2">
-                Únanse a nosotros en este viaje hacia un mundo en el que el potencial no conozca límites. Elijan SkillConnect, la plataforma que empodera, conecta e inspira.
-            </p>
-        </section>
-        
-        <section class="cards_about">
-            <h2> Meet the team</h2>
-            <article class="card">
-                <picture>
-                <img src="/img/devGabi.jpg">
-                </picture>
-                <h3>Gabi</h3>
-                <p> Andres el pintor</p>
-            </article>
-            <article class="card">
-                <picture>
-                <img src="/img/devGabi.jpg">
-                </picture>
-                <h3>Gabi</h3>
-                <p> Andres el pintor</p>
-            </article>
-            <article class="card">
-                <picture>
-                <img src="/img/devGabi.jpg">
-                </picture>
-                <h3>Gabi</h3>
-                <p> Andres el pintor</p>
-            </article>
-            <article class="card">
-                <picture>
-                <img src="/img/devDuvan.jpg">
-                </picture>
-                <h3>Duvan</h3>
-                <p> No pudo hacer sobresalir el footer sobre el main</p>
-            </article>
-        </section>
-    </main>
-        <!-- PERSONALIZACIÓN DEL PIE DE PAGINA (FOOTER) -->
-        <footer class="mainFooter">
-            <!-- Creamos una lista que contiene los enlaces de navegación de nuestro footer -->
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Conditions</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Privacy</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Accessibility</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Help</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">©SkillConnect</a>
-                    </li>
-                </ul>
-        </footer>
-</body>
+    <main class="main">
+        <div class="main__container">
+            <section class="main__text">
+                <h2 class="about__title">¿Por qué escoger a SkillConnect?</h2>
+                <p class="about__paragraph">
+                    En un mundo en constante evolución, SkillConnect se erige como un faro de oportunidades. Creemos en el poder de conectar a las personas y en la creación de un ecosistema próspero donde todos pueden tener éxito. El objetivo es hacerlo de manera transparente, al tiempo que fomentamos una comunidad basada en la confianza, la excelencia y la colaboración. En SkillConnect, nos impulsa un único propósito: marcar la diferencia, al promover las conexiones significativas, el crecimiento personal y profesional a través de soluciones innovadoras.
+                </p>
+                <p class="about__paragraph">
+                    Únanse a nosotros en este viaje hacia un mundo en el que el potencial no conozca límites. Elijan SkillConnect, la plataforma que empodera, conecta e inspira.
+                </p>
+            </section>
 
+            <section class="main__card">
+                <h2 class="team__title"> Meet the team</h2>
+                <div class="container__cards">
+                    <article class="card">
+                        <picture class="card__image">
+                        <img class="card__image-a" src="../img/sebas.png">
+                        </picture>
+                        <h3 class="name">Juan Sebastian Abello</h3>
+                        <p class="rol">
+                            <ul class="rols">
+                                <li>Lider de proyecto</li>
+                                <li>Desarrollador Front-End</li>
+                                <li>Desarrollador Back-End</li>
+                            </ul>
+                        </p>
+                    </article>
+                    <article class="card">
+                        <picture class="card__image">
+                        <img class="card__image-a" src="../img/gabi.png">
+                        </picture>
+                        <h3 class="name">Gabriela Aguilar Marquez</h3>
+                        <p class="rol">
+                            <ul class="rols">
+                                <li>Desarrolladora Front-End</li>
+                            </ul>
+                        </p>
+                    </article>
+                    <article class="card">
+                        <picture class="card__image">
+                        <img class="card__image-a" src="../img/erik.png">
+                        </picture>
+                        <h3 class="name">Erik Damian Duarte Lobaratón</h3>
+                        <p class="rol">
+                            <ul class="rols">
+                                <li>Desarrollador Back-End</li>
+                            </ul>
+                        </p>
+                    </article>
+                    <article class="card">
+                        <picture class="card__image">
+                        <img class="card__image-a" src="../img/duvan.png">
+                        </picture>
+                        <h3 class="name">Duvan Uriel Rodriguez</h3>
+                        <p class="rol">
+                            <ul class="rols">
+                                <li>Desarrollador Front-End</li>
+                            </ul>
+                        </p>
+                    </article>
+                </div>
+            </section>
+            
+            
+        </div>
+    </main>
+    <!-- PERSONALIZACIÓN DEL PIE DE PAGINA (FOOTER) -->
+    <!-- Creamos una lista que contiene los enlaces de navegación de nuestro footer -->
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#" class="footer__link">Conditions</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Accessibility</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Help</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">©SkillConnect</a>
+            </li>
+        </ul>
+    </footer>
+</body>
 </html>
