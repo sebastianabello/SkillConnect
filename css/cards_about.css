@@ -1,7 +1,46 @@
 .card{
-    border: 5px black solid;
-    border-style:outline;
-    height:auto;
-    width:auto;
-    display:inline-block;
+    box-shadow: 0.2rem 0.2rem var(--color1);
+    border-radius: 0.8rem;
+    height:30rem;
+    width:16.5rem;    
+    margin-top: 7rem; 
+    display: inline-block;
+    margin-left: 5rem;
+    
+}
+
+.cards_about {
+    margin: 5rem;
+    display: flex;   
+    justify-content: center; 
+    
+}
+.card > picture >img{
+    height: 15rem;
+    width: 12rem;
+    border-radius: 0.8rem;
+    margin-top: 0.9rem;
+    object-fit: cover;
+
+}
+.card > picture{
+    display: flex;
+    justify-content: center;
+    box-shadow: -0.2rem -0.2rem var(--color2);
+    border-radius: 1rem;
+}
+
+.card > h3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.cards_about > h2{
+    display: block;
+    justify-content: center;
+    padding: 1rem;
+    position: absolute;
+    font-size: x-large;
+    
 }

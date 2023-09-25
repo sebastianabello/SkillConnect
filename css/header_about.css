@@ -8,8 +8,8 @@ html {
 
 .container__header {
     width: 100%;
-    height: 15vh;
-    background-color: #007bff;
+    height:9rem; /*15vh;*/
+    background-color: var(--color1);
     padding: 0 20px;
     display: flex;
     justify-content: space-around;

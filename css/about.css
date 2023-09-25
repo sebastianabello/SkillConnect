@@ -21,8 +21,14 @@ html{
 }
 
 /*Guia para maquetear, nos ayuda a darle cuerpo a los elementos, cuando terminemos hay que borrarlo el body > */
+/*6.25rem = 100px
+ *300px = 18.75 rem
+ *50px = 3.2rem 
 
-
+*/
+body {
+    background-color: var(--color1);
+}
 
 /*Declaro colores (desde el :root)*/
 
@@ -39,8 +45,9 @@ html{
 #container{
     display: grid;
     min-height: 100%;
-    background-color: var(--color1);
-    border-right: var(--color1) solid 50px;
+    background-color: var(--color1);  
+    min-width: 100%;
+    
     
     /*grid-template-areas: */
     grid-template-areas: 
@@ -64,13 +71,13 @@ html{
 /* Contenedor principal */
 .about__text {
     text-align: justify;
-    margin: 2rem 5rem 2rem 5rem;
+    margin: 5rem 5rem 2rem 5rem;
 }
 
 /* Estilos del titulo principal */
 .about__title {
     text-align: center;
-    margin: 1rem;
+    margin: 2rem;
     font-size: 2rem;
     color: #333333;
 }
@@ -89,29 +96,14 @@ html{
     font-size: 1.5rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* PERSONALIZACIÓN DEL PIE DE PAGINA (FOOTER) */
 
 /* Definimos estilos generales del contenido dentro del footer */
 .footer {
     padding: 1rem 0;
     width: 100%;
-    background-color: #003671;
-    color: white;
+    background-color: var(--color3);
+    color: #fff;
     margin-top: auto;
     display: flex;
     justify-content: center;
@@ -131,24 +123,25 @@ html{
 }
 /* Establecemos que cuando el cursor se posicione sobre un enlace, cambia de color*/
 .footer__link:hover {
-    color: #FF5722;
+    color: var(--color2);
 }
 
 
 .mainContent{
     grid-area: main;
-    border-top-right-radius: 60px;
-    border-top-left-radius: 60px;
+    border-top-right-radius:6rem;
+    border-top-left-radius: 3.75rem;
     background-color: #fff;
+    margin-top: 30px;
+    border-right: var(--color1) solid 3rem;   
     
 }
 .mainFooter{
-    grid-area: footer;
-    background-color: var(--color3);
+    grid-area: footer;   
     bottom:0; 
-    width: 100%;
-    position:absolute;
-    height: 50px;
+    position:relative;
+    height:9rem;
+    align-items: center;
 }
 
 /*Responsive, por ahora pc*/
@@ -156,9 +149,9 @@ html{
 @media (min-width: 900px){
     #container{
         grid-template:
-        "header   header"        100px
+        "header   header"        6.25rem
         "sidebar  main"          auto
-        "footer   footer"        100px/
+        "footer   footer"        6.25rem/
       /*Acomodar sidebar, then*/  
          300px    auto /*dos columnas*/
 
