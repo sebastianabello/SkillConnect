@@ -35,17 +35,9 @@ body {
 }
 .header{
     grid-area: header;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
 }
 .aside{
     grid-area: sidebar;
-    position: fixed;
-    top: 14vh;
-    left: 0;
-    bottom: 0;
 }
 .main{
     grid-area: main;
@@ -54,7 +46,7 @@ body {
     grid-area: footer;
 }
 
- @media screen and (min-width: 1440px) {
+@media (min-width: 1200px) {
     .header__nav {
         display: grid;
         grid-template-columns:1fr 2fr 2fr 1fr;
