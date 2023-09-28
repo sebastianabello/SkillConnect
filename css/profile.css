@@ -174,124 +174,148 @@ Desktop
       border-radius: 20%;
     }
   
-  /* Diseño Aside */
-  .aside__container {
-    background-color: var(--primary-color);
-    width: 20vw;
-    height: 86vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2vh;
-  }
-  .aside__nav {
-    width: 14vw;
-    height: 55vh;
-    border: var(--black-color) solid 0.2rem;
-    border-radius: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--white-color);
-  }
-  .aside__link {
-    width: 7vw;
-    color: var(--text-icons-color);
-    font-size: 1.3rem;
-    font-weight: 700;
+    /* Diseño Aside */
+    .aside__container {
+      background-color: var(--primary-color);
+      width: 20vw;
+      height: 86vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2vh;
+    }
+    .aside__nav {
+      width: 14vw;
+      height: 55vh;
+      border: var(--black-color) solid 0.2rem;
+      border-radius: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: var(--white-color);
+    }
+    .aside__link {
+      width: 7vw;
+      color: var(--text-icons-color);
+      font-size: 1.3rem;
+      font-weight: 700;
+    
+    }
+    .aside__link:hover {
+      border-radius: 0.5rem;
+      box-shadow: var(--secondary-text-color) 0.2rem 0.5rem 0.5rem;/*x, y,opacidad*/
+      transition: all 0.3s ease-in-out;
+    
+    }
+    .aside-icon {
+      font-size: 1.8rem;
+      margin-right: 1rem;
+    }
   
-  }
-  .aside__link:hover {
-    border-radius: 0.5rem;
-    box-shadow: var(--secondary-text-color) 0.2rem 0.5rem 0.5rem;/*x, y,opacidad*/
-    transition: all 0.3s ease-in-out;
+    .aside__card {
+      width: 14vw;
+      height: 30vh;
+      padding: 0 1rem;
+      border: var(--black-color) solid 0.2rem;
+      border-radius: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: var(--white-color);
+    }
+    .card__add {
+      width: 3.5rem;
+      height: 3.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: var(--black-color) solid 0.2rem;
+      border-radius: 50%;
+      background-color: var(--highlight-color);
+    }
+    .card__add:hover {
+      box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+      transition: all 0.2s ease-in-out;
+    }
+    .logo-add {
+      color: var(--white-color);
+      font-size: 2rem;
+    }
+    .card__title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-icons-color);
+    }
+    .card__text {
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+      color: var(--secondary-text-color);
+    }
+    .card__button {
+      width: 10rem;
+      height: 2.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white-color);
+      background-color: var(--highlight-color);
+      border: var(--black-color) solid 0.2rem;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+    .card__button:hover {
+      box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+      transition: all 0.2s ease-in-out;
+    }
   
-  }
-  .aside-icon {
-    font-size: 1.8rem;
-    margin-right: 1rem;
-  }
+    /* Diseño Main */
+    .main {
+      background-color: var(--primary-color);
+    }
+    .main__container {
+      width: 96%;
+      height: 100%;
+      margin-right: auto;
+      padding: 0 4rem;
+      border: var(--black-color) solid 0.2rem;
+      border-bottom: none;
+      border-radius: 3em 3rem 0 0;
+      background-color: var(--white-color);
+      z-index: 200;
+    }
+    .main__text {
+      width: 94%;
+      height: auto;
+      margin: auto;
+    }
 
-  .aside__card {
-    width: 14vw;
-    height: 30vh;
-    padding: 0 1rem;
-    border: var(--black-color) solid 0.2rem;
-    border-radius: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--white-color);
-  }
-  .card__add {
-    width: 3.5rem;
-    height: 3.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: var(--black-color) solid 0.2rem;
-    border-radius: 50%;
-    background-color: var(--highlight-color);
-  }
-  .card__add:hover {
-    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-    transition: all 0.2s ease-in-out;
-  }
-  .logo-add {
-    color: var(--white-color);
-    font-size: 2rem;
-  }
-  .card__title {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--text-icons-color);
-  }
-  .card__text {
-    font-size: 1rem;
-    font-weight: 700;
-    text-align: center;
-    color: var(--secondary-text-color);
-  }
-  .card__button {
-    width: 10rem;
-    height: 2.5rem;
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--white-color);
-    background-color: var(--highlight-color);
-    border: var(--black-color) solid 0.2rem;
-    border-radius: 1rem;
-    cursor: pointer;
-  }
-  .card__button:hover {
-    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-    transition: all 0.2s ease-in-out;
-  }
-
+    
+  
     /* Footer */
-  .footer {
-    background-color: var(--secondary-color);
-    border: var(--black-color) solid 0.2rem;
-    border-bottom: none;
-    border-top: none;
-    width: 96%;
-    margin-right: auto;
+    .footer {
+      background-color: var(--secondary-color);
+      border: var(--black-color) solid 0.2rem;
+      border-bottom: none;
+      border-top: none;
+      width: 96%;
+      margin-right: auto;
+    }
+    .footer__list {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 2rem 0;
+      list-style: none;
+    }
+  
+    .footer__link {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white-color);
+    }
   }
-  .footer__list {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 2rem 0;
-    list-style: none;
-  }
-
-  .footer__link {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--white-color);
-  }
-}
+  
