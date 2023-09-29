@@ -284,11 +284,7 @@ Desktop
       background-color: var(--white-color);
       z-index: 200;
     }
-    .main__text {
-      width: 94%;
-      height: auto;
-      margin: auto;
-    }
+   
   
     /* Footer */
     .footer {
