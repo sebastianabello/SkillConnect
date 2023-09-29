@@ -275,8 +275,7 @@ Desktop
       background-color: var(--primary-color);
     }
     .main__container {
-      width: 96%;
-      height: 100%;
+      
       margin-right: auto;
       padding: 0 4rem;
       border: var(--black-color) solid 0.2rem;
@@ -290,8 +289,6 @@ Desktop
       height: auto;
       margin: auto;
     }
-
-    
   
     /* Footer */
     .footer {
@@ -317,5 +314,4 @@ Desktop
       font-weight: 700;
       color: var(--white-color);
     }
-  }
-  
+}
