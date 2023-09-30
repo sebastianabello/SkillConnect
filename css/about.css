@@ -31,26 +31,27 @@ body {
 celular
 */
 
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
   .container {
+ 
     grid-template:
-      "header"
+      "header" 
       "main"
       "footer";
   }
   /* Definimos que el contendeor header si quede fijo */
   .header {
     grid-area: header;
-    background-color: brown;
+    background-color: var(--secondary-color);
   }
   /* Definimos que el contendeor aside se quede fijo */
   .main {
     grid-area: main;
-    background: red;
+    background: var(--white-color);
   }
   .footer {
     grid-area: footer;
-    background-color: blue;
+    background-color: var(--primary-color);
   }
   .aside__container {
     display: none;
@@ -62,6 +63,19 @@ celular
 /*
 tablet || @media (min-width: 768px) and (max-width: 991.98px) 
 */
+@media (min-width: 768px){
+    .container {
+      grid-template:
+        "header" 
+        "main"
+        "footer";
+    }
+    .header {
+      grid-area: header;
+      background-color: var(--secondary-color);
+    }
+
+}
 
 /*
 Laptop || @media (min-width: 992px) and (max-width: 1199.98px)
