@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Profile</title>
+    <link rel="stylesheet" href="../css/supplier-profile.css">
+    <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="container">
+    <!-- Container Header -->
+    <header class="header">
+        <nav class="header__nav">
+            <!--logo-->
+            <div class="header__logo">
+                <img class="pag__image" src="../img/logo.png" alt="logopag">
+                <a href="../index.html"><span class="pag__name">SkillConnect</span></a>
+
+
+            </div>
+            <!--text navigation-->
+            <div class="header__navigation-text">
+                <h1 class="header__title">Profile</h1>
+                <h2 class="header__subtitle">Check your profile settings</h2>
+            </div>
+            <!--service search bar-->
+            <div class="header__search-bar">
+                <input class="search-input" type="text" placeholder="Buscar">
+                <i class="fa-solid fa-magnifying-glass icon-search"></i>
+            </div>
+            <!--alerts and profile picture-->
+            <div class="header__alerts">
+                <div class="alerts__icon">
+                    <a href="#"><i class="fa-regular fa-bell alerts-icon"></i></a>
+                </div>
+                <div class="alerts__icon">
+                    <a href="#"><i class="fa-regular fa-envelope alerts-icon"></i></a>
+                </div>
+                <div class="alerts__icon">
+                    <a class="cc" href="../html/profile.html"><img class="picture-user"
+                            src="../img/pexels-joão-jesus-1080213.jpg" alt="foto de usuario"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="aside">
+        <div class="aside__container">
+            <nav class="aside__nav">
+                <a href="../index.html" class="aside__link"><i class="fa-solid fa-house aside-icon"></i>Home</a>
+                <a href="explore.html" class="aside__link"><i class="fa-solid fa-compass aside-icon"></i>Explore</a>
+                <a href="saved.html" class="aside__link"><i class="fa-solid fa-bookmark aside-icon"></i>Saved</a>
+                <a href="plans.html" class="aside__link"><i class="fa-solid fa-crown aside-icon"></i>Plans</a>
+                <a href="profile.html" class="aside__link"><i class="fa-solid fa-user-gear aside-icon"></i>Profile</a>
+                <a href="history.html" class="aside__link"><i
+                        class="fa-solid fa-clock-rotate-left aside-icon"></i>History</a>
+                <a href="about.html" class="aside__link"><i class="fa-solid fa-users aside-icon"></i>About</a>
+            </nav>
+
+            <section class="aside__card">
+                <figure class="card__add">
+                    <a href="../html/profile.html"><i class="fa-solid fa-plus logo-add"></i></a>
+                </figure>
+                <h2 class="card__title"> Share Your Skills</h2>
+                <p class="card__text">Share your services, experience and rates. In this way other users can find you
+                    and work together using your talents.</p>
+                <button class="card__button">Add Publication</button>
+            </section>
+        </div>
+    </aside>
+
+
+    <main class="main">
+        <!-- Banner de perfil de usuario -->
+        <section class="main__container">
+            <picture class="banner">
+
+                <figure class="avatar-perfil">
+                    <button id="avatar-perfil--button" type=""><i class="fa-solid fa-star"></i> 4.9 </button>
+                    <img src="/img/profile/profile.png" alt="img">
+                    <a href="#" class="cambiar-foto">
+                        <i class="fas fa-camera"></i>
+                        <span>Change Photo</span>
+                    </a>
+
+                </figure>
+                <button type=""><i class="fas fa-wrench"></i>Change Banner</button>
+            </picture>
+            <section class="datos-perfil">
+                <article class="titulo-usuario">
+                    <h4>Maite Delgado</h4>
+                    <a href="#" class="bio-usuario">@maite.delgado</a>
+                </article>
+                <article class="lista-perfil">
+                    <button class="message-profile " type=""><i class="fa-regular fa-envelope alerts-icon"></i>
+                        Send message </button>
+                    <button class="follow-profile" type=""> Seguir </button>
+                    <button class="follow-profile" type="">Seguidores | 1k </button>
+                </article>
+
+            </section>
+         <section class="container-content">
+            <article class="contenedor-perfil">
+                <div class="portada-perfil">
+
+
+                    <!--
+                                <div class="opcciones-perfil">
+                                    <button type=""><i class="fas fa-wrench"></i>Cambiar portada</button>
+                                    <button type=""><i class="fa-solid fa-star"></i> 4.9 </button>
+                                </div>
+                                -->
+                </div>
+                <article class="servicios__container">
+                    
+                        <div class="servicios-ubicacion">
+                            <h3> Servicios </h3>
+                            <a href="#"><span class="ubicacion">Medellín, Colombia</span></a>
+                        </div>
+                        <div class="detalle-servicios">
+                            <ul class="lista-servicios">
+                                <li>Maquillaje de día</li>
+                                <li>Maquillaje de efectos especiales</li>
+                                <li>Maquillaje de pasarela</li>
+                                <li>Maquillaje de noche</li>
+                                <li>Maquillaje de novia</li>
+                                <li>Maquillaje de sesión fotográfica</li>
+                                <li>Maquillaje de televisión y cine</li>
+                            </ul>
+                        </div>
+                        <div class="enlace-redes">
+                            <a href="#"><img src="/img/profile/icons/facebook.svg"></a>
+                            <a href="#"><img src="/img/profile/icons/instagram.svg"></a>
+                            <a href="#"><img src="/img/profile/icons/linkedin.svg"></a>
+                            <a href="#"><img src="/img/profile/icons/icons8-gmail-100.svg"></a>
+                        </div>
+                </article>
+            </article>
+
+
+            <article class="publicacion">
+                <div class="cont-publicacion">
+                    <p class="caption">
+                    <h6 class="arroba">@maite.delgado</h6> otro dias especial, haciendo feliz a mis clientas</p>
+                    <span class="reacciones"><i class="fa-solid fa-face-kiss-wink-heart"></i></span>
+                </div>
+                <div class="img-publicacion">
+                    
+                    <img src="https://www.okchicas.com/wp-content/uploads/2017/11/maquillaje-ojos-tutoriales-730x381.jpg"
+                        alt="">
+                </div>
+                <div class="comentario">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYS164-xau6ek2pBGXYlBLyowEIfXdYQuq67wtNrM6ykzteqMXi9zw1atwxE3w3nuBwdU&usqp=CAU"
+                        alt="">
+                    <label for="" placeholder="">Ingresa tu comentario</label>
+                    <button class="enviar"><i class="fa-regular fa-paper-plane"></i></button>
+                    <p class="guardar"><i class="fa-regular        fa-bookmark"></i> Guardar publicacion</p>
+                </div>
+            </article>
+            <article class="descripcion">
+                <div class="calendario">
+                <h5>Sobre mi</h5>
+                <h6>Maquilladora</h6>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, distinctio.</p>
+                <a href="#">Se ha unido, junio 2023</a>
+            </div>
+
+                 
+                <img src="/img/profile/calendario.png" alt="calendario">
+            
+            </article>
+        </section>
+        </section>
+
+
+    </main>
+    <!-- PERSONALIZACIÓN DEL PIE DE PAGINA (FOOTER) -->
+    <!-- Creamos una lista que contiene los enlaces de navegación de nuestro footer -->
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#" class="footer__link">Conditions</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Accessibility</a>
+            </li>
+            <li class="footer__item">
+                <a href="help.html" class="footer__link">Help</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">©SkillConnect</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
