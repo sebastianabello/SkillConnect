@@ -832,7 +832,7 @@ Desktop
   align-items: center;
   border-radius: 0.6rem;
   color: var(--white-color);
-  background-color: var(--highlight-color);
+  background-color: var(--highlight-color); 
 }
 
 .avatar-perfil{
@@ -921,18 +921,22 @@ Desktop
 
 
 .cont-publicacion{
-
+  text-align: center;
   margin:2rem 2rem 2rem 2rem; 
-  border-radius:3rem;
+  border-top-left-radius:3rem;
+  border-top-right-radius:3rem;
   background-color: var(--white-color);
-  width: 20rem;
-  height: 3rem;
+  width: auto;
+  height: auto;
 }
 .reacciones{
+  display: flex;
+  justify-content: end;
   background-color: var(--white-color);
-  height: auto;
+  height: 2rem;
   width: auto;
-
+  border-radius:3rem;
+  
 }
 
 
@@ -989,6 +993,7 @@ Desktop
 .descripcion > img{
     width: 40rem;
     height: 30rem;
+    object-fit: cover;
 }
 
 .comentario img{
