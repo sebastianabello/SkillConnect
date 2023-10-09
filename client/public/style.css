@@ -29,47 +29,37 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/*Here we are sizing all the bx icons xD*/
+
 .bx{
     font-size: 1.7rem;
 }
-/*Same happens with the a tag*/
+
 a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
-/*li as well*/
+
 li{
     list-style: none;
 }
-/*Just in case that anything go over other label it will be hided*/
+
 html{
     overflow-x: hidden;
 }
-/*Color property*/
+
 body.dark{
     --light: #181a1e;
     --grey: #25252c;
     --dark: #fbfbfb;
 }
-/*Same goes for body with the color and the overflow*/
+
 body{
     background: var(--grey);
-    overflow-x: hidden;
+    overflow-x: hidden;  /** Test*/
     font-family: "Poppins", sans-serif;
     min-height: 100%;
 }
-/*Trying to do la grid*/
-.container{
-    display: grid;
-    grid-template-areas: 
-       "header"
-       "sidebar"
-       "main"
-       "footer"
-    
-    ;
-}
+
 
 .sidebar{
     position: fixed;
