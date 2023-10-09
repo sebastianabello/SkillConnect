@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
+@import url('/css/card--index.css');
 
 :root {
     --light: #f6f6f9;
@@ -200,6 +200,7 @@ body{
     width: calc(100% - 230px);
     left: 230px;
     transition: all 0.3s ease;
+    
 }
 /*~ es una notacion que selecciona elementos como vecinos jeje*/
 .sidebar.close~.header{  /*Animacion cuando se cierra el aside, header se mueve con el calculando el ancho que es 100% - lo que va a correr*/
@@ -548,13 +549,21 @@ body{
 
 /*Set main values*/
 .main{
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    top: 12vh;
+    height: 100vh;
     position: relative;
     width: calc(100% - 230px); /*Necesito que me calculee*/
-    max-height: calc(100vh - 56px);
     left: 230px; /*Necesito indicarle la posicion del relative*/
     transition: all 0.3s ease;
+    gap:1rem;
+    overflow-x: hidden;
+    padding: 3rem;
 }
+
 
 .sidebar.close~.main{
     width: calc(100% - 60px);
@@ -565,7 +574,7 @@ body{
 
 /*End main*/
 
-
+/*
 
 .footer{
 
@@ -577,7 +586,7 @@ body{
     z-index: 1000;
    
 }
-
+*/
 /*End footer*/
 
 /*Laptop media query*/
@@ -674,6 +683,8 @@ body{
     
 
     .main {
+        display: flex;
+        flex-wrap: wrap;
         width: calc(100% - 60px);
         left: 190px;
     }
@@ -687,23 +698,6 @@ body{
    
 }
 
-
-
-
-
-
-
-@media screen and (min-width: 1200px){
-    .grid-container{
-        grid-template:
-
-        "aside header" 12vh
-        "aside main"   auto
-        "footer footer" 10vh
-        230px  auto;
-
-    }
-}
 
 /*Tablet**/
 
@@ -779,7 +773,6 @@ body{
         margin-top: 0;
         width: 2rem;
         height: 2rem;
-
         justify-content: center;
         align-items: center;
         border: solid 0.2rem;
@@ -847,9 +840,7 @@ body{
         display: none;
     }
 
-.main{
-    background-color: #003671;
-}
+
 
 }
 
