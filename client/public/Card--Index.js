@@ -1,15 +1,13 @@
-const names = ["Juan Perez", "Maria Lopez", "Pedro Ramirez", "Ana Martinez", "Carlos Rodriguez"];
-const prices = ["$200.50", "$350.80", "$420.25", "$275.60", "$500.00"];
-const occupations = ["Artist", "Web Developer", "Chef", "Photographer", "Teacher"];
-const rates = ["4.1", "4.5", "4.7", "4.3", "4.9"];
+const names = [];
+const prices = [];
+const occupations = [];
+const rates = [];
 const cards = document.querySelectorAll(".card--container");
 
 // Recorrer todas las tarjetas y actualizar la información
 cards.forEach((card, index) => {
-  const name = names[Math.floor(Math.random() * names.length)];
-  const price = prices[Math.floor(Math.random() * prices.length)];
-  const occupation = occupations[Math.floor(Math.random() * occupations.length)];
-  const rate = rates[Math.floor(Math.random() * rates.length)];
+  const name = names[alert('nname??????')];
+
 //Selecciono tarjeta
   const cardName = card.querySelector(".card--user-name");
   const cardPrice = card.querySelector(".card--price");
@@ -28,7 +26,7 @@ class Persona{  //Para meterle parametros a una clase uso el consutrctor, toda c
         this.nombre = nombre;
         this.edad = edad;
         this.saludar = function(){
-            console.log("Hola, soy " + this.nombre + " y tengo " + this.edad + " años")
+            //console.log("Hola, soy " + this.nombre + " y tengo " + this.edad + " años")
     }
    /*saludar(){
     console.log("Hola, soy " + this.nombre + " y tengo " + this.edad + " años") */
