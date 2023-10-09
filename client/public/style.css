@@ -439,7 +439,7 @@ body{
     justify-content: center;
     align-items: center;
     border: var(--black-color) solid 0.2rem;
-    border-radius: 10%;
+    border-radius: 30%;
     background-color: var(--highlight-color);
   }
   .alerts__icon:hover {
@@ -550,7 +550,7 @@ body{
     left: 230px; /*Necesito indicarle la posicion del relative*/
     transition: all 0.3s ease;
     gap:1rem;
-    overflow-x: hidden;
+    
     padding: 2rem;
 }
 
@@ -617,9 +617,7 @@ body{
 
     .header__logo{
        margin-top:2rem;
-       
-
-       
+             
     }
     .header__title {
         font-size: 1.7rem;
@@ -632,8 +630,7 @@ body{
         font-weight: 300;
         color: var(--dark);
         text-align:center;
-        
-    
+            
       }
       .aside__card {
         height: 10vh;
@@ -670,15 +667,8 @@ body{
     .card__add {
         margin-top: 0rem;
     }
-
-
-
-    
-
     .main {
-        display: flex;
-        flex-wrap: wrap;
-        width: calc(100% - 60px);
+
         left: 190px;
     }
 
@@ -686,9 +676,7 @@ body{
         width: 160px;
         height: 40vh;
 
-    }
-
-   
+    }  
 }
 
 
@@ -706,9 +694,6 @@ body{
         text-align: center;
         width: 150px;
         margin-left: 0.6rem;
-        
-    
-        /*test*/
       
       }
 
@@ -731,19 +716,15 @@ body{
     display:none;
     font-size: 0.8rem;
     margin: 0;
-    font-weight: 300;
-    
-    
+    font-weight: 300;   
 }
-
-
 .alerts-icon{
    width: 10px;
    height: 1rem;
 }  
     
     .main{
-        width: calc(100% - 60px);
+      
         left: 205px;
     }
 
@@ -794,16 +775,12 @@ body{
         display: none;
         
       }
-
-
     /*--------------------------------------*/
     .header{
         width: calc(100% - 36px);
         left: 200px;
         
     }
-
-
 
     .header nav form .form-input input{
         display: none;
@@ -826,15 +803,15 @@ body{
         width: 36px;
         height: 100%;
         color: #363949;
-        background: var(--danger);
         border-radius: 0 36px 36px 0;
     }
 
     .header nav form.show~.notif, .header nav form.show~.profile{
         display: none;
     }
-
-
+    .bx-menu{
+        display: none;
+    }
 
 }
 
