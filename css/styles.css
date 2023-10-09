@@ -221,10 +221,10 @@ body{
   /*cardAside*/
 .aside__card {
     gap:0.5rem;
-    width: 200px;
-    height: 30vh;
+    width: 10rem;
+    height: 34vh;
     padding:1rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -443,8 +443,8 @@ body{
     align-items: center;
   }
   .alerts__icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -457,14 +457,14 @@ body{
   }
   .alerts-icon {
     color: var(--dark);
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .cc {
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
   }
   .picture-user {
     width: 100%;
@@ -646,7 +646,10 @@ body{
     
       }
       .aside__card {
-        gap:0.8rem;
+        height: 10vh;
+        gap:0.5rem;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
     }
 
      .card__title{
@@ -661,10 +664,10 @@ body{
     .card__button {
   
         width: 7.2rem;
-        height: 2.6rem;
+        height: 5vh;
         font-size: 0.7rem;
         font-weight: 500;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
         padding: 0.4rem;
       }
       .card__button:hover{
@@ -691,7 +694,7 @@ body{
 
     .aside__card{
         width: 160px;
-        height: 29vh;
+        height: 40vh;
 
     }
 
@@ -762,14 +765,15 @@ body{
 
     .aside__card {
         height: 10px;
-
-        width: 30px;
+        margin-left: 0.9rem;
+        width: 20px;
         background-color: var( --light);
     
         /*test*/
       
       }
       .card__add {
+        
         margin-top: 0;
         width: 2rem;
         height: 2rem;
