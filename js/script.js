@@ -11,6 +11,22 @@ function ocultarFormulario() {
     formulario.style.display = "none";
 }
 
+// Función para mostrar y ocultar los formularios del perfil
+function mostrarFormulario(indice) {
+    const formularios = document.querySelectorAll('.container__card form');
+    formularios.forEach((formulario) => {
+        formulario.style.display = 'none';
+    });
+    const formularioAMostrar = document.getElementById(`hiddenForm${indice}`);
+    formularioAMostrar.style.display = 'block';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    mostrarFormulario(1);
+});
+
+
+
 
 /***
  * New Design
@@ -72,3 +88,4 @@ toggler.addEventListener('change', function () {
         document.body.classList.remove('dark');
     }
 });
+

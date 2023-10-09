@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Documento permita caracteres especiales-->
+    <meta charset="UTF-8">
+    <!--Contenido se podra visualizar en diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Descripción breve que se mostrará en los resultados de búsqueda-->
+    <meta name="description"
+        content="SkillConnect es una red social de servicios profesionales que conecta a proveedores de servicios y usuarios que buscan habilidades específicas.">
+    <!--Autor o empresa-->
+    <meta name="author" content="BugBusters">
+    <!--Palabras clave relevantes para la plataforma-->
+    <meta name="keywords" content="servicios profesionales, red social, habilidades, proveedores de servicios">
+
+    <!--Especificamos el título de proyecto web-->
+    <title>SkillConnect</title>
+
+    <!--Link a la hoja de estilos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/profile.css">
+
+</head>
+
+<body class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <!--Logo-->
+        <div class="header__logo">
+            <img class="pag__image" src="/img/logo.png" alt="logopag">
+            <a href="../index.html"><span class="pag__name">SkillConnect</span></a>
+
+
+        </div>
+        <ul class="side-menu">
+            <li class="active"><a href="../index.html"><i class="fa-solid fa-house aside-icon"></i>Home</a></li>
+            <li><a href="explore.html" class="aside__link"><i class="fa-solid fa-compass aside-icon"></i>Explore</a>
+            </li>
+            <li><a href="saved.html" class="aside__link"><i class="fa-solid fa-bookmark aside-icon"></i>Saved</a>
+            <li><a href="plans.html" class="aside__link"><i class="fa-solid fa-crown aside-icon"></i>Plans</a></li>
+            <li><a href="history.html" class="aside__link"><i
+                        class="fa-solid fa-clock-rotate-left aside-icon"></i>History</a></li>
+            <li><a href="/html/about.html" class="aside__link"><i class="fa-solid fa-users aside-icon"></i>About</a>
+            </li>
+        </ul>
+
+        <!--Card add-->
+        <section class="aside__card">
+            <figure class="card__add">
+                <a href="../html/profile.html"><i class="fa-solid fa-plus logo-add"></i></a>
+            </figure>
+            <h2 class="card__title"> Share Your Skills</h2>
+            <p class="card__text">Share your services, experience and rates. In this way other users can find you and work together using your talents.</p>
+            <button class="card__button">Add Publication</button>
+        </section>
+        <!--
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>-->
+    </aside>
+    <!-- End of Sidebar -->
+
+
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="header__nav">
+
+
+
+            <!--Settings icon-->
+
+
+
+            <i class='bx bx-menu'></i>
+            <!-- Page name and description  -->
+            <div class="header__navigation-text">
+                <h1 class="header__title">Home</h1>
+                <h2 class="header__subtitle">Welcome to SkillConnect</h2>
+            </div>
+
+            <!--service search bar-->
+
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+
+            <!--alerts and profile picture-->
+            <div class="header__alerts">
+                <div class="alerts__icon">
+                    <a href="#"><i class="fa-regular fa-bell alerts-icon"></i></a>
+                </div>
+                <div class="alerts__icon">
+                    <a href="#"><i class="fa-regular fa-envelope alerts-icon"></i></a>
+                </div>
+                <div class="alerts__icon">
+                    <a class="cc" href="../html/profile.html"><img class="picture-user"
+                            src="../img/pexels-joão-jesus-1080213.jpg" alt="foto de usuario"></a>
+                </div>
+            </div>
+
+
+            <!---Toggle button---->
+
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+        </nav>
+    </header>
+
+
+    <!-- End of Navbar -->
+
+    <main class="main">
+
+        <div class="main__container">
+
+            <!-- Card de Personal Info -->
+            <ul class="card__links">
+               <li><a href="#" class="link__card" onclick="mostrarFormulario(1)">Personal Info</a></li>
+               <li><a href="#" class="link__card" onclick="mostrarFormulario(2)">Edit Profile</a></li>
+               <li><a href="#" class="link__card" onclick="mostrarFormulario(3)">Notifications</a></li>
+           </ul>
+           <section class="container__card">
+               <!-- Inicializamos el 1er formulario -->
+               <form id="hiddenForm1" action="" class="form__container">
+                   <!-- Menu de opciones: Visibiidad -->
+                   <div class="cont__label">
+                       <label for="" class="form__title">Privacy Settings:</label>
+                   <select name="" id="" class="form__select">
+                       <option disabled value="">Escoja su preferencia</option>
+                       <option value="">Mis seguidores</option>
+                       <option value="">Todos Pueden</option>
+                   </select>
+                   </div>
+                   
+                   <!-- Campo: Nombre Completo (usuario) -->
+                   <div class="cont__label">
+                       <label for="" class="form__title">Full name:
+                       </label>
+                       <input type="text" class="form__input">
+                   </div>
+                   
+                   <!-- Campo: Ubicación Geográfica -->
+                   <div class="cont__label">
+                       <label for="" class="form__title">Location:</label>
+                       <input type="text" class="form__input">
+                   </div>
+                   
+                   <!-- Campo: Celular -->
+                   <div class="cont__label">
+                       <label for="" class="form__title">Phone:</label>
+                       <input type="tel" name="" id="" class="form__input">
+                   </div>
+   
+                   <!-- Campo: Correo -->
+                   <div class="cont__label">
+                       <label for="" class="form__title">Email Address:</label>
+                       <input type="email" name="" id="" class="form__input">
+                   </div>
+   
+                   <!-- Campo: Fecha de Nacimiento -->
+                   <div class="cont__label">
+                       <label for="" class="form__title">Birthdate:</label>
+                       <input type="date" name="" id="" class="form__date">
+                   </div>
+                   <a href="#" class="delete">Delete Account</a>
+               </form>
+           </section>
+   
+   
+           <!-- Card de Edit Profile -->
+           
+           <section class="container__card hide">
+               <!-- Inicializamos el 2do formulario -->
+               <form id="hiddenForm2" class="form__container">
+                   <p class="parrafo">The information here will be visible for all users that would like to see it.</p>
+                   <!-- Cambiar foto de perfil -->
+                   <div class="cont__img">
+                       <label for="">
+                           <img src="../img/profilee.jpg" alt="" id="img" class="form__img">
+                           <span class="text__span">Profile Picture</span>
+                           <input type="file" name="foto" accept="imge" class="input__img">
+                       </label>
+                   </div>
+               
+                       <!-- About del usuario -->
+                       <label class="cont-area">Description</label>
+                       <br>
+                       <textarea placeholder="Description" id="" cols="10" rows="3" class="form__area"></textarea>
+                       <!-- Listado de servicios que ofrece el usuario -->
+                       <br>
+                       <label class="cont-area">Services</label>
+                       <br>
+                       <textarea placeholder="Services" name="" id="" cols="10" rows="3" class="form__area"></textarea>
+               
+                   
+                   <!-- Nombre de profesion u oficio del usuario -->
+                   <div class="cont__label">
+                       <label for="" class="form__title">Profession</label>
+                       <input type="text" class="form__input">
+                       <button class="form__button"><span class="button_top">Change</span</button>  
+                   </div>
+                    
+                   <!-- Nombre visible del usuario -->
+                   <div class="cont__label">
+                       <label for="" class="form__title">Nick Name</label>
+                       <input type="text" class="form__input">
+                       <button class="form__button"><span class="button_top">Change</span</button>  
+                   </div>
+                   
+                   <!-- ID del usuario en la red social -->
+                   <div class="cont__label">
+                       <label for="" class="form__title">User Name</label>
+                       <input type="text" class="form__input">
+                       <button class="form__button"><span class="button_top">Change</span</button>  
+                   </div>
+                   
+               </form>
+           </section>
+   
+   
+           <!-- Card de Notifications -->
+           
+           <section class="container__card hide">
+               <!-- Inicializamos el 3er formulario -->
+                   <form id="hiddenForm3" action="" class="form__container">
+                       <p class="parrafo">¿Would you like to receive notifications for the next features?</p>
+                       <!-- Preferencia para ajustar las notificaciones -->
+                       <div class="cont__card3">
+                           <input type="checkbox" name="" id="">
+                           <label for="" class="card3__text">Messages</label>
+                           <p class="descriptive__card3">
+                               Someone has sent you a direct message
+                               <br>
+                               You have a new follower
+                               <br>
+                               Your services got rated
+                               <br>
+                               You have been tag in a publication
+                               <br>
+                               Your publication has been commented
+                           </p>
+                       </div>
+                       
+                       <!-- Alertas sobre otros usuarios -->
+                       <div class="cont__card3">
+                           <input type="checkbox" name="" id="">
+                           <label for="" class="card3__text">Users that you follow has updated new content</label>
+                       </div>
+                       
+                       <!-- Noticias y anuncios de nuesta red social -->
+                       <div class="cont__card3">
+                           <input type="checkbox" name="" id="">
+                           <label for="" class="card3__text">Updates and news from SkillConnect</label>
+                       </div>
+                       
+                   </form>
+               </section>
+   
+    </main>
+
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#" class="footer__link">Conditions</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Accessibility</a>
+            </li>
+            <li class="footer__item">
+                <a href="help.html" class="footer__link">Help</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">©SkillConnect</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
