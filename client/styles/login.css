@@ -1,3 +1,24 @@
+:root {
+    --light: #f6f6f9;
+    --primary: #1976D2;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #363949;
+
+
+    /***/
+    --primary-color: #007bff;
+    --secondary-color: #003671;
+    --text-icons-color: #333333;
+    --secondary-text-color: #666666;
+    --white-color: #ffffff;
+    --highlight-color: #ff5722;
+    --light-highlight: #ff9c7efe;
+    --primary-color-opacity: rgba(#007bff 0.2);
+    --secondary-color-opacity: rgba(#007bff 0.2);
+    --black-color: #000000;
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -9,11 +30,10 @@ body{
     width: 100%;
 }
 .background{
-    background: url(../assets/background-login.jpg) no-repeat;
-    background-position: center;
-    background-size:cover;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    background-image: url('../assets/fondologin.gif');
+    background-size: cover; 
 }
 .container{
     position: absolute;
@@ -22,7 +42,7 @@ body{
     transform: translate(-50%,-50%);
     width: 75%;
     height: 550px;
-    background: url(../assets/background-Clogin1.jpg) no-repeat;
+    background-color: var(--dark);
     opacity: 0.8;
     background-position: center;
     background-size:cover ;
