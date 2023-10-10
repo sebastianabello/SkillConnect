@@ -1,76 +1,101 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <!-- Falta crear el css y linkear -->
-    <link rel="stylesheet" href="../css/.css">
-    <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!-- Container Header -->
-    <header>
-        <nav>
-            <!--logo-->
-            <div>
-                <img class="pag__image" src="../img/logo.png" alt="logopag">
-                <a href="../index.html"><span class="pag__name">SkillConnect</span></a>
-            </div>
-            <!--text navigation-->
-            <div>
-                <h1 class="header__title">Login</h1>
-            </div>
-            <div>
-                <h1 class="header__title">Sign Up</h1>
-            </div>
-        </div>    
-        </nav>
-    </header>
-    <main>
-        <div>
-            <!-- Texto de la pagina -->
-            <section>
-                <div>
-                    <h2> Ingresa tu correo y contraseña </h2>
-                    <p>
-                        <label>
-                            <p>Email</p>
-                            <input type="text" name="usuario">
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <p>Password</p>
-                            <input type="text" name="usuario">
-                        </label>
-                    </p>
-                </div>
-                <button>Enter</button>
-
-            </section>
+    <link rel="stylesheet" href="../styles/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <!-- LOGIN -->
+    <div class="background"></div>
+    <!-- Container 1 -->
+    <div class="container">
+      <div class="item">
+        <h2 class="logo"><img class="logo-p" src="../assets/logo.png" alt="Logo de SkillConnect">SkillConnect</h2>
+        <div class="text-item">
+          <h2>
+            ¡Bienvenido! <br /><span>
+              Estamos contentos de que estes aqui.
+            </span>
+          </h2>
+          <p>
+            Estamos creciendo más allá de nuestras expectativas, todo gracias a ti.
+          </p>
+          <!-- social icons -->
+          <!-- <div class="social-icon">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-tiktok'></i></a>
+                </div> -->
         </div>
-    </main>
-    <!-- PERSONALIZACIÓN DEL PIE DE PAGINA (FOOTER) -->
-    <!-- Creamos una lista que contiene los enlaces de navegación de nuestro footer -->
-    <footer>
-        <ul>
-            <li>
-                <a href="#" class="footer__link">Conditions</a>
-            </li>
-            <li>
-                <a href="#" class="footer__link">Privacy</a>
-            </li>
-            <li>
-                <a href="#" class="footer__link">Accessibility</a>
-            </li>
-            <li>
-                <a href="#" class="footer__link">Help</a>
-            </li>
-            <li>
-                <a href="#" class="footer__link">©SkillConnect</a>
-            </li>
-        </ul>
-    </footer>
-</body>
+      </div>
+      <div class="login-section">
+        <div class="form-box login">
+          <form action="">
+            <h2>Iniciar Sesión</h2>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-user-account"></i></span>
+              <input type="text" required />
+              <label>Usuario</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+              <input type="password" required />
+              <label>Contraseña</label>
+            </div>
+            <div class="remember-password">
+              <label for=""><input type="checkbox" />Recuerda</label>
+              <a href="#">Olvidaste tu contraseña</a>
+            </div>
+            <button class="btn">Ingresar</button>
+            <div class="create-account">
+              <p>
+                ¿Aún no tienes cuenta?<a href="#" class="register-link">
+                  Registrarse</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="form-box register">
+          <form action="">
+            <h2>Ingreso</h2>
+
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-user"></i></span>
+              <input type="text" required />
+              <label>Nombre</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-user-account"></i></span>
+              <input type="text" required />
+              <label>Usuario</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+              <input type="password" required />
+              <label>Contraseña</label>
+            </div>
+            <div class="remember-password">
+              <label for=""
+                ><input type="checkbox" />Estoy de acuerdo con los términos y
+                condiciones</label
+              >
+            </div>
+            <button class="btn">Registrarse</button>
+            <div class="create-account">
+              <p>
+                Tienes una cuenta?
+                <a href="#" class="login-link"> Iniciar Sesión</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../scripts/login-mov.js"></script>
+  </body>
 </html>
