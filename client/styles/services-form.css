@@ -1,0 +1,94 @@
+
+/*Main content*/
+
+.add-service-container {
+    
+    height: 70vh;
+    width: 60vw;
+    background-color: var(--light);
+    box-shadow: 2rem 1rem 2rem var(--black-color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.service-title {
+    
+    padding: 3rem;
+    height: 10vh;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    color: var(--dark);
+}
+.columns-service {
+    display: flex;
+    flex-direction: row;
+    margin:0 10vw 5vh 10vw;
+    justify-content: space-between;
+   
+}
+.left-card-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20vw;
+   
+    
+}
+.right-card-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 20vw;
+    
+    
+}
+.service-img {
+    height: 25vh;
+    width: 15vw; /*15vw*/
+    border-radius: 2rem;
+    margin: auto;
+    border: 0.2rem var(--dark) dashed;
+
+    
+}
+
+.service-btn {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 9vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--highlight-color);
+    color:var(--white-color);
+    border-radius: 0.7rem;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    
+}
+
+#add-service-img{
+    display: flex;
+    color: var(--dark);
+    justify-content: end;
+    margin-top: 0.5rem;
+    margin-left:1.8rem;
+}
+input{
+    border-radius: 0.5rem;
+    height: 3vh;
+    font-size: small;
+
+}
+label{
+    color: var(--dark);
+}
+#list{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    flex-wrap: wrap;
+}

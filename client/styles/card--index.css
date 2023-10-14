@@ -2,12 +2,16 @@
 
 .card--container{
     margin: 3rem 0;
+    /*
     height: 19rem;
+    
+    */
+    height: auto;
+    width: 14rem;
     border: 0.2rem solid var(--black-color);
     display:flex;
     flex-direction: column;
     gap:0.5rem;
-    width: 14rem;
     border-radius: 1rem;
 
 }
@@ -46,11 +50,14 @@
 /*Names, details */
 .card--price{
     font-weight: bold;
+    color: var(--dark);
 
 }
 
 .card--description{
     padding-left: 1rem;
+    color: var(--dark);
+
 
 }
 .card--user-name{
