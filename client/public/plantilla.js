@@ -89,3 +89,14 @@ toggler.addEventListener('change', function () {
     }
 });
 
+/*
+function saveCard() {
+    document.getElementById('btn').style.backgroundColor = "#ff9c7eca";
+}
+*/
+const saveButton = document.querySelectorAll('.btn'); 
+saveButton.forEach(btn => {
+   btn.addEventListener('click', function onClick(){
+    btn.style.backgroundColor = '#ff9c7eca'; 
+ })
+})
