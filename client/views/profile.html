@@ -30,7 +30,7 @@
     <aside class="sidebar">
         <!--Logo-->
         <div class="header__logo">
-            <img class="pag__image" src="/img/logo.png" alt="logopag">
+            <img class="pag__image" src="../assets/logo.png" alt="logopag">
             <a href="../index.html"><span class="pag__name">SkillConnect</span></a>
 
 
@@ -101,7 +101,7 @@
                 </div>
                 <div class="alerts__icon">
                     <a class="cc" href="./profile.html"><img class="picture-user"
-                            src="../img/pexels-joão-jesus-1080213.jpg" alt="foto de usuario"></a>
+                            src="../assets/perfil1.jpg" alt="foto de usuario"></a>
                 </div>
             </div>
 
@@ -122,13 +122,13 @@
 
             <!-- Card de Personal Info -->
             <ul class="card__links">
-               <li><a href="#" class="link__card" onclick="mostrarFormulario(1)">Personal Info</a></li>
-               <li><a href="#" class="link__card" onclick="mostrarFormulario(2)">Edit Profile</a></li>
-               <li><a href="#" class="link__card" onclick="mostrarFormulario(3)">Notifications</a></li>
+               <li><a href="#" class="link__card" onclick="mostrarFormularioHelpCenter(1)">Personal Info</a></li>
+               <li><a href="#" class="link__card" onclick="mostrarFormularioHelpCenter(2)">Edit Profile</a></li>
+               <li><a href="#" class="link__card" onclick="mostrarFormularioHelpCenter(3)">Notifications</a></li>
            </ul>
            <section class="container__card">
                <!-- Inicializamos el 1er formulario -->
-               <form id="hiddenForm1" action="" class="form__container">
+               <form id="OcultarForm" action="" class="form__container">
                    <!-- Menu de opciones: Visibiidad -->
                    <div class="cont__label">
                        <label for="" class="form__title">Privacy Settings:</label>
@@ -178,12 +178,12 @@
            
            <section class="container__card hide">
                <!-- Inicializamos el 2do formulario -->
-               <form id="hiddenForm2" class="form__container">
+               <form id="OcultarForm" class="form__container">
                    <p class="parrafo">The information here will be visible for all users that would like to see it.</p>
                    <!-- Cambiar foto de perfil -->
                    <div class="cont__img">
                        <label for="">
-                           <img src="../img/profilee.jpg" alt="" id="img" class="form__img">
+                           <img src="../assets/perfil1.jpg" alt="" id="img" class="form__img">
                            <span class="text__span">Profile Picture</span>
                            <input type="file" name="foto" accept="imge" class="input__img">
                        </label>
@@ -202,21 +202,21 @@
                    
                    <!-- Nombre de profesion u oficio del usuario -->
                    <div class="cont__label">
-                       <label for="" class="form__title">Profession</label>
+                       <label for="" class="form__title">Profession: </label>
                        <input type="text" class="form__input">
                        <button class="form__button"><span class="button_top">Change</span</button>  
                    </div>
                     
                    <!-- Nombre visible del usuario -->
                    <div class="cont__label">
-                       <label for="" class="form__title">Nick Name</label>
+                       <label for="" class="form__title">Nick Name: </label>
                        <input type="text" class="form__input">
                        <button class="form__button"><span class="button_top">Change</span</button>  
                    </div>
                    
                    <!-- ID del usuario en la red social -->
                    <div class="cont__label">
-                       <label for="" class="form__title">User Name</label>
+                       <label for="" class="form__title">User Name: </label>
                        <input type="text" class="form__input">
                        <button class="form__button"><span class="button_top">Change</span</button>  
                    </div>
@@ -229,7 +229,7 @@
            
            <section class="container__card hide">
                <!-- Inicializamos el 3er formulario -->
-                   <form id="hiddenForm3" action="" class="form__container">
+                   <form id="OcultarForm" action="" class="form__container">
                        <p class="parrafo">¿Would you like to receive notifications for the next features?</p>
                        <!-- Preferencia para ajustar las notificaciones -->
                        <div class="cont__card3">
