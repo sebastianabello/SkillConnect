@@ -29,194 +29,41 @@ body{
     height: 100vh;
     width: 100%;
 }
+/* Fondo del login */
 .background{
     height: 100%;
     width: 100%;
-    background-image: url('../assets/fondologin.gif');
-    background-size: cover; 
-}
-.container{
-    position: absolute;
-    left: 50%;
-    top: 53%;
-    transform: translate(-50%,-50%);
-    width: 75%;
-    height: 550px;
-    background-color: var(--dark);
-    opacity: 0.8;
-    background-position: center;
-    background-size:cover ;
-    border-radius: 20px;
-    overflow: hidden;
-    
-}
-.item{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 58%;
-    height: 100%;
-    color: #fff;
-    background: transparent;
-    padding: 80px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.logo-p{
-    width: 120px;
-    border-radius: 10px;
-}
-.item .logo{
-    color: #fff;
-    font-size: 35px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
 }
 
-.text-item p{
-    font-size: 16px;
-    margin: 20px 0;
-}
-.social-icon a i{
-    color: #fff;
-    font-size: 24px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: .5s ease;
-}
-.social-icon a:hover i{
-    transform: scale(1.2);
-}
-.container .login-section{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: calc(100% - 58%);
+.cont{
     height: 100%;
-    color: #fff;
-    background-color: transparent;
-}
-
-.login-section .form-box{
-    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    
+    background:black;
 }
-.login-section .form-box.register{
-    transform: translateX(430px);
-    transition: transform .6s ease;
-    transition-delay: 0s;
-}
-.login-section.active .form-box.register{
-    transform: translateX(0px);
-    transition-delay: .7s;
-}
-
-.login-section .form-box.login{
-    transform: translateX(0px);
-    transition: transform .6s ease;
-    transition-delay: 0.7s;
-}
-.login-section.active .form-box.login{
-    transform: translateX(430px);
-    transition-delay: 0s;
-}
-.login-section .form-box h2{
-    text-align: center;
-    font-size: 25px;
-}
-
-.form-box .input-box{
-    width: 340px;
-    height: 50px;
-    border-bottom: 2px solid#fff;
-    margin: 30px 0;
-    position: relative;
-}
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    padding-right: 28px;
-            color: #fff;
-
-}
-.input-box label{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    font-size: 16px;
-    font-weight: 600px;
-    pointer-events: none;
-    transition: .5s ease;
-
-
-}
-.input-box .icon{
-    position: absolute;
-    top: 13px;
-    right: 0;
-    font-size: 19px;
-
-}
-.input-box input:focus~ label,
-.input-box input:valid~ label{
-    top: -5px;
-}
-.remember-password{
-    font-size: 14px;
-    font-weight: 500;
-    margin: -15px 0 15px ;
+.container{
+    height: 80vh;
+    width: 70vw;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: red;
 }
-.remember-password label input{
-    accent-color: #fff;
-    margin-right: 3px;
-
+.item{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
 }
-.remember-password a{
-    color: #fff;
-    text-decoration: none;
-}
-.remember-password a:hover{
-    text-decoration: underline;
-}
-.btn{
-    background: #fff;
-    width: 100%;
-    height: 45px;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    background: #0d9ea3;
-    font-size: 16px;
-    color: #fff;
-
-}
-.create-account{
-    font-size: 14.5px;
-    text-align: center;
-    margin: 25px;
-}
-.create-account p a{
-    color: #fff;
-    font-weight: 600px;
-    text-decoration: none;
-}
-.create-account p a:hover{
-    text-decoration: underline;
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
 }
