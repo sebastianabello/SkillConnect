@@ -211,8 +211,6 @@
 
     /* RESPONSIVE DISEÑOO */
 
-    
-/* Estilos para pantallas de 360px a 576px */
 @media screen and (min-width: 360px) and (max-width: 576px) {
   .main__container {
     margin-left: 0;
@@ -312,7 +310,6 @@
 }
 
 
-/* Estilos para pantallas de 576px a 767px */
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .main__container {
     margin-left: 0;

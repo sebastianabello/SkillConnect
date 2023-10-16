@@ -36,7 +36,7 @@
 
 .tabla>i {
     color: var(--dark-grey);
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 1rem;
 }
 
@@ -102,12 +102,31 @@
 
 
 @media screen and (max-width: 1000px) {
+    .contenedor {
+        flex-direction: column ;
+    }
+    
     .tabla {
-        flex-basis: 45%;
+        width: 80%;
+    }
+    .tabla p {
+        text-align: center;
+        font-size: 1.3rem;
+        padding-top: 1rem;
+    }
+    .beneficios {
+        padding-top: .8rem;
+        font-size: 1.2rem;
+    }
+    .tabla i {
+        font-size: 5rem;
     }
 }
 
 @media screen and (max-width: 700px) {
+    .contenedor {
+        flex-direction: column;
+    }
     .tabla {
         flex-basis: 45%;
         padding: 30px;
