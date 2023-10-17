@@ -1,1064 +1,403 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-
-:root {
-    --light: #f6f6f9;
-    --grey: #eee;
-    --dark-grey: #AAAAAA;
-    --dark: #363949;
-
-
-    /***/
-    --secondary-color: #003671;
-    --text-icons-color: #333333;
-    --secondary-text-color: #666666;
-    --white-color: #ffffff;
-    --highlight-color: #ff5722;
-    --light-highlight:#ff9c7efe;
-    --primary-color-opacity: rgba(#007bff 0.2);
-    --secondary-color-opacity: rgba(#007bff 0.2);
-    --black-color: #000000;
-    
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-.bx{
-    font-size: 1.7rem;
-}
-/*Same happens with the a tag*/
-a{
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-}
-/*li as well*/
-li{
-    list-style: none;
-}
-/*Just in case that anything go over other label it will be hided*/
-html{
-    overflow-x: hidden;
-}
-/*Color property*/
-body.dark{
-    --light: #181a1e;
-    --grey: #25252c;
-    --dark: #fbfbfb;
-}
-/*Same goes for body with the color and the overflow*/
-body{
-    background: var(--grey);
-    overflow-x: hidden;
-    font-family: "Poppins", sans-serif;
-    min-height: 100%;
-}
-/*Trying to do la grid*/
-.container{
-    display: grid;
-    grid-template-areas: 
-       "header"
-       "sidebar"
-       "main"
-       "footer"
-    
-    ;
-}
-
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: var(--light);
-    width: 230px;
-    height: 100%;
-    z-index: 2000;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    transition: all 0.3s ease;
-}
-
-.sidebar::-webkit-scrollbar{ /*Selector que le da estilo a la barra de desplazamiento, en este caso se establece que no va a tener ningun estilo*/
-    display: none;
-}
-
-.sidebar.close{
-    width: 60px;
-}
-
-.sidebar .logo{
-    font-size: 24px;
-    font-weight: 700;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    color: var(--highlight-color);
-    z-index: 500;
-    padding-bottom: 20px;
-    box-sizing: content-box;
-}
-
-.sidebar .logo .logo-name span{
-    color: var(--dark);
-}
-
-.sidebar .logo .bx{
-    min-width: 60px;
-    display: flex;
-    justify-content: center;
-    font-size: 2.2rem;
-}
-
-.sidebar .side-menu{
-    width: 100%;
-    margin-top: 8vh;
-    margin-bottom:15vh;
-}
-
-.sidebar .side-menu li{
-    height: 48px;
-    background: transparent;
-    margin-left: 6px;
-    border-radius: 48px 0 0 48px;
-    padding: 4px;
-}
-
-.sidebar .side-menu li.active{
-    background: var(--grey);
-    position: relative;
-}
-
-.sidebar .side-menu li.active::before{
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    top: -40px;
-    right: 0;
-    box-shadow: 20px 20px 0 var(--grey);
-    z-index: -1;
-}
-
-.sidebar .side-menu li.active::after{
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    bottom: -40px;
-    right: 0;
-    box-shadow: 20px -20px 0 var(--grey);
-    z-index: -1;
-}
-
-.sidebar .side-menu li a{
-    width: 100%;
-    height: 100%;
-    background: var(--light);
-    display: flex;
-    align-items: center;
-    border-radius: 48px;
-    font-size: 16px;
-    color: var(--dark);
-    white-space: nowrap;
-    overflow-x: hidden;
-    transition: all 0.3s ease;
-}
-
-.sidebar .side-menu li.active a{
-    color: var(--highlight-color);
-}
-
-.sidebar.close .side-menu li a{
-    width: calc(48px - (4px * 2));
-    transition: all 0.3s ease;
-}
-
-.sidebar .side-menu li a .bx{
-    min-width: calc(60px - ((4px + 6px) * 2));
-    display: flex;
-    font-size: 1.6rem;
-    justify-content: center;
-}
-
-
-
-/*side-menu card*/
-
-/* HEader config*/
-
-.header{    
-    display: inline-block;
-    position: absolute;
-    width: calc(100% - 230px);
-    left: 230px;
-    transition: all 0.3s ease;
-}
-/*~ es una notacion que selecciona elementos como vecinos jeje*/
-.sidebar.close~.header{  /*Animacion cuando se cierra el aside, header se mueve con el calculando el ancho que es 100% - lo que va a correr*/
-    width: calc(100% - 60px);
-    left: 60px;
-}
-
-/*up*/
-
-.aside__link {
-  
-    color: var(--text-icons-color);
-    font-size: 1.3rem;
-    font-weight: 700;
-  
-  }
-
-  /*cardAside*/
-.aside__card {
-    gap:0.5rem;
-    width: 200px;
-    height: 30vh;
-    padding:1rem;
-    margin-left: 1rem;
-    border-radius: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var( --grey);
-
-    /*test*/
-  
-  }
-  .card__add {
-
-    margin-top: 3rem;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 0.2rem;
-    border-radius: 50%;
-    background-color: var(--highlight-color);
-  }
-  .card__add a{
-    color: white;
-  }
-  .card__add:hover {
-    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-    transition: all 0.2s ease-in-out;
-  }
-  .card__title {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--dark);
-  }
-  .card__text {
-    width: 130px;
-    font-size: 0.7rem;
-    font-weight: 500;
-    text-align: justify;
-    color: var(--secondary-text-color);
-  }
-
-  /*dis*/
-  .card__button {
-  
-    width: 7.2rem;
-    height: 5.5rem;
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: var(--white-color);
-    background-color: var(--highlight-color);
-    border: var(--black-color) solid 0.2rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    margin-bottom: 3rem;
-    padding: 0.3rem;
-  }
-  .card__button:hover {
-    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-    transition: all 0.2s ease-in-out;
-  }
-  
-
-.aside-icon {
-    
-  font-size: 1.2rem;
-  margin-left: 0.6rem;
-  margin-right: 1rem;
-}
-
-  /*down*/
-
-/*Start Header*/
-
-
-.header nav{
-    height:12vh;
-    background: var(--light);
-    padding: 0 24px 0 0;
-    display: flex;
-    align-items: center;
-    grid-gap: 24px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.header nav::before{
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    bottom: -40px;
-    left: 0;
-    border-radius: 50%;
-    box-shadow: -20px -20px 0 var(--light);
-}
-
-/*Configuracion de los nav en header */
-
-.header nav a{
-    color: var(--dark);
-}
-
-/*Settings Button*/
-
-.header nav .bx.bx-menu{
-    cursor: pointer;
-    color: var(--dark);
-}
-
-.header nav form{
-    max-width: 400px;
-    width: 100%;
-    margin-right: auto;
-}
-
-.header nav form .form-input{
-    margin-left: 2rem;
-    display: flex;
-    align-items: center;
-    height: 36px;
-}
-
-.header nav form .form-input input{
-    flex-grow: 1;
-    padding: 0 16px;
-    height: 100%;
-    border: none;
-    background: var(--grey);
-    border-radius: 36px 0 0 36px;
-    outline: none;
-    width: 100%;
-    color: var(--dark);
-}
-
-.header nav form .form-input button{
-    width: 80px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--highlight-color);
-    color: var(--light);
-    font-size: 18px;
-    border: none;
-    outline: none;
-    border-radius: 0 36px 36px 0;
-    cursor: pointer;
-}
-
-.header nav .notif{
-    font-size: 20px;
-    position: relative;
-}
-
-
-.header nav .theme-toggle{
-    right:0;
-    position: absolute;
-    display: block;
-    min-width: 50px;
-    height: 25px;
-    background: var(--grey);
-    cursor: pointer;
-    position: relative;
-    border-radius: 25px;
-}
-
-.header nav .theme-toggle::before{
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    bottom: 2px;
-    width: calc(25px - 4px);
-    background: var(--highlight-color);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.header nav #theme-toggle:checked+.theme-toggle::before{
-    left: calc(100% - (25px - 4px) - 2px);
-}
-
-/*Text styles*/
-.header__navigation-text {
-    color: var(--dark);
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-   
-  }
-
-
-  .header__title {
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: var(--dark);
-  }
-  .header__subtitle {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--dark);
-  }
-
-/*Icons header**/
-
-.header__alerts {
-
-    gap: 1rem;
-    padding-right: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .alerts__icon {
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: var(--black-color) solid 0.2rem;
-    border-radius: 10%;
-    background-color: var(--highlight-color);
-  }
-  .alerts__icon:hover {
-    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
-  }
-  .alerts-icon {
-    color: var(--dark);
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .cc {
-    width: 2rem;
-    height: 2rem;
-  }
-  .picture-user {
-    width: 100%;
-    height: 100%;
-    border-radius: 20%;
-  }
-
-
-
-
-.header__nav {
-    display: flex;
-    row-gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-
-
-  .pag__name {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--dark);
-    overflow-x: hidden;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-    position: absolute;
-
-  }
-.header__logo > img{
-    width: 31px;
-    height: 30px;
-    border-radius: 5px;
-    margin-left: 1rem;
-    margin-right: 0.8rem;
-    
-}
-
-
-
-.header__nav {
-    display: grid;
-    grid-template-columns: 20vw 1fr 30vw 20vw;
-    grid-template-rows: 12vh;
-    grid-template-areas: "logo navigation-text search-bar alerts";
-    column-gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-color);
-  }
-
-
-
-
-  .pag__name {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--dark);
-    overflow-x: hidden;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-    position: absolute;
-
-  }
-.header__logo > img{
-    width: 31px;
-    height: 30px;
-    border-radius: 5px;
-    margin-left: 1rem;
-    margin-right: 0.8rem;
-    
-}
-
-.header__logo{
-    margin-top: 2.5rem;
-}
-
-/*End Header*/
-
-
-
-/*Set main values*/
-.main{
-    height: 100vh;
-    position: relative;
-    width: calc(100% - 230px); /*Necesito que me calculee*/
-    max-height: calc(100vh - 56px);
-    left: 230px; /*Necesito indicarle la posicion del relative*/
-    transition: all 0.3s ease;
-}
-
-.sidebar.close~.main{
-    width: calc(100% - 60px);
-    left: 60px;
-}
-
-
-
-/*End main*/
-
-
-
-.footer{
-
-    height: 100%;
-    max-height: calc(100vh - 56px);
-    bottom:0;
-    background: var(--secondary-color);
-    position: sticky;
-    z-index: 1000;
-   
-}
-
-/*End footer*/
-
-/*Laptop media query*/
-
-@media screen and (min-width: 900px) and (max-width: 1199px) {
-  
-    .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: var(--light);
-        width: 190px;
-        height: 100%;
-        z-index: 2000;
-        overflow-x: hidden;
-        scrollbar-width: none;
-        transition: all 0.3s ease;
-    }
-
-    .header{    
-    
-        position: absolute;
-        width: calc(100% - 190px);
-        left: 190px;
-        transition: all 0.3s ease;
-    }
-
-    .header nav .theme-toggle{
-        margin-left: 10px;
-        display: block;
-        min-width: 50px;
-        height: 25px;
-        background: var(--grey);
-        cursor: pointer;
-        position: relative;
-        border-radius: 25px;
-    }
-
-    .header__logo{
-       margin-top:2rem;
-       
-
-       
-    }
-    .header__title {
-        font-size: 1.7rem;
-        font-weight: 500;
-        color: var(--dark);
-      }
-      .header__subtitle {
-        
-        font-size: 0.4rem;
-        font-weight: 300;
-        color: var(--dark);
-        text-align:center;
-        
-    
-      }
-      .aside__card {
-        gap:0.8rem;
-    }
-
-     .card__title{
-        margin-top:0rem;
-     }
-      .card__text{
-      font-size: 0.5rem;
-      font-weight: 500;
-      text-align: justify;
-      margin-bottom: 2rem;
-    }
-    .card__button {
-  
-        width: 7.2rem;
-        height: 2.6rem;
-        font-size: 0.7rem;
-        font-weight: 500;
-        margin-bottom: 1rem;
-        padding: 0.4rem;
-      }
-      .card__button:hover{
-        color: var(--light);
-     }
-
-    .card__text:hover{
-       color: var(--dark-grey);
-    }
-    .card__add {
-        margin-top: 0rem;
-    }
-
-
-
-    
-
-    .main {
-        width: calc(100% - 60px);
-        left: 190px;
-    }
-
-    .aside__card{
-        width: 160px;
-        height: 29vh;
-
-    }
-
-   
-}
-
-
-
-
-
-
-
-@media screen and (min-width: 1200px){
-    .grid-container{
-        grid-template:
-
-        "aside header" 12vh
-        "aside main"   auto
-        "footer footer" 10vh
-        230px  auto;
-
-    }
-}
-
-/*Tablet**/
-
-@media screen and (min-width: 768px) and (max-width: 899px) {
-    .pag__name{
-        font-size: 1rem;
-    }
-    .sidebar{
-        width: 170px;
-    }    
-    .aside__card {
-        height: 30vh;
-        text-align: center;
-        width: 150px;
-        margin-left: 0.6rem;
-        
-    
-        /*test*/
-      
-      }
-
-
-      .header nav form .form-input{
-        margin-left: 1rem;
-    }
-
-    .header{
-        width: calc(100% - 170px);
-        left: 170px;
-        
-    }
-
-.header__title{
-    font-size: 1.6rem;
-    
-}
-.header__subtitle{
-    display:none;
-    font-size: 0.8rem;
-    margin: 0;
-    font-weight: 300;
-    
-    
-}
-
-
-.alerts-icon{
-   width: 10px;
-   height: 1rem;
-}  
-    
-    .main{
-        width: calc(100% - 60px);
-        left: 205px;
-    }
-
-}
-
-@media screen and (min-width: 576px) and (max-width: 767px) {
-    
-
-
-    .aside__card {
-        height: 10px;
-
-        width: 30px;
-        background-color: var( --light);
-    
-        /*test*/
-      
-      }
-      .card__add {
-        margin-top: 0;
-        width: 2rem;
-        height: 2rem;
-
-        justify-content: center;
-        align-items: center;
-        border: solid 0.2rem;
-        border-radius: 50%;
-        background-color: var(--highlight-color);
-      }
-      .card__add a{
-        color: white;
-      }
-      .card__add:hover {
-        box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-        transition: all 0.2s ease-in-out;
-      }
-      .card__title {
-        display: none;
-        color: transparent;
-      }
-      .card__text {
-        display: none;
-        color: transparent;
-      }
-    
-      /*dis*/
-      .card__button {
-        display: none;
-        
-      }
-
-
-    /*--------------------------------------*/
-    .header{
-        width: calc(100% - 36px);
-        left: 200px;
-        
-    }
-
-
-
-    .header nav form .form-input input{
-        display: none;
-    }
-
-    .header nav form .form-input button{
-        width: auto;
-        height: auto;
-        background: transparent;
-        color: var(--dark);
-        border-radius: none;
-    }
-
-    .header nav form.show .form-input input{
-        display: block;
-        width: 100%;
-    }
-
-    .header nav form.show .form-input button{
-        width: 36px;
-        height: 100%;
-        color: #363949;
-        background: var(--danger);
-        border-radius: 0 36px 36px 0;
-    }
-
-    .header nav form.show~.notif, .header nav form.show~.profile{
-        display: none;
-    }
-
-.main{
-    background-color: #003671;
-}
-
-}
+@import url(../public/style.css);
 
 /**------------------------------------*/
-  
-   /* Diseño Main */
-   
-  .main__container {
-    margin-left: 51%;
-    transform: translateX(-50%);
-    margin-top: 10rem;
-    color: var(--dark);
-  }
+
+/* Diseño Main */
+.main__container {
+  transform: translateY(-1%);
+  color: var(--dark);
+  margin-left: 9rem;
+}
 
 .container__card {
-    width: 50rem;
-    height:auto;
-    margin-right: 10rem;
-    background-color: var(--light);
-
-
-    text-align: left;
-    border-radius: 2rem;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  width: 50rem;
+  height: auto;
+  margin-right: 10rem;
+  background-color: var(--light);
+  text-align: left;
+  border-radius: 2rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-.form__container{
-    display: flex;
-    flex-direction: column;
-    padding: 5rem;
+.form__container {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
 }
 .form__img {
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    object-fit: cover;
-    background-color: var(--secondary-text-color);
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: var(--secondary-text-color);
 }
 .cont__img {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .cont__label {
-    display: flex;
-    padding: 1rem;
+  display: flex;
+  padding: 1rem;
 }
 
 .form__area {
-    border: var(--dark-grey) solid .2rem;
-    border-radius: .6rem;
-    padding: 1rem;
-    width: 100%;
+  border: var(--dark-grey) solid 0.2rem;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  width: 100%;
 }
 
-.text__span, .input__img {
-    display: block;
-    text-align: center;
+.text__span,
+.input__img {
+  display: block;
+  text-align: center;
 }
 
 .form__input {
-    outline: none;
-    padding: 0.3rem;
-    margin: 0 1rem;
-    width: 60%;
-    text-align: justify;
-
-    font-size: medium;
-    border: none;
-    border-bottom: 0.2rem solid #ccc;
-    color: var(--primary-color);
-    background-color: transparent;
-    transition: border-color 0.3s ease-in-out;
-
+  outline: none;
+  padding: 0.3rem;
+  margin: 0 1rem;
+  width: 100%; /* Cambia el ancho al 100% */
+  text-align: justify;
+  font-size: medium;
+  border: none;
+  border-bottom: 0.2rem solid #ccc;
+  color: var(--primary-color);
+  background-color: transparent;
+  transition: border-color 0.3s ease-in-out;
 }
-  
-  .form__input:focus {
-    border-color: #08AEEA;
-    outline: none;
-  }
 
-  .card3__text {
-    font-size: large;
-  }
+.form__input:focus {
+  border-color: #08aeea;
+  outline: none;
+}
 
-  .descriptive__card3{
-    margin-left: 2rem;
-  }
+.card3__text {
+  font-size: large;
+}
 
-  .parrafo {
-    font-size: large;
-    font-weight: var(--dark-grey);
-    padding-bottom: 1rem;
+.descriptive__card3 {
+  margin-left: 2rem;
+}
+
+.parrafo {
+  font-size: large;
+  font-weight: var(--dark-grey);
+  padding-bottom: 1rem;
+}
+
+.card__links {
+  display: flex;
+  list-style: none;
+  font-size: large;
+  color: var(--secondary-text-color);
+}
+
+.card__links li {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.card__links li a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: var(--dark);
+  transition: color 0.3s ease-in-out;
+}
+
+.card__links li:active {
+  color: var(--dark-grey);
+  border: none;
+  border-bottom: 2px solid var(--highlight-color);
+  background-color: transparent;
+  margin-bottom: 0.3rem;
+  margin-top: 0;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.delete {
+  text-decoration: none;
+  font-weight: lighter;
+  color: var(--dark);
+  transition: color 0.3s ease-in-out;
+}
+
+.form__select,
+.form__date {
+  padding: 2%;
+  outline: none;
+  border: 0.2rem solid var(--dark-grey);
+  border-radius: 2rem;
+  width: 100%;
+  margin-left: 1rem;
+  text-align: center;
+}
+
+.form__button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  transform: translateY(0);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-grey);
+  width: calc(100% - 230px); /*Necesito que me calculee*/
+  max-height: calc(100vh - 56px);
+  left: 230px; /*Necesito indicarle la posicion del relative*/
+  transition: all 0.3s ease;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  height: 10vh;
+}
+.sidebar.close ~ .footer {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  list-style: none;
+}
+
+.footer__link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--light);
+}
+
+/* RESPONSIVE DISEÑOO */
+
+@media screen and (min-width: 360px) and (max-width: 576px) {
+  .main__container {
+    margin-left: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .card__links {
-    display: flex;
     list-style: none;
     font-size: large;
     color: var(--secondary-text-color);
+    flex-direction: column;
   }
-  
+
   .card__links li {
-    text-decoration: none;
-    margin-left: 1rem;
+    margin: 0.5rem 0;
   }
 
-  .card__links li a {
-    text-decoration: none;
-    font-weight: bolder;
-    color: var(--dark);
-    transition: color 0.3s ease-in-out;
+  .container__card,
+  .form__container {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
   }
 
-    .card__links li:hover, .card__links li:active {
-      color: var(--dark-grey);
-      border: none;
-      border-bottom: 2px solid var(--highlight-color);
-      background-color: transparent;
-      margin-bottom: .3rem;
-      margin-top: 0;
-      transition: border-color 0.3s ease-in-out;   
-    }
-
-    .delete {
-    text-decoration: none;
-    font-weight: lighter;
-    color: var(--dark);
-    transition: color 0.3s ease-in-out;
-    }
-    
-    .form__select {
-      outline: none;
-      border: .2rem solid var(--dark-grey);
-      border-radius: 2rem;
-      width: 70%;
-      margin-left: 1rem;
-      text-align: center;
-    }
-
-    .form__date {
-      outline: none;
-      border: .2rem solid var(--dark-grey);
-      border-radius: 2rem;
-      width: 70%;
-      margin-left: 2rem;
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    .form__button {
-      /* Variables */
-      --button_radius: 0.75em;
-      --button_color: #e8e8e8;
-      --button_outline_color: #000000;
-      font-size: 17px;
-      font-weight: bold;
-      border: none;
-      border-radius: var(--button_radius);
-      background: var(--button_outline_color);
-    }
-    
-    .button_top {
-      display: block;
-      box-sizing: border-box;
-      border: 2px solid var(--button_outline_color);
-      border-radius: var(--button_radius);
-      padding: 0.75em 1.5em;
-      background: var(--button_color);
-      color: var(--button_outline_color);
-      transform: translateY(-0.2em);
-      transition: transform 0.1s ease;
-    }
-    
-    button:hover .button_top {
-      transform: translateY(-0.33em);
-    }
-    
-    button:active .button_top {
-      transform: translateY(0);
-    }
-
-    /* Footer */
-    .footer {
-      background-color: var(--dark-grey);
-      width: calc(100% - 230px); /*Necesito que me calculee*/
-      max-height: calc(100vh - 56px);
-      left: 230px; /*Necesito indicarle la posicion del relative*/
-      transition: all 0.3s ease;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      height: 10vh;
-    }
-    .sidebar.close~.footer{
-      width: calc(100% - 60px);
-      left: 60px;
+  .cont__label {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-    .footer__list {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      padding: 1rem;
-      list-style: none;
-    }
-  
-    .footer__link {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--light);
-    }
-  
+
+  .form__title {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .form__input {
+    width: 100%;
+    font-size: 1rem;
+    margin: 0.2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .form__select,
+  .form__date {
+    width: 100%;
+  }
+
+  .form__button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .form__area {
+    font-size: 0.6rem;
+    width: 100%;
+    height: 0.8rem;
+  }
+
+  .cont__img {
+    justify-content: center;
+  }
+
+  .form__img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    max-height: 5vh;
+  }
+
+  .footer__list {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .footer__item {
+    margin: 0.5rem;
+  }
+
+  .footer__link {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .main__container {
+    margin-left: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card__links li {
+    margin: 0.3rem;
+    text-align: 1rem;
+  }
+
+  .container__card,
+  .form__container {
+    width: 48vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+  }
+
+  .cont__label {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form__title {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .form__input {
+    width: 80%;
+    font-size: 1rem;
+    margin: 0.1rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .form__select,
+  .form__date {
+    width: 100%;
+  }
+
+  .form__button {
+    width: 30%;
+    font-size: 1rem;
+  }
+
+  .cont-area {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form__area {
+    margin-left: 2.5rem;
+    font-size: 0.6rem;
+    width: 80%;
+    height: 0.8rem;
+  }
+
+  .cont__img {
+    justify-content: center;
+  }
+
+  .form__img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    max-height: 5vh;
+  }
+
+  .footer__list {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .footer__item {
+    margin: 0.5rem;
+  }
+
+  .footer__link {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}

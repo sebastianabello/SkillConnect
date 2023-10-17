@@ -1,136 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help Center</title>
-    <link rel="stylesheet" href="../css/help.css">
-    <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>
-</head>
-<body class="container">
-    <!-- Container Header -->
-    <header class="header">
-        <nav class="header__nav">
-            <!--logo-->
-            <div class="header__logo">
-                <img class="pag__image" src="../img/logo.png" alt="logopag">
-                <a href="../index.html"><span class="pag__name">SkillConnect</span></a>
-  
+  <head>
+    <!--Documento permita caracteres especiales-->
+    <meta charset="UTF-8" />
+    <!--Contenido se podra visualizar en diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Descripción breve que se mostrará en los resultados de búsqueda-->
+    <meta
+      name="description"
+      content="SkillConnect es una red social de servicios profesionales que conecta a proveedores de servicios y usuarios que buscan habilidades específicas."
+    />
+    <!--Autor o empresa-->
+    <meta name="author" content="BugBusters" />
+    <!--Palabras clave relevantes para la plataforma-->
+    <meta
+      name="keywords"
+      content="servicios profesionales, red social, habilidades, proveedores de servicios"
+    />
 
-            </div>
-            <!--text navigation-->
-            <div class="header__navigation-text">
-                <h1 class="header__title">Sobre nosotros</h1>
-                <h2 class="header__subtitle">Aqui conoceras un poco mas sobre el proyecto</h2>
-            </div>
-            <!--service search bar-->
-            <div class="header__search-bar">
-                <input class="search-input" type="text" placeholder="Buscar">
-                <i class="fa-solid fa-magnifying-glass icon-search"></i>
-            </div> 
-            <!--alerts and profile picture-->
-            <div class="header__alerts">
-                <div class="alerts__icon">
-                    <a href="#"><i class="fa-regular fa-bell alerts-icon"></i></a>
-                </div>
-                <div class="alerts__icon">
-                    <a href="#"><i class="fa-regular fa-envelope alerts-icon"></i></a>
-                </div>
-                <div class="alerts__icon">
-                    <a class="cc" href="../html/profile.html"><img class="picture-user" src="../img/pexels-joão-jesus-1080213.jpg" alt="foto de usuario"></a>
-                </div> 
-            </div>
-        </nav>
+    <!--Especificamos el título de proyecto web-->
+    <title>Help Center</title>
+
+    <!--Link a la hoja de estilos-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/help.css" />
+    <script src="https://kit.fontawesome.com/c11e788422.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!--Logo-->
+      <div class="header__logo">
+        <img class="pag__image" src="../assets/logo.png" alt="logopag" />
+        <a href="./index.html"><span class="pag__name">SkillConnect</span></a>
+      </div>
+      <ul class="side-menu">
+        <li class="active">
+          <a href="./index.html"><i class="fa-solid fa-house aside-icon show"></i>Home</a>
+        </li>
+        <li>
+          <a href="./views/explore.html" class="aside__link"
+            ><i class="fa-solid fa-compass aside-icon"></i>Explore</a
+          >
+        </li>
+        <li>
+          <a href="./views/saved.html" class="aside__link"
+            ><i class="fa-solid fa-bookmark aside-icon"></i>Saved</a
+          >
+        </li>
+        <li>
+          <a href="./views/plans.html" class="aside__link"
+            ><i class="fa-solid fa-crown aside-icon"></i>Plans</a
+          >
+        </li>
+        <li>
+          <a href="./views/history.html" class="aside__link"
+            ><i class="fa-solid fa-clock-rotate-left aside-icon"></i>History</a
+          >
+        </li>
+        <li>
+          <a href="./views/about.html" class="aside__link"
+            ><i class="fa-solid fa-users aside-icon"></i>About</a
+          >
+        </li>
+      </ul>
+
+      <!--Card add-->
+      <section class="aside__card">
+        <figure class="card__add">
+          <a href="./client/views/profile.html"
+            ><i class="fa-solid fa-plus logo-add"></i
+          ></a>
+        </figure>
+        <h2 class="card__title">Share Your Skills</h2>
+        <p class="card__text">
+          Share your services, experience and rates. In this way other users can
+          find you and work together using your talents.
+        </p>
+        <button class="card__button">Add Publication</button>
+      </section>
+      <!--
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>-->
+    </aside>
+    <!-- End of Sidebar -->
+
+    <!-- Navbar -->
+    <header class="header">
+      <nav class="header__nav">
+        <!--Settings icon-->
+        <i class="bx bx-menu"></i>
+        <!-- Page name and description  -->
+        <div class="header__navigation-text">
+          <h1 class="header__title">Home</h1>
+          <h2 class="header__subtitle">Welcome to SkillConnect</h2>
+        </div>
+
+        <!--service search bar-->
+
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Search..." />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <!--alerts and profile picture-->
+        <div class="header__alerts">
+          <div class="alerts__icon">
+            <a href="#"><i class="fa-regular fa-bell alerts-icon"></i></a>
+          </div>
+          <div class="alerts__icon">
+            <a href="#"><i class="fa-regular fa-envelope alerts-icon"></i></a>
+          </div>
+          <div class="alerts__icon">
+            <a class="cc" href="./views/profile.html"
+              ><img
+                class="picture-user"
+                src="../assets/perfil1.jpg"
+                alt="foto de usuario"
+            /></a>
+          </div>
+        </div>
+
+        <!---Toggle button---->
+
+        <input type="checkbox" id="theme-toggle" hidden />
+        <label for="theme-toggle" class="theme-toggle"></label>
+      </nav>
     </header>
 
-    <aside class="aside">
-        <div class="aside__container">
-            <nav class="aside__nav">
-                <a href="../index.html" class="aside__link"><i class="fa-solid fa-house aside-icon"></i>Home</a>
-                <a href="explore.html" class="aside__link"><i class="fa-solid fa-compass aside-icon"></i>Explore</a>
-                <a href="saved.html" class="aside__link"><i class="fa-solid fa-bookmark aside-icon"></i>Saved</a>
-                <a href="plans.html" class="aside__link"><i class="fa-solid fa-crown aside-icon"></i>Plans</a>
-                <a href="profile.html" class="aside__link"><i class="fa-solid fa-user-gear aside-icon"></i>Profile</a>
-                <a href="history.html" class="aside__link"><i class="fa-solid fa-clock-rotate-left aside-icon"></i>History</a>
-                <a href="about.html" class="aside__link"><i class="fa-solid fa-users aside-icon"></i>About</a>  
-            </nav>
+    <!-- End of Navbar -->
+
+
+
+
+
     
-            <section class="aside__card">
-                <figure class="card__add">
-                    <a href="../html/profile.html"><i class="fa-solid fa-plus logo-add"></i></a>
-                </figure>
-                <h2 class="card__title"> Share Your Skills</h2>
-                <p class="card__text">Share your services, experience and rates. In this way other users can find you and work together using your talents.</p>
-                <button class="card__button">Add Publication</button>
-            </section>
-        </div>
-    </aside>
 
+  <!-- Personalización de pagina de ayuda -->
+  <main class="main">
+    <div class="main__container">
 
-    <!-- Personalización de pagina de ayuda -->
-    <main class="main">
-        <div class="main__container">
+    <section class="help__description">
+            <h1 class="help__title-h1">Ups...</h1>
+            <h2 class="help__title"> ¿Algo no funciona como deberia? </h2>
+            <p class="help__text"> Selecciona la opción con la que te sientas más identificado. </p>
 
-        <section class="help__description">
-                <h1 class="help__title-h1">Ups...</h1>
-                <h2 class="help__title"> ¿Algo no funciona como deberia? </h2>
-                <p class="help__text"> Selecciona la opción con la que te sientas más identificado. </p>
+            <div class="help__container">
+                <a href="login.html" class="help__enlaces"><span class="buttom_top">Iniciar Sesión</span></a>
+                <a href="recoverpassword.html" class="help__enlaces"><span class="buttom_top">Recuperar</span> Contraseña</a>
+                <a href="plans.html" class="help__enlaces"><span class="buttom_top">Obtener Premium</span></a>
+            </div>
 
-                <div class="help__container">
-                    <a href="login.html" class="help__enlaces">Iniciar Sesión</a>
-                    <a href="recoverpassword.html" class="help__enlaces">Recuperar Contraseña</a>
-                    <a href="plans.html" class="help__enlaces">Obtener Premium </a>
-                </div>
+            <p class="help__text"> ¿No pudimos ayudarte? <br> Por favor, llena el siguiente formulario. <br> ¡Da click en el botón! </p>
 
-                <p class="help__text"> ¿No pudimos ayudarte? <br> Por favor, llena el siguiente formulario. <br> ¡Da click en el botón! </p>
+            <button class="mostrar" id="mostrar" onclick="mostrarFormulario()" type="button">Mostrar</button>
+    </section>
+            <form class="main__form" id="hiddenForm" action="https://formsubmit.co/skillconnect.help@gmail.com" method="POST">
 
-                <button class="mostrar" id="mostrar" onclick="mostrarFormulario()" type="button">Mostrar</button>
+              <i class="fa-regular fa-circle-xmark ocultar" id="ocultar" type="button" onclick="ocultarFormulario()"></i>
+      
+                <h2 class="form__subtitle">¡Contáctanos!</h2>
 
-                <form class="main__form" id="hiddenForm" action="https://formsubmit.co/skillconnect.help@gmail.com" method="POST">
-                    <h2 class="form__subtitle">¡Contáctanos!</h2>
-
-                <div class="contenedor__form">
-                    <label for="name" class="form__label">Nombre</label>
-                    <input type="text" name="name" class="input-group" id="nameInput" placeholder="Nombre">
-                    <label for="phone" class="form__label">Teléfono</label>
-                    <input type="text" name="phone" class="input-group" id="phoneInput" placeholder="Teléfono">
-                    <label for="email" class="form__label">Email</label>
-                    <input type="text" name="email" class="input-group" id="emailInput" placeholder="Email">
-                    <label for="message" class="form__label">Mensaje</label>
-                    <textarea class="textarea" name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
-                    <input type="submit" class="btn" value="Enviar">
-                    <br>
-                    <button class="ocultar" id="ocultar" type="button" onclick="ocultarFormulario()">Ocultar</button>
-
-                </form>
-            </section>
-        </div>
-    </main>
+            <div class="contenedor__form">
+                <label for="name" class="form__label">Nombre</label>
+                <input type="text" name="name" class="input-group" id="nameInput" placeholder="Nombre">
+                <label for="phone" class="form__label">Teléfono</label>
+                <input type="text" name="phone" class="input-group" id="phoneInput" placeholder="Teléfono">
+                <label for="email" class="form__label">Email</label>
+                <input type="text" name="email" class="input-group" id="emailInput" placeholder="Email">
+                <label for="message" class="form__label">Mensaje</label>
+                <textarea class="textarea" name="message" id="message" cols="30" rows="2" placeholder="Mensaje"></textarea>
+                <input type="submit" class="btn" value="Enviar">
+                <br>
+            </form>
+        </section>
+    </div>
+</main>
 
 
 
 
-    <!-- PERSONALIZACIÓN DEL PIE DE PAGINA (FOOTER) -->
-    <!-- Creamos una lista que contiene los enlaces de navegación de nuestro footer -->
-    <footer class="footer">
-        <ul class="footer__list">
-            <li class="footer__item">
-                <a href="#" class="footer__link">Conditions</a>
-            </li>
-            <li class="footer__item">
-                <a href="#" class="footer__link">Privacy</a>
-            </li>
-            <li class="footer__item">
-                <a href="#" class="footer__link">Accessibility</a>
-            </li>
-            <li class="footer__item">
-                <a href="help.html" class="footer__link">Help</a>
-            </li>
-            <li class="footer__item">
-                <a href="#" class="footer__link">©SkillConnect</a>
-            </li>
-        </ul>
-    </footer>
-</body>
+
+    <footer class="footer"></footer>
+
+    <script src="../public/plantilla.js"></script>
+    <script src="../scripts/Card--Index.js"></script>
+
+  </body>
 </html>

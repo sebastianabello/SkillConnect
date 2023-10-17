@@ -1,31 +1,3 @@
-// Personalización de los botones: mostrar y ocultar, que estan en la seccion de ayuda.
-
-function mostrarFormulario() {
-    let formulario = document.getElementById("hiddenForm");
-    formulario.style.display = "block";
-}
-
-function ocultarFormulario() {
-    let formulario = document.getElementById("hiddenForm");
-
-    formulario.style.display = "none";
-}
-
-// Función para mostrar y ocultar los formularios del perfil
-function mostrarFormulario(indice) {
-    const formularios = document.querySelectorAll('.container__card form');
-    formularios.forEach((formulario) => {
-        formulario.style.display = 'none';
-    });
-    const formularioAMostrar = document.getElementById(`hiddenForm${indice}`);
-    formularioAMostrar.style.display = 'block';
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    mostrarFormulario(1);
-});
-
-
 
 
 /***
