@@ -142,4 +142,17 @@
         flex-basis: 85%;
         padding: 20px;
     }
+    .beneficios {
+        padding-top: .5rem;
+        font-size: 1rem;
+    }
+    .tabla>h2 {
+        margin-top: 20px;
+    }
+    .tabla>p {
+        font-size: 1rem;
+    }
+    .tabla i {
+    font-size: 3rem;
+    }
 }
