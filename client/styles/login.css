@@ -29,12 +29,123 @@ body{
     height: 100vh;
     width: 100%;
 }
+/* Fondo del login */
 .background{
     height: 100%;
     width: 100%;
-    background-image: url('../assets/fondologin.gif');
-    background-size: cover; 
 }
+
+.cont{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+    
+}
+.container{
+    height: 80vh;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--dark);
+    opacity: 0.8;
+    overflow: hidden;
+}
+.item{
+    width: 60%;
+    height: 100%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.logo{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.logo-p{
+    width: 120px;
+    border-radius: 10px;
+}
+.text-item{
+    color: #fff;
+    margin-top: 70px;
+    font-size: 1rem;
+}
+.welcome{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.ms{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+
+
+.login{
+    width: 50%;
+    height: 76%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--light);
+}
+.login-text{
+    font-size: 1.8rem;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    gap: 8px;
+}
+label{
+    font-size: 1.2rem;
+    color: var(--light);
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--grey);
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+.bt-submit{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    color: var(--light);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+a{ 
+    text-decoration: none;
+    color: var(--light);
+}
+
+
+/* 
 .container{
     position: absolute;
     left: 50%;
@@ -219,4 +330,4 @@ body{
 }
 .create-account p a:hover{
     text-decoration: underline;
-}
+} */

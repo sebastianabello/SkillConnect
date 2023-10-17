@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/login.css" />
-    <title>Login</title>
+    <title>Registro</title>
   </head>
   <body>
     <div class="cont">
@@ -26,26 +26,21 @@
           </div>
         </div>
         <div class="login">
-          <h2 class="login-text">Iniciar Sesión</h2>
-          <form class="form1" id="loginForm">
+          <h2 class="login-text">Registrarse</h2>
+          <form class="form1" id="signupForm">
+            <label>Nombre</label>
+            <input type="text" placeholder="Nombre" id="name" required autofocus/>
             <label>Correo</label>
-            <input
-              type="email"
-              placeholder="Correo"
-              id="email"
-              required
-              autofocus
-            />
+            <input type="email" placeholder="Correo" id="email" required/>
             <label>Contraseña</label>
             <input type="password" placeholder="Contraseña" id="password" required />
-            <input class="bt-submit" type="submit" value="Ingresar" />
+            <input class="bt-submit" type="submit" value="Registrarse" />
           </form>
-          <a href="#">Olvidaste tu contraseña</a>
-          <p>¿Aún no tienes cuenta? <a href="./signup.html">Registro</a></p>
+          <p>¿Ya tienes una cuenta?<a href="./login.html">Login</a></p>
         </div>
       </section>
 
     </div>
-    <script src="../scripts/login.js"></script>
+    <script src="../scripts/singup.js"></script>
   </body>
 </html>
