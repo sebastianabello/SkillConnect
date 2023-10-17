@@ -21,7 +21,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/profile.css">
-
+    <script src="../scripts/formsProfile.js"></script>
 </head>
 
 <body class="container">
@@ -128,7 +128,7 @@
            </ul>
            <section class="container__card">
                <!-- Inicializamos el 1er formulario -->
-               <form id="formPersonalInfo" class="form__container">
+               <form id="formPersonalInfo" class="form__container hide">
                    <!-- Menu de opciones: Visibiidad -->
                    <div class="cont__label">
                        <label for="" class="form__title">Privacy Settings:</label>
@@ -178,7 +178,7 @@
            
            <section class="container__card hide">
                <!-- Inicializamos el 2do formulario -->
-               <form id="formEditProfile" class="form__container">
+               <form id="formEditProfile" class="form__container hide">
                    <p class="parrafo">The information here will be visible for all users that would like to see it.</p>
                    <!-- Cambiar foto de perfil -->
                    <div class="cont__img">
@@ -229,7 +229,7 @@
            
            <section class="container__card hide">
                <!-- Inicializamos el 3er formulario -->
-                   <form id="formNotifications" class="form__container">
+                   <form id="formNotifications" class="form__container hide">
                        <p class="parrafo">¿Would you like to receive notifications for the next features?</p>
                        <!-- Preferencia para ajustar las notificaciones -->
                        <div class="cont__card3">
@@ -285,7 +285,7 @@
         </ul>
     </footer>
 
-    <script src="../scripts/formsProfile.js"></script>
+    <script src="../public/plantilla.js"></script>
 </body>
 
 </html>

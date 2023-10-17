@@ -46,7 +46,7 @@
 }
 
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1100px){
     .tarjeta{
         width: 24%;
         height: 15rem;
@@ -69,16 +69,19 @@
 }
 
 @media screen and (max-width:700px){
+    .contenedor__tarjeta{
+      padding-top: 1.5rem;
+    }
     .tarjeta{
-        width: 60%;
-        height: 15rem;
+        width: 55%;
+        height: 11rem;
     }
     .tarjeta>p {
         margin-top: 1rem;
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 700;
     }
     .tarjeta>i {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
     }
 }
