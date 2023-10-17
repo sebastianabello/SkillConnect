@@ -1,7 +1,7 @@
 /*Ctrl+shift+p > html*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-@import url(services-form.css);
-@import url(/client/styles/card--index.css);
+@import url('services-form.css');
+@import url('/client/styles/card--index.css');
 :root {
     --light: #f6f6f9;
     --primary: #1976D2;
@@ -696,22 +696,28 @@ body {
     }
     .sub__extra_card{
         margin-top: 0;
-        height: 20vh;
+        max-height: 17svh;
+        min-width: 9svw;
+    }
+    .extra__card{
+        min-width: 11.3svw;
+        padding: 0.6rem 0.5rem;
     }
     .card__title{
+        width: 11svw;
         font-size: 0.7rem;
+        font-weight: 700;
     }
     .card__text{
-        width: 90px;
+        margin-top: 0.9svh;
+        width: 9.4svw;
         padding-left: 0.5rem;
     }
-    .sub__extra_card{
-        width: 10.3svw;
-    }
+
     .card__button{
-        width: 6rem;
-        margin-top: 0rem;
-        margin-left: 0.3rem;
+        height: 3.5svh;
+        width: 9svw;
+        margin-top: 1svh;
         font-size: 0.6rem;
     }
 
@@ -746,7 +752,7 @@ body {
     }
     .sub__extra_card{
         margin-top: 0;
-        height: 18vh;
+        height: 14vh;
     }
     .card__title{
         font-size: 0.7rem;
@@ -759,10 +765,11 @@ body {
         width: 10.1svw;
     }
     .card__button{
-        width: 6rem;
-        margin-top: 0rem;
+        height: 3svh;
+        width: 8.4svw;
+        margin-top: 0.5rem;
         margin-left: 0.3rem;
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
 
@@ -952,10 +959,28 @@ body {
     .sidebar.close~.main {
         position: relative;
         left: 90px;
+        
     }
-
-
+    .card__text{
+        display: none;
+    }
+    
+    .card__button{
+        display: none;
+    }
+    .sub__extra_card{
+        display: none;
+    }
+    .card__title{
+        padding-left: 0.2rem;
+        font-size: 0.5rem;
+        font-weight: 300;
+    }
 }
+
+
+
+
 
 
 

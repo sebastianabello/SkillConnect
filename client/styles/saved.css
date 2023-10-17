@@ -1,5 +1,7 @@
+/*Ctrl+shift+p > html*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
+@import url('services-form.css');
+@import url('/client/styles/card--index.css');
 :root {
     --light: #f6f6f9;
     --primary: #1976D2;
@@ -15,7 +17,7 @@
     --secondary-text-color: #666666;
     --white-color: #ffffff;
     --highlight-color: #ff5722;
-    --light-highlight: #ff9c7efe;
+    --light-highlight: #ff9c7ef6;
     --primary-color-opacity: rgba(#007bff 0.2);
     --secondary-color-opacity: rgba(#007bff 0.2);
     --black-color: #000000;
@@ -214,25 +216,25 @@ body {
 
 /*cardAside*/
 .aside__card {
-    gap: 0.5rem;
-    width: 10rem;
-    height: 30vh;
-    padding: 1rem;
-    margin: 0 2rem;
-    border-radius: 1.5rem;
+    
+    height: 10vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    width: 230px;
+    margin-top: 10vh;
+    border-radius: 1.5rem;
     align-items: center;
-    background-color: var(--grey);
+    margin-left: 0.8rem;
+    
 
     /*test*/
 
 }
 
-.card__add {
 
-    margin-top: 5vh;
+.card__add {
+    padding: auto;
+    margin: auto;
     width: 2rem;
     height: 2rem;
     display: flex;
@@ -243,6 +245,45 @@ body {
     background-color: var(--highlight-color);
 }
 
+
+.extra__left__card{
+    width:3rem;
+    height:3rem;
+    background-color: var(--grey);
+    border-radius: 50%;  
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;    
+    left: 6px;
+    padding: 0.5rem;
+    
+}
+
+/***/
+.sub__extra_card{
+    margin-top: 0.7rem;
+    height: 18vh;
+    width: 10.5vw;
+    background-color: var(--grey);
+    border-bottom-left-radius:  10%;
+    border-bottom-right-radius:  10%;
+    border-top-left-radius: -40%;
+}
+/**/
+
+.extra__card{
+    width: 11vw;
+    height: 3rem;
+    background-color: var(--grey);
+    padding: 0.7rem 0.4rem;
+    align-items: center;
+    border-top-right-radius: 0.3rem;
+    margin-left: -0.5rem;
+         
+}
+
+
+
+
 .card__add a {
     color: white;
 }
@@ -252,25 +293,37 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
+
+
+
+
 .card__title {
     font-size: 0.9rem;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--dark);
 }
 
 .card__text {
-    width: 130px;
+    padding-left: 1rem;
+    width: 110px;
     font-size: 0.5rem;
     font-weight: 500;
     text-align: justify;
     color: var(--secondary-text-color);
 }
 
-/*dis*/
+
+
+
+
+/*dis test*/
+
+
+
 .card__button {
 
     width: 7.2rem;
-    height: 5.5rem;
+    height: 4vh;
     font-size: 0.7rem;
     font-weight: 500;
     color: var(--white-color);
@@ -278,8 +331,9 @@ body {
     border: var(--black-color) solid 0.2rem;
     border-radius: 1rem;
     cursor: pointer;
-    margin-bottom: 5vh;
-    padding: 0.3rem;
+    margin-top: 2vh;
+    margin-left: 0.5rem;
+
 }
 
 .card__button:hover {
@@ -538,7 +592,7 @@ body {
 
 /*Set main values*/
 .main {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-around;
@@ -547,12 +601,12 @@ body {
     position: relative;
     width: calc(100% - 230px);
     /*Necesito que me calculee*/
-    left: 230px;
+    left: 200px;
     /*Necesito indicarle la posicion del relative*/
     transition: all 0.3s ease;
     gap: 1rem;
-
-    padding: 2rem;
+    margin: auto;
+    padding: 5rem;
 }
 
 
@@ -619,90 +673,105 @@ body {
     }
 
     .header__title {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight: 500;
         color: var(--dark);
     }
 
     .header__subtitle {
 
-        font-size: 0.4rem;
+        font-size: 0.6rem;
         font-weight: 300;
         color: var(--dark);
-        text-align: center;
+       
 
-    }
-
-    .aside__card {
-        height: 8vh;
-        gap: 0.5rem;
-        margin-left: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .card__title {
-        margin-top: 0rem;
-    }
-
-    .card__text {
-        font-size: 0.5rem;
-        font-weight: 500;
-        text-align: justify;
-    }
-
-    .card__button {
-
-        width: 7.2rem;
-        height: 5vh;
-        font-size: 0.7rem;
-        font-weight: 500;
-        margin-bottom: 2vh;
-        padding: 0.4rem;
-    }
-
-    .card__button:hover {
-        color: var(--light);
-    }
-
-    .card__text:hover {
-        color: var(--dark-grey);
-    }
-
-    .card__add {
-        margin-top: 0rem;
     }
 
     .main {
 
-        left: 190px;
+        left:120px;
+    }
+    .aside__card{
+        margin-top: 0;
+    }
+    .sub__extra_card{
+        margin-top: 0;
+        max-height: 17svh;
+        min-width: 9svw;
+    }
+    .extra__card{
+        min-width: 11.3svw;
+        padding: 0.6rem 0.5rem;
+    }
+    .card__title{
+        width: 11svw;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    .card__text{
+        margin-top: 0.9svh;
+        width: 9.4svw;
+        padding-left: 0.5rem;
     }
 
-    .aside__card {
-        width: 160px;
-        height: 28vh;
-
+    .card__button{
+        height: 3.5svh;
+        width: 9svw;
+        margin-top: 1svh;
+        font-size: 0.6rem;
     }
+
+
 }
 
 
 /*Tablet**/
 
 @media screen and (min-width: 768px) and (max-width: 899px) {
+    
+    
+    .sidebar .side-menu {
+        width: 100%;
+       
+    }
+   
+    
+
+
     .pag__name {
         font-size: 1rem;
+        margin-top: 0.5rem;
     }
 
     .sidebar {
         width: 170px;
     }
 
-    .aside__card {
-        height: 30vh;
-        text-align: center;
-        width: 150px;
-        margin-left: 0.6rem;
-
+    .aside__card{
+        margin-top: 0;
     }
+    .sub__extra_card{
+        margin-top: 0;
+        height: 14vh;
+    }
+    .card__title{
+        font-size: 0.7rem;
+    }
+    .card__text{
+        width: 70px;
+        padding-left: 0.5rem;
+    }
+    .sub__extra_card{
+        width: 10.1svw;
+    }
+    .card__button{
+        height: 3svh;
+        width: 8.4svw;
+        margin-top: 0.5rem;
+        margin-left: 0.3rem;
+        font-size: 0.5rem;
+    }
+
 
 
     .header nav form .form-input {
@@ -716,13 +785,13 @@ body {
     }
 
     .header__title {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
 
     }
 
     .header__subtitle {
-        display: none;
-        font-size: 0.8rem;
+        
+        font-size: 0.5rem;
         margin: 0;
         font-weight: 300;
     }
@@ -734,64 +803,24 @@ body {
 
     .main {
 
-        left: 205px;
+        left: 90px;
     }
+    
 
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
+.sidebar{
+    width: 180px;
+}
 
-
-    .sidebar {
-        width: 59px;
-    }
-
-    .bx-menu {
-
+    .sub__extra_card{
         display: none;
     }
-
-    .bx-menu:before {
-        display: none;
-
+    .pag__name {
+        font-size: 1.1rem;
     }
-
-    .aside__card {
-        height: 10px;
-        margin-left: 0.9rem;
-        width: 20px;
-        background-color: var(--light);
-
-        /*test*/
-
-    }
-
-    .card__add {
-
-        margin-top: 0;
-        width: 2rem;
-        height: 2rem;
-        justify-content: center;
-        align-items: center;
-        border: solid 0.2rem;
-        border-radius: 50%;
-        background-color: var(--highlight-color);
-    }
-
-    .card__add a {
-        color: white;
-    }
-
-    .card__add:hover {
-        box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-        transition: all 0.2s ease-in-out;
-    }
-
-    .card__title {
-        display: none;
-        color: transparent;
-    }
-
+    
     .card__text {
         display: none;
         color: transparent;
@@ -805,14 +834,10 @@ body {
 
     /*--------------------------------------*/
     .header {
-        width: calc(100% - 36px);
-        left: 100px;
+        width: calc(100% - 70px);
+        left: 180px;
         gap: 0.1rem;
 
-    }
-
-    .header nav form .form-input input {
-        display: none;
     }
 
     .header nav form .form-input button {
@@ -838,16 +863,6 @@ body {
     .header nav form.show~.notif,
     .header nav form.show~.profile {
         display: none;
-    }
-
-    .sidebar.close~.bx-menu {
-        width: calc(100% - 60px);
-        left: 60px;
-    }
-
-    .sidebar.close~.header__title {
-        width: calc(100% - 60px);
-        left: 60px;
     }
 
     .header__subtitle {
@@ -864,69 +879,32 @@ body {
 
 @media screen and (min-width: 360px) and (max-width: 576px) {
 
-    .bx-menu {
-
-        display: none;
+    .sidebar{
+        width: 120px;
+        position: absolute;
     }
-
-    .bx-menu:before {
-        display: none;
-
+    .pag__name{
+        font-size: 9px;
+        margin-top: 1vh;
+        
     }
+   .sidebar .side-menu li a{
+    font-size: 10px;
+   }
+   .header__alerts{
+    padding-right: 0;
+   }
 
-    .aside__card {
-        height: 10px;
-        margin-left: 0.9rem;
-        width: 20px;
-        background-color: var(--light);
-
-        /*test*/
-
-    }
-
-    .card__add {
-
-        margin-top: 0;
-        width: 2rem;
-        height: 2rem;
-        justify-content: center;
-        align-items: center;
-        border: solid 0.2rem;
-        border-radius: 50%;
-        background-color: var(--highlight-color);
-    }
-
-    .card__add a {
-        color: white;
-    }
-
-    .card__add:hover {
-        box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-        transition: all 0.2s ease-in-out;
-    }
-
-    .card__title {
-        display: none;
-        color: transparent;
-    }
-
-    .card__text {
-        display: none;
-        color: transparent;
-    }
-
-    /*dis*/
-    .card__button {
-        display: none;
-
-    }
 
     /*--------------------------------------*/
     .header {
-        width: calc(100% - 36px);
-        left: 60px;
+        width: calc(100% - 10px);
+        left:120px;
         gap: 0.1rem;
 
+    }
+    .header nav {
+        grid-gap:8px;
     }
 
     .header nav form .form-input input {
@@ -957,6 +935,9 @@ body {
     .header nav form.show~.profile {
         display: none;
     }
+    .header__navigation-text{
+        display: none;
+    }
 
     .header__subtitle {
         display: none;
@@ -964,6 +945,7 @@ body {
 
     .header__title {
         display: none;
+        
     }
 
     .header__logo {
@@ -971,10 +953,34 @@ body {
     }
 
     .main {
-        padding: 0.2rem;
+        padding: 0.9rem;
+        margin: 0;
     }
-
-
-
-
+    .sidebar.close~.main {
+        position: relative;
+        left: 90px;
+        
+    }
+    .card__text{
+        display: none;
+    }
+    
+    .card__button{
+        display: none;
+    }
+    .sub__extra_card{
+        display: none;
+    }
+    .card__title{
+        padding-left: 0.2rem;
+        font-size: 0.5rem;
+        font-weight: 300;
+    }
 }
+
+
+
+
+
+
+
