@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="/client/styles/services.css">
     <title>Services</title>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
     <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
 </head>
 
 
@@ -123,7 +125,22 @@
 
                     <main class="left-card-service"><!--flex-column-->
                         <label for="inputCategory"> Catergory</label>
-                        <input id="inputCategory" type="text" placeholder="Categoria ome" />
+                        <select name="categories" id="inputCategory" multiple>
+                            <option value="Repair & Maintance">Repair & Maintance</option>
+                            <option value="Desing & Creativity">Desing & Creativity</option>
+                            <option value="Tecnology $ development">Tecnology $ development</option>
+                            <option value="Education & Tutoring">Education & Tutoring</option>
+                            <option value="Home & Gardening">Home & Gardening</option>
+                            <option value="Events & Entretaiment">Events & Entretaiment</option>
+                            <option value="Health & Wellness">Health & Wellness</option>
+                            <option value="Business Consulting">Business Consulting</option>
+                            <option value="Arts & Crafts">Arts & Crafts</option>
+                            <option value="Music & Entertainment"> Music & Entertainment</option>
+                            <option value="Automotive"> Automotive</option>
+                            <option value="Food & Cooking">Food & Cooking</option>
+                            <option value="Fashion & Beauty">Fashion & Beauty</option>
+                            <option value="Sports & adventure">Sports & adventure</option>
+                        </select>
                         <label for="serviceName"> Skill</label>
                         <input id="serviceName" type="text" placeholder="-give me some name" />
                         <label for="servicePrice"> Price </label>

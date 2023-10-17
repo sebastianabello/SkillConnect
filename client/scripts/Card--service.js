@@ -69,3 +69,4 @@ jsonButton.addEventListener('click', function() {
 
 });
 }
+new MultiSelectTag('inputCategory')

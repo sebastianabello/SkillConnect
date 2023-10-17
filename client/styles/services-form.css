@@ -72,13 +72,15 @@
 #add-service-img{
     display: flex;
     color: var(--dark);
-    justify-content: end;
-    margin-top: 0.5rem;
-    margin-left:1.8rem;
+    margin: auto;
+    padding-left: 2rem;
 }
 input{
-    border-radius: 0.5rem;
-    height: 3vh;
+
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    height: 4svh;
     font-size: small;
 
 }
