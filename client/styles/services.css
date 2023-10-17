@@ -673,91 +673,98 @@ body {
     }
 
     .header__title {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight: 500;
         color: var(--dark);
     }
 
     .header__subtitle {
 
-        font-size: 0.4rem;
+        font-size: 0.6rem;
         font-weight: 300;
         color: var(--dark);
-        text-align: center;
+       
 
-    }
-
-    .aside__card {
-        height: 8vh;
-        margin-left: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .card__title {
-        margin-top: 0rem;
-    }
-
-    .card__text {
-        display: none;
-        font-size: 0.5rem;
-        font-weight: 500;
-        text-align: justify;
-        border-radius: 0.5rem;
-    }
-
-    .card__button {
-
-        width: 7.2rem;
-        height: 5vh;
-        font-size: 0.7rem;
-        font-weight: 500;
-        margin-bottom: 2vh;
-        padding: 0.4rem;
-    }
-
-    .card__button:hover {
-        color: var(--light);
-    }
-
-    .card__text:hover {
-        color: var(--dark-grey);
-    }
-
-    .card__add {
-        margin-top: 0rem;
     }
 
     .main {
 
         left:120px;
     }
-
-    .aside__card {
-        width: 160px;
-        height: 28vh;
-
+    .aside__card{
+        margin-top: 0;
     }
+    .sub__extra_card{
+        margin-top: 0;
+        height: 20vh;
+    }
+    .card__title{
+        font-size: 0.7rem;
+    }
+    .card__text{
+        width: 90px;
+        padding-left: 0.5rem;
+    }
+    .sub__extra_card{
+        width: 10.3svw;
+    }
+    .card__button{
+        width: 6rem;
+        margin-top: 0rem;
+        margin-left: 0.3rem;
+        font-size: 0.6rem;
+    }
+
+
 }
 
 
 /*Tablet**/
 
 @media screen and (min-width: 768px) and (max-width: 899px) {
+    
+    
+    .sidebar .side-menu {
+        width: 100%;
+       
+    }
+   
+    
+
+
     .pag__name {
         font-size: 1rem;
+        margin-top: 0.5rem;
     }
 
     .sidebar {
         width: 170px;
     }
 
-    .aside__card {
-        height: 30vh;
-        text-align: center;
-        width: 150px;
-        margin-left: 0.6rem;
-
+    .aside__card{
+        margin-top: 0;
     }
+    .sub__extra_card{
+        margin-top: 0;
+        height: 18vh;
+    }
+    .card__title{
+        font-size: 0.7rem;
+    }
+    .card__text{
+        width: 70px;
+        padding-left: 0.5rem;
+    }
+    .sub__extra_card{
+        width: 10.1svw;
+    }
+    .card__button{
+        width: 6rem;
+        margin-top: 0rem;
+        margin-left: 0.3rem;
+        font-size: 0.6rem;
+    }
+
 
 
     .header nav form .form-input {
@@ -771,13 +778,13 @@ body {
     }
 
     .header__title {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
 
     }
 
     .header__subtitle {
-        display: none;
-        font-size: 0.8rem;
+        
+        font-size: 0.5rem;
         margin: 0;
         font-weight: 300;
     }
@@ -791,62 +798,22 @@ body {
 
         left: 90px;
     }
+    
 
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
+.sidebar{
+    width: 180px;
+}
 
-
-    .sidebar {
-        width: 59px;
-    }
-
-    .bx-menu {
-
+    .sub__extra_card{
         display: none;
     }
-
-    .bx-menu:before {
-        display: none;
-
+    .pag__name {
+        font-size: 1.1rem;
     }
-
-    .aside__card {
-        height: 10px;
-        margin-left: 0.9rem;
-        width: 20px;
-        background-color: var(--light);
-
-        /*test*/
-
-    }
-
-    .card__add {
-
-        margin-top: 0;
-        width: 2rem;
-        height: 2rem;
-        justify-content: center;
-        align-items: center;
-        border: solid 0.2rem;
-        border-radius: 50%;
-        background-color: var(--highlight-color);
-    }
-
-    .card__add a {
-        color: white;
-    }
-
-    .card__add:hover {
-        box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-        transition: all 0.2s ease-in-out;
-    }
-
-    .card__title {
-        display: none;
-        color: transparent;
-    }
-
+    
     .card__text {
         display: none;
         color: transparent;
@@ -860,14 +827,10 @@ body {
 
     /*--------------------------------------*/
     .header {
-        width: calc(100% - 36px);
-        left: 100px;
+        width: calc(100% - 70px);
+        left: 180px;
         gap: 0.1rem;
 
-    }
-
-    .header nav form .form-input input {
-        display: none;
     }
 
     .header nav form .form-input button {
@@ -893,16 +856,6 @@ body {
     .header nav form.show~.notif,
     .header nav form.show~.profile {
         display: none;
-    }
-
-    .sidebar.close~.bx-menu {
-        width: calc(100% - 60px);
-        left: 60px;
-    }
-
-    .sidebar.close~.header__title {
-        width: calc(100% - 60px);
-        left: 60px;
     }
 
     .header__subtitle {
@@ -919,69 +872,32 @@ body {
 
 @media screen and (min-width: 360px) and (max-width: 576px) {
 
-    .bx-menu {
-
-        display: none;
+    .sidebar{
+        width: 120px;
+        position: absolute;
     }
-
-    .bx-menu:before {
-        display: none;
-
+    .pag__name{
+        font-size: 9px;
+        margin-top: 1vh;
+        
     }
+   .sidebar .side-menu li a{
+    font-size: 10px;
+   }
+   .header__alerts{
+    padding-right: 0;
+   }
 
-    .aside__card {
-        height: 10px;
-        margin-left: 0.9rem;
-        width: 20px;
-        background-color: var(--light);
-
-        /*test*/
-
-    }
-
-    .card__add {
-
-        margin-top: 0;
-        width: 2rem;
-        height: 2rem;
-        justify-content: center;
-        align-items: center;
-        border: solid 0.2rem;
-        border-radius: 50%;
-        background-color: var(--highlight-color);
-    }
-
-    .card__add a {
-        color: white;
-    }
-
-    .card__add:hover {
-        box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-        transition: all 0.2s ease-in-out;
-    }
-
-    .card__title {
-        display: none;
-        color: transparent;
-    }
-
-    .card__text {
-        display: none;
-        color: transparent;
-    }
-
-    /*dis*/
-    .card__button {
-        display: none;
-
-    }
 
     /*--------------------------------------*/
     .header {
-        width: calc(100% - 36px);
-        left: 60px;
+        width: calc(100% - 10px);
+        left:120px;
         gap: 0.1rem;
 
+    }
+    .header nav {
+        grid-gap:8px;
     }
 
     .header nav form .form-input input {
@@ -1012,6 +928,9 @@ body {
     .header nav form.show~.profile {
         display: none;
     }
+    .header__navigation-text{
+        display: none;
+    }
 
     .header__subtitle {
         display: none;
@@ -1019,6 +938,7 @@ body {
 
     .header__title {
         display: none;
+        
     }
 
     .header__logo {
@@ -1026,10 +946,16 @@ body {
     }
 
     .main {
-        padding: 0.2rem;
+        padding: 0.9rem;
+        margin: 0;
+    }
+    .sidebar.close~.main {
+        position: relative;
+        left: 90px;
     }
 
 
-
-
 }
+
+
+
