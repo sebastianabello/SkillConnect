@@ -31,7 +31,7 @@
     width: 2.2rem;
     border-radius: 50%;
     background-color: var(--highlight-color);
-    color:var(--dark);
+   /* color:var(--dark); */
     cursor: pointer;
     margin-left: 1rem;
     position:absolute;
@@ -44,7 +44,7 @@
     height: 2.2rem;
     width: 2.2rem;
     border-radius: 50%;
-    background-color: var(--light-highlight);
+    background-color: #e79f03;
     color:var(--dark);
     cursor: pointer;
     margin-left: 1rem;
