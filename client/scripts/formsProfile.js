@@ -1,9 +1,9 @@
+//  Formularios del Perfil
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("formPersonalInfo").style.display = "none";
+  document.getElementById("formPersonalInfo").style.display = "block";
   document.getElementById("formEditProfile").style.display = "none";
   document.getElementById("formNotifications").style.display = "none";
 
-  document.getElementById("formPersonalInfo").style.display = "block";
 });
 
 function mostrarFormularioHelpCenter(formulario) {

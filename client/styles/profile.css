@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: column;
   padding: 5rem;
+
 }
 .form__img {
   height: 6rem;
@@ -170,11 +171,11 @@ button:active .button_top {
 }
 
 /* Footer */
-.footer {
+/* .footer {
   background-color: var(--dark-grey);
-  width: calc(100% - 230px); /*Necesito que me calculee*/
+  width: calc(100% - 230px); 
   max-height: calc(100vh - 56px);
-  left: 230px; /*Necesito indicarle la posicion del relative*/
+  left: 230px; 
   transition: all 0.3s ease;
   bottom: 0;
   right: 0;
@@ -197,207 +198,7 @@ button:active .button_top {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--light);
-}
+} */
 
 /* RESPONSIVE DISEÑOO */
 
-@media screen and (min-width: 360px) and (max-width: 576px) {
-  .main__container {
-    margin-left: 0;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card__links {
-    list-style: none;
-    font-size: large;
-    color: var(--secondary-text-color);
-    flex-direction: column;
-  }
-
-  .card__links li {
-    margin: 0.5rem 0;
-  }
-
-  .container__card,
-  .form__container {
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1rem;
-  }
-
-  .cont__label {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .form__title {
-    margin: 0.5rem 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 1rem;
-    white-space: nowrap;
-  }
-
-  .form__input {
-    width: 100%;
-    font-size: 1rem;
-    margin: 0.2rem 0;
-    margin-bottom: 2rem;
-  }
-
-  .form__select,
-  .form__date {
-    width: 100%;
-  }
-
-  .form__button {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .form__area {
-    font-size: 0.6rem;
-    width: 100%;
-    height: 0.8rem;
-  }
-
-  .cont__img {
-    justify-content: center;
-  }
-
-  .form__img {
-    height: 5rem;
-    width: 5rem;
-  }
-
-  .footer {
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    max-height: 5vh;
-  }
-
-  .footer__list {
-    justify-content: center;
-    padding: 0;
-  }
-
-  .footer__item {
-    margin: 0.5rem;
-  }
-
-  .footer__link {
-    font-size: 1rem;
-    font-weight: normal;
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  .main__container {
-    margin-left: 0;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card__links li {
-    margin: 0.3rem;
-    text-align: 1rem;
-  }
-
-  .container__card,
-  .form__container {
-    width: 48vh;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1rem;
-  }
-
-  .cont__label {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .form__title {
-    margin: 0.5rem 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 1rem;
-    white-space: nowrap;
-  }
-
-  .form__input {
-    width: 80%;
-    font-size: 1rem;
-    margin: 0.1rem 0;
-    margin-bottom: 2rem;
-  }
-
-  .form__select,
-  .form__date {
-    width: 100%;
-  }
-
-  .form__button {
-    width: 30%;
-    font-size: 1rem;
-  }
-
-  .cont-area {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .form__area {
-    margin-left: 2.5rem;
-    font-size: 0.6rem;
-    width: 80%;
-    height: 0.8rem;
-  }
-
-  .cont__img {
-    justify-content: center;
-  }
-
-  .form__img {
-    height: 5rem;
-    width: 5rem;
-  }
-
-  .footer {
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    max-height: 5vh;
-  }
-
-  .footer__list {
-    justify-content: center;
-    padding: 0;
-  }
-
-  .footer__item {
-    margin: 0.5rem;
-  }
-
-  .footer__link {
-    font-size: 1rem;
-    font-weight: normal;
-  }
-}
