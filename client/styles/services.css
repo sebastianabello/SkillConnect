@@ -689,7 +689,7 @@ body {
 
     .main {
 
-        left:120px;
+        padding: 1rem;
     }
     .aside__card{
         margin-top: 0;
@@ -734,8 +734,7 @@ body {
         width: 100%;
        
     }
-   
-    
+
 
 
     .pag__name {
@@ -810,6 +809,11 @@ body {
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
+    .columns-service{
+        display: flex;
+        flex-direction: column;
+    }
+    
 .sidebar{
     width: 180px;
 }
