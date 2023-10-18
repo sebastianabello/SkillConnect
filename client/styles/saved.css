@@ -1,2 +1,5 @@
 /*Ctrl+shift+p > html*/
 @import url('/client/public/style.css');
+.saved--icon{
+background-color: #e79f03 !important; 
+}
