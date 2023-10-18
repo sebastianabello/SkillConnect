@@ -15,7 +15,7 @@
     <meta name="keywords" content="servicios profesionales, red social, habilidades, proveedores de servicios">
 
     <!--Especificamos el título de proyecto web-->
-    <title>Edit profile</title>
+    <title></title>
 
     <!--Link a la hoja de estilos-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -37,13 +37,13 @@
         </div>
         <ul class="side-menu">
             <li class="active"><a href="../"><i class="fa-solid fa-house aside-icon"></i>Home</a></li>
-            <li><a href="explore.html" class="aside__link"><i class="fa-solid fa-compass aside-icon"></i>Explore</a>
+            <li><a href="explore.html" class="aside__link"><i class="fa-solid fa-compass aside-icon"></i>Explorar</a>
             </li>
-            <li><a href="saved.html" class="aside__link"><i class="fa-solid fa-bookmark aside-icon"></i>Saved</a>
-            <li><a href="plans.html" class="aside__link"><i class="fa-solid fa-crown aside-icon"></i>Plans</a></li>
+            <li><a href="saved.html" class="aside__link"><i class="fa-solid fa-bookmark aside-icon"></i>Guardados</a>
+            <li><a href="plans.html" class="aside__link"><i class="fa-solid fa-crown aside-icon"></i>Planes</a></li>
             <li><a href="history.html" class="aside__link"><i
                         class="fa-solid fa-clock-rotate-left aside-icon"></i>History</a></li>
-            <li><a href="/html/about.html" class="aside__link"><i class="fa-solid fa-users aside-icon"></i>About</a>
+            <li><a href="/html/about.html" class="aside__link"><i class="fa-solid fa-users aside-icon"></i>Nosotros</a>
             </li>
         </ul>
 
@@ -56,13 +56,12 @@
 
      </article>
          <article class="extra__card">
-             <h2 class="card__title">Share Your Skills</h2>
+             <h2 class="card__title">Unete & Conectate</h2>
              <main class="sub__extra_card">
              <p class="card__text">
-                 Share your services, experience and rates. In this way other users can
-                 find you and work together using your talents.
+                Comparte tus services, experiencia y calificaciones. De esta forma otros usuarios pueden contactarte y trabajar juntos usando tus talentos.
              </p>
-             <button class="card__button">Add Publication</button>
+             <button class="card__button">Agregar</button>
          </main>
          </article>
      </section>
@@ -80,8 +79,8 @@
             <i class='bx bx-menu'></i>
             <!-- Page name and description  -->
             <div class="header__navigation-text">
-                <h1 class="header__title">Profile</h1>
-                <h2 class="header__subtitle">Here you can configure your profile</h2>
+                <h1 class="header__title">Perfil</h1>
+                <h2 class="header__subtitle">Configura tu perfil</h2>
             </div>
 
             <!--service search bar-->
@@ -125,17 +124,17 @@
             <!-- Card de Personal Info -->
             <ul class="card__links">
                <li><a href="#" class="link__card" onclick="mostrarFormularioHelpCenter(1)">Personal Info</a></li>
-               <li><a href="#" class="link__card" onclick="mostrarFormularioHelpCenter(2)">Edit Profile</a></li>
-               <li><a href="#" class="link__card" onclick="mostrarFormularioHelpCenter(3)">Notifications</a></li>
+               <li><a href="#" class="link__card" onclick="mostrarFormularioHelpCenter(2)">Editar Perfil</a></li>
+               <li><a href="#" class="link__card" onclick="mostrarFormularioHelpCenter(3)">Notificaciones</a></li>
            </ul>
            <section class="container__card">
                <!-- Inicializamos el 1er formulario -->
                <form id="formPersonalInfo" class="form__container hide">
                    <!-- Menu de opciones: Visibiidad -->
                    <div class="cont__label">
-                       <label for="" class="form__title">Privacy Settings:</label>
+                       <label for="" class="form__title">Privacidad:</label>
                    <select name="" id="" class="form__select">
-                       <option disabled value="">Escoja su preferencia</option>
+                       <option disabled value="">¿Quien puede ver su perfil?</option>
                        <option value="">Mis seguidores</option>
                        <option value="">Todos Pueden</option>
                    </select>
@@ -143,35 +142,35 @@
                    
                    <!-- Campo: Nombre Completo (usuario) -->
                    <div class="cont__label">
-                       <label for="" class="form__title">Full name:
+                       <label for="" class="form__title">Nombre Completo:
                        </label>
                        <input type="text" class="form__input">
                    </div>
                    
                    <!-- Campo: Ubicación Geográfica -->
                    <div class="cont__label">
-                       <label for="" class="form__title">Location:</label>
+                       <label for="" class="form__title">Ubicación</label>
                        <input type="text" class="form__input">
                    </div>
                    
                    <!-- Campo: Celular -->
                    <div class="cont__label">
-                       <label for="" class="form__title">Phone:</label>
+                       <label for="" class="form__title">Telefono:</label>
                        <input type="tel" name="" id="" class="form__input">
                    </div>
    
                    <!-- Campo: Correo -->
                    <div class="cont__label">
-                       <label for="" class="form__title">Email Address:</label>
+                       <label for="" class="form__title">Correo:</label>
                        <input type="email" name="" id="" class="form__input">
                    </div>
    
                    <!-- Campo: Fecha de Nacimiento -->
                    <div class="cont__label">
-                       <label for="" class="form__title">Birthdate:</label>
+                       <label for="" class="form__title">Nacimiento:</label>
                        <input type="date" name="" id="" class="form__date">
                    </div>
-                   <a href="#" class="delete">Delete Account</a>
+                   <a href="#" class="delete">Eliminar Cuenta</a>
                </form>
            </section>
    
@@ -181,24 +180,25 @@
            <section class="container__card hide">
                <!-- Inicializamos el 2do formulario -->
                <form id="formEditProfile" class="form__container hide">
-                   <p class="parrafo">The information here will be visible for all users that would like to see it.</p>
+                   <p class="parrafo">Esta información sera visible para todos los usuarios.</p>
                    <!-- Cambiar foto de perfil -->
                    <div class="cont__img">
-                       <label for="">
-                           <img src="../assets/perfil1.jpg" alt="" id="img" class="form__img">
-                           <span class="text__span">Profile Picture</span>
-                           <input type="file" name="foto" accept="imge" class="input__img">
-                       </label>
-                   </div>
+                    <label for="fileInput">
+                        <img src="../assets/perfil1.jpg" alt="" id="img" class="form__img">
+                        <span class="text__span">Foto de perfil</span>
+                    </label>
+                    <input type="file" id="fileInput" name="foto" accept="image/*" class="input__img">
+                </div>
+                
                
                        <!-- About del usuario -->
                     <div class="cont__area">
-                       <label class="cont-area">Description</label>
+                       <label class="cont-area">Descripción</label>
                        <br>
                        <textarea placeholder="Description" id="" cols="10" rows="3" class="form__area"></textarea>
                        <!-- Listado de servicios que ofrece el usuario -->
                        <br>
-                       <label class="cont-area">Services</label>
+                       <label class="cont-area">Servcios</label>
                        <br>
                        <textarea placeholder="Services" name="" id="" cols="10" rows="3" class="form__area"></textarea>
                     </div>
@@ -206,23 +206,23 @@
                    
                    <!-- Nombre de profesion u oficio del usuario -->
                    <div class="cont__label">
-                       <label for="" class="form__title">Profession: </label>
+                       <label for="" class="form__title">Habilidad: </label>
                        <input type="text" class="form__input">
-                       <button class="form__button"><span class="button_top">Change</span</button>  
+                       <button class="form__button"><span class="button_top">Cambiar</span</button>  
                    </div>
                     
                    <!-- Nombre visible del usuario -->
                    <div class="cont__label">
-                       <label for="" class="form__title">Nick Name: </label>
+                       <label for="" class="form__title">@apodo: </label>
                        <input type="text" class="form__input">
-                       <button class="form__button"><span class="button_top">Change</span</button>  
+                       <button class="form__button"><span class="button_top">Cambiar</span</button>  
                    </div>
                    
                    <!-- ID del usuario en la red social -->
                    <div class="cont__label">
-                       <label for="" class="form__title">User Name: </label>
+                       <label for="" class="form__title">Usuario: </label>
                        <input type="text" class="form__input">
-                       <button class="form__button"><span class="button_top">Change</span</button>  
+                       <button class="form__button"><span class="button_top">Cambiar</span</button>  
                    </div>
                    
                </form>
@@ -234,34 +234,34 @@
            <section class="container__card hide">
                <!-- Inicializamos el 3er formulario -->
                    <form id="formNotifications" class="form__container hide">
-                       <p class="parrafo">¿Would you like to receive notifications for the next features?</p>
+                       <p class="parrafo"> ¿Quieres recibir notificaciones de las siguientes funciones?</p>
                        <!-- Preferencia para ajustar las notificaciones -->
                        <div class="cont__card3">
                            <input type="checkbox" name="" id="">
-                           <label for="" class="card3__text">Messages</label>
+                           <label for="" class="card3__text">Mensajes</label>
                            <p class="descriptive__card3">
-                               Someone has sent you a direct message
+                               Alguien te ha enviado un mensaje directo
                                <br>
-                               You have a new follower
+                               Tienes un nuevo seguidor
                                <br>
-                               Your services got rated
+                               Tus servicios fueron calificados
                                <br>
-                               You have been tag in a publication
+                               Te han etiquetado en una publicación
                                <br>
-                               Your publication has been commented
+                               Tu publicación ha sido comentada
                            </p>
                        </div>
                        
                        <!-- Alertas sobre otros usuarios -->
                        <div class="cont__card3">
                            <input type="checkbox" name="" id="">
-                           <label for="" class="card3__text">Users that you follow has updated new content</label>
+                           <label for="" class="card3__text">Los usuarios que sigues han actualizado su contenido</label>
                        </div>
                        
                        <!-- Noticias y anuncios de nuesta red social -->
                        <div class="cont__card3">
                            <input type="checkbox" name="" id="">
-                           <label for="" class="card3__text">Updates and news from SkillConnect</label>
+                           <label for="" class="card3__text">Actualizaciones y noticias de SkillConnect</label>
                        </div>
                        
                    </form>
@@ -290,6 +290,7 @@
     </footer> -->
 
     <script src="../public/plantilla.js"></script>
+    <script src="../scripts/animaciones.js"></script>
 </body>
 
 </html>
