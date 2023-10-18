@@ -45,13 +45,12 @@ let listUsers =[];
    <footer class="card--description">
      <h3 class="card--user-name">${user.serviceName}</h3>
      <span class="card--skill"> ${user.descriptionName}</span>
-     <p class="card--price">Price ${user.priceInfo}</p>
-     <p class="card--price">${user.portfolioInfo}</p>
+     <p class="card--price">Precio ${user.priceInfo}</p>
      <picture class="card--rate--button--container">
        <button id="avatar-perfil--button" type="">
-         <i class="fa-solid fa-star"></i> 4.4
+         <i class="fa-solid fa-star"></i> 5.0
        </button>
-       <button class="card--rate--button">Contact</button>
+       <button class="card--rate--button">Contactar</button>
      </picture>
    </footer>
  </article>`;
