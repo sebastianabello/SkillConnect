@@ -87,7 +87,7 @@
 
 .parrafo {
   font-size: large;
-  font-weight: var(--dark-grey);
+  font-weight: 400;
   padding-bottom: 1rem;
 }
 
@@ -139,37 +139,22 @@
 }
 
 .form__button {
-  /* Variables */
-  --button_radius: 0.75em;
-  --button_color: #e8e8e8;
-  --button_outline_color: #000000;
-  font-size: 17px;
-  font-weight: bold;
   border: none;
-  border-radius: var(--button_radius);
-  background: var(--button_outline_color);
+  outline: none;
+  padding: .8rem;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: var(--highlight-color);
+  color: var(--light);
+  border-radius: 3rem;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px var(--dark);
 }
 
-.button_top {
-  display: block;
-  box-sizing: border-box;
-  border: 2px solid var(--button_outline_color);
-  border-radius: var(--button_radius);
-  padding: 0.75em 1.5em;
-  background: var(--button_color);
-  color: var(--button_outline_color);
-  transform: translateY(-0.2em);
-  transition: transform 0.1s ease;
+button:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
 }
-
-button:hover .button_top {
-  transform: translateY(-0.33em);
-}
-
-button:active .button_top {
-  transform: translateY(0);
-}
-
 /* Footer */
 /* .footer {
   background-color: var(--dark-grey);
@@ -201,4 +186,235 @@ button:active .button_top {
 } */
 
 /* RESPONSIVE DISEÑOO */
+@media screen and (max-width: 1000px) {
+  .main__container {
+    transform: translateY(-1%);
+    color: var(--dark);
+    margin-left: 6rem;
+  }
+ 
+  .container__card {
+    width: 40rem;
+    margin-right: 10rem;
+  } 
+  .form__container {
+    padding: 3rem;
+  }
+  .cont__label {
+    padding: .8rem;
+  }
+  .form__area {
+    padding: 0.2rem;
+    width: 95%;
+    margin-left: 1rem;
+  }  
+  .text__span,
+  .input__img {
+    font-size: .8rem;
+  }
+  
+  .form__input {
+    margin: 0.5rem 0.5rem;
+    width: 90%;
+  }
+  
+  .card3__text {
+    font-size: 1rem;
+  }
+  
+  .descriptive__card3 {
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
+  
+  .card__links {
+    display: flex;
+    list-style: none;
+    font-size: large;
+    color: var(--secondary-text-color);
+  }
+  
+  .card__links li {
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+  
+  .card__links li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--dark);
+    transition: color 0.3s ease-in-out;
 
+    font-size: 1rem;
+  }
+  
+  .delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+  }
+  
+  .form__date {
+    padding: 0;
+    width: 100rem;
+  }
+
+  .form__select {
+    padding: 0;
+    width: 100rem;
+    height: 1.8rem;
+  }
+}
+
+
+
+@media screen and (max-width: 790px) {
+  .main__container {
+    padding-top: 7rem;
+
+  }
+ 
+  .container__card {
+    width: 30rem;
+  } 
+
+  .form__area {
+    padding: 0.2rem;
+    width: 90%;
+    margin-left: 1rem;
+  } 
+  
+  .cont__area  {
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__title {
+    font-size: .8rem;
+    padding-top: 1rem;
+  }
+
+  .form__button {
+    padding: .4rem;
+    font-size: 9px;
+  }
+
+  .form__img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .text__span,
+  .input__img {
+    font-size: .6rem;
+  }
+  
+  .form__input {
+    margin: 0.2rem 0.2rem;
+    width: 100%;
+  }
+  
+  .delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem;
+    font-size: .8rem;
+  }
+  
+  .form__date {
+    padding: 0;
+    width: 95rem;
+    height: 1.5rem;
+  }
+
+  .form__select {
+    padding: 0;
+    width: 95rem;
+    height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .main__container {
+    padding-top: 7rem;
+    margin-left: 7rem;
+    margin-right: 0;
+    transform: translateX(-2%);
+  
+  }
+  .container__card {
+    width: 20rem;
+    height: auto;
+  } 
+
+  .card__links {
+    flex-direction: column;
+    text-align: center;
+    margin-right: 10rem;
+    padding-bottom: .8rem;
+  }
+
+  .form__area {
+    padding: 0.2rem;
+    width: 90%;
+    margin-left: 1rem;
+  } 
+
+  .card__links li a {
+    font-size: 1.6rem;
+  }
+  
+  .cont__area  {
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__title {
+    font-size: .6rem;
+    padding-top: 1rem;
+  }
+
+  .form__button {
+    padding: .4rem;
+    font-size: 8px;
+  }
+
+  .form__img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .text__span,
+  .input__img {
+    font-size: .6rem;
+  }
+
+  .form__input {
+    margin: 0.2rem 0.2rem;
+    width: 80%;
+  }
+  
+  .delete {
+    font-size: .6rem;
+  }
+  
+  .form__date {
+    padding: 0;
+    width: 13vh;
+    height: 1.5rem;
+  }
+
+  .form__select {
+    padding: 0;
+    width: 13vh;
+    height: 1.5rem;
+  } 
+}
