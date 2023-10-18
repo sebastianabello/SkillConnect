@@ -5,8 +5,9 @@
     max-width: 900px;
     margin: auto;
     height: 100vh;
+    margin-left: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
 }
@@ -100,6 +101,17 @@
 }
 
 
+@media screen and (max-width: 1500px) {
+    .contenedor {
+        max-width: 900px;
+        margin: auto;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+    }
+    
+}
 
 @media screen and (max-width: 1000px) {
     .contenedor {
