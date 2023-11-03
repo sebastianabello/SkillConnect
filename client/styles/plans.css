@@ -20,7 +20,7 @@
     margin: 10px;
     border-radius: 1rem;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    padding: 60px;
+    padding: 40px;
     text-align: center;
     color: var(--dark);
 
@@ -54,21 +54,21 @@
 .beneficios {
     list-style: none;
     text-align: justify;
-    font-size: .8rem;
+    font-size: .9rem;
+    padding-bottom: 1.2rem;
 }
 
+
 .boton {
-    display: inline-block;
-    width: 150px;
-    padding: 12px;
-    background: var(--highlight-color);
-    text-decoration: none;
-    color: var(--secondary-color);
-    border-radius: 100px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 1rem;
+    padding: .5em;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.875em;
+    line-height: 2.7142857142857144;
+    background: #009ee3;
+    border-radius: 0.2857142857142857em;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
 }
 
 .tabla:hover {
@@ -116,22 +116,28 @@
 @media screen and (max-width: 1000px) {
     .contenedor {
         flex-direction: column ;
+        margin-top: 400px;
     }
     
     .tabla {
+        display: block;
         width: 80%;
+    }
+    .tabla h2 {
+        font-size: 1.2rem;
     }
     .tabla p {
         text-align: center;
-        font-size: 1.3rem;
+        font-size: .8rem;
         padding-top: 1rem;
     }
+
     .beneficios {
         padding-top: .8rem;
-        font-size: 1.2rem;
+        font-size: .8rem;
     }
     .tabla i {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 }
 
@@ -150,21 +156,37 @@
 }
 
 @media screen and (max-width: 550px) {
-    .tabla {
-        flex-basis: 85%;
-        padding: 20px;
-    }
-    .beneficios {
-        padding-top: .5rem;
-        font-size: 1rem;
-    }
-    .tabla>h2 {
-        margin-top: 20px;
-    }
-    .tabla>p {
-        font-size: 1rem;
-    }
-    .tabla i {
-    font-size: 3rem;
-    }
+        .contenedor {
+          width: 100%;
+          margin-top: 450px;
+        }
+      
+        .tabla {
+          width: 300px;
+          height: 100vh;
+        }
+
+        .tabla>h2 {
+            font-size: 20px;
+          }
+        
+          .tabla>i {
+            font-size: 2rem;
+          }
+        
+          .tabla>p {
+            font-size: 18px;
+          }
+        
+          .tabla>h3 {
+            font-size: 20px;
+          }
+        }
+        
+        @media (max-width: 500px) {
+          .tabla>ul {
+            display: flex;
+            flex-direction: column;
+          }
+
 }

@@ -1,6 +1,6 @@
 @import url(../public/style.css);
 /* Diseño Main */
-.main {
+/* .main {
   background-color: var(--primary-color);
 }
 .main__container {
@@ -95,4 +95,4 @@
   font-size: 1rem;
   font-weight: 500;
   color: var(--white-color);
-}
+} */

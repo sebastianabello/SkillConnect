@@ -123,9 +123,9 @@
 
             <!-- Card de Personal Info -->
             <ul class="card__links">
-               <li><a href="#" class="link__card" onclick="mostrarFormularioHelpCenter(1)">Personal Info</a></li>
-               <li><a href="#" class="link__card" onclick="mostrarFormularioHelpCenter(2)">Editar Perfil</a></li>
-               <li><a href="#" class="link__card" onclick="mostrarFormularioHelpCenter(3)">Notificaciones</a></li>
+                <li><a href="#" class="link__card" data-form="formPersonalInfo">Personal Info</a></li>
+                <li><a href="#" class="link__card" data-form="formEditProfile">Editar Perfil</a></li>
+                <li><a href="#" class="link__card" data-form="formNotifications">Notificaciones</a></li>
            </ul>
            <section class="container__card">
                <!-- Inicializamos el 1er formulario -->
@@ -184,10 +184,10 @@
                    <!-- Cambiar foto de perfil -->
                    <div class="cont__img">
                     <label for="fileInput">
-                        <img src="../assets/perfil1.jpg" alt="" id="img" class="form__img">
+                        <img src="/client/assets/img-default.avif" alt="" id="imgProfile" class="form__img">
                         <span class="text__span">Foto de perfil</span>
                     </label>
-                    <input type="file" id="fileInput" name="foto" accept="image/*" class="input__img">
+                    <input type="file" id="fileInputProfile" name="foto" accept="image/*" class="input__img">
                 </div>
                 
                
@@ -268,7 +268,7 @@
                </section>
    
     </main>
-<!-- 
+
     <footer class="footer">
         <ul class="footer__list">
             <li class="footer__item">
@@ -287,7 +287,7 @@
                 <a href="#" class="footer__link">©SkillConnect</a>
             </li>
         </ul>
-    </footer> -->
+    </footer>
 
     <script src="../public/plantilla.js"></script>
     <script src="../scripts/animaciones.js"></script>
