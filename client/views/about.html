@@ -31,7 +31,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../styles/about.css" />
-    <link rel="stylesheet" href="styles/slide-cards.css">
+    <link rel="stylesheet" href="../styles/slide-cards.css">
   </head>
 
   <body class="container">
@@ -39,35 +39,35 @@
     <aside class="sidebar">
       <!--Logo-->
       <div class="header__logo">
-        <img class="pag__image" src="./assets/logo.png" alt="logopag" />
+        <img class="pag__image" src="../assets/logo.png" alt="logopag" />
         <a href="#"><span class="pag__name">SkillConnect</span></a>
       </div>
       <ul class="side-menu">
         <li>
-          <a href="./index.html" class="aside__link"><i class="fa-solid fa-house aside-icon show"></i>Inicio</a>
+          <a href="../index.html" class="aside__link"><i class="fa-solid fa-house aside-icon show"></i>Inicio</a>
         </li>
         <li>
-          <a href="./views/explore.html" class="aside__link"
+          <a href="../views/explore.html" class="aside__link"
             ><i class="fa-solid fa-compass aside-icon"></i>Explorar</a
           >
         </li>
         <li>
-          <a href="./views/saved.html" class="aside__link"
+          <a href="../views/saved.html" class="aside__link"
             ><i class="fa-solid fa-bookmark aside-icon"></i>Guardados</a
           >
         </li>
         <li>
-          <a href="./views/plans.html" class="aside__link"
+          <a href="../views/plans.html" class="aside__link"
             ><i class="fa-solid fa-crown aside-icon"></i>Planes</a
           >
         </li>
         <li>
-          <a href="./views/history.html" class="aside__link"
+          <a href="../views/history.html" class="aside__link"
             ><i class="fa-solid fa-clock-rotate-left aside-icon"></i>Historial</a
           >
         </li>
         <li class="active">
-          <a href="./views/about.html"
+          <a href="../views/about.html"
             ><i class="fa-solid fa-users aside-icon"></i>Nosotros</a
           >
         </li>
@@ -77,7 +77,7 @@
       <section class="aside__card">
         <article class="extra__left__card active" >
          <figure class="card__add">
-             <a href="/client/views/add--publication.html"><i class="fa-solid fa-plus logo-add"></i></a>
+             <a href="../client/views/add--publication.html"><i class="fa-solid fa-plus logo-add"></i></a>
          </figure>
 
      </article>
@@ -142,9 +142,78 @@
     <!-- Main -->
     <main class="main">
         <div class="main__container">
+          <section class="main__card">
+            <h2 class="team__title"> Equipo de Desarrollo</h2>
+            <div class="container__cards">
+                <article class="card">
+                    <picture class="card__image">
+                    <img class="card__image-a" src="../assets/devs/devSebas.png" alt="foto Juan Sebastian Abello">
+                    </picture>
+                    <div class="description">
+                    <h3 class="name">Juan Abello</h3>
+                    <p class="rol">
+                        <ul class="rols">
+                            <li  class="li1"><i class="fa-solid fa-database"></i>Front-End y Back-End</li>
+                            <li  class="li1"><i class="fa-solid fa-network-wired"></i>Lider de Proyecto</li>
+                            <li  class="li1"><a href="https://www.linkedin.com/in/sebastian-abello-desarrollador/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+                        </ul>
+                    </p>
+                  </div>
+                </article>
+                <article class="card">
+                  <picture class="card__image">
+                  <img class="card__image-a" src="../assets/devs/devDuvi.jpg" alt="foto Duvan Uriel Rodriguez">
+                  </picture>
+                  <div class="description">
+                  <h3 class="name">Duvan Rodriguez</h3>
+                  <p class="rol">
+                      <ul class="rols">
+                          <li><i class="fa-solid fa-paint-roller"></i>Front-End</li>
+                          <li><i class="fa-brands fa-figma"></i> UI Desing</li>
+                          <li><a href="https://www.linkedin.com/in/duvan-rodriguez-developer/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+                      </ul>
+                  </p>
+                </div>
+              </article>
+                <article class="card">
+                    <picture class="card__image">
+                    <img class="card__image-a" src="../assets/devs/devErick.jpg" alt="foto Erik Damian Duarte Lobaratón">
+                    </picture>
+                    <div class="description">
+                    <h3 class="name">Erik Duarte</h3>
+                    <p class="rol">
+                        <ul class="rols">
+                            <li><i class="fa-solid fa-database"></i>Back-End</li>
+                            <li><i class="fa-regular fa-calendar-check"></i>Product Owner</li>
+                            <li><a href="https://www.linkedin.com/in/erick-duarte-desarrolladorjava/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+                        </ul>
+                    </p>
+                  </div>
+                </article>
+                <article class="card">
+                  <picture class="card__image">
+                  <img class="card__image-a" src="../assets/devs/devGaby.jpg" alt="foto Gabriela Aguiar Marquez">
+                  </picture>
+                  <div class="description">
+                  <h3 class="name">Gabriela Aguiar</h3>
+                  <p class="rol">
+                      <ul class="rols">
+                          <li><i class="fa-solid fa-paint-roller"></i>Front-End</li>
+                          <li><i class="fa-solid fa-brain"></i>UX Desing</li>
+                          <li><a href="https://www.linkedin.com/in/gabriela-aguiar-desarrollador/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+                      </ul>
+                  </p>
+                  </div>
+              </article>
+            </div>
+        </section>
             <!-- Texto de la pagina -->
             <section class="main__text">
                 <h2 class="about__title">¿Por qué escoger a SkillConnect?</h2>
+                <figure class="banner">
+                  <img src="../assets/skillconnect banner.png" alt="Banner de SkillConnect">
+                  <figcaption class="resumen">Tus habilidades, tu negocio</figcaption>
+                </figure>
                 <p class="about__paragraph">
                     En un mundo en constante evolución, SkillConnect se erige como un faro de oportunidades. Creemos en el poder de conectar a las personas y en la creación de un ecosistema próspero donde todos pueden tener éxito. El objetivo es hacerlo de manera transparente, al tiempo que fomentamos una comunidad basada en la confianza, la excelencia y la colaboración. En SkillConnect, nos impulsa un único propósito: marcar la diferencia, al promover las conexiones significativas, el crecimiento personal y profesional a través de soluciones innovadoras.
                 </p>
@@ -153,57 +222,6 @@
                 </p>
             </section>
             <!-- Cartas de cada miembro del equipo -->
-            <section class="main__card">
-                <h2 class="team__title"> Meet the team</h2>
-                <div class="container__cards">
-                    <article class="card">
-                        <picture class="card__image">
-                        <img class="card__image-a" src="../img/sebas.png" alt="foto Juan Sebastian Abello">
-                        </picture>
-                        <h3 class="name">Juan Sebastian Abello</h3>
-                        <p class="rol">
-                            <ul class="rols">
-                                <li>Lider de proyecto</li>
-                                <li>Desarrollador Front-End</li>
-                                <li>Desarrollador Back-End</li>
-                            </ul>
-                        </p>
-                    </article>
-                    <article class="card">
-                        <picture class="card__image">
-                        <img class="card__image-a" src="../img/devGabi.jpg" alt="foto Gabriela Aguilar Marquez">
-                        </picture>
-                        <h3 class="name">Gabriela Aguilar Marquez</h3>
-                        <p class="rol">
-                            <ul class="rols">
-                                <li>Desarrolladora Front-End</li>
-                            </ul>
-                        </p>
-                    </article>
-                    <article class="card">
-                        <picture class="card__image">
-                        <img class="card__image-a" src="../img/erik.png" alt="foto Erik Damian Duarte Lobaratón">
-                        </picture>
-                        <h3 class="name">Erik Damian Duarte Lobaratón</h3>
-                        <p class="rol">
-                            <ul class="rols">
-                                <li>Desarrollador Back-End</li>
-                            </ul>
-                        </p>
-                    </article>
-                    <article class="card">
-                        <picture class="card__image">
-                        <img class="card__image-a" src="../img/devDuvan.jpg" alt="foto Duvan Uriel Rodriguez">
-                        </picture>
-                        <h3 class="name">Duvan Uriel Rodriguez</h3>
-                        <p class="rol">
-                            <ul class="rols">
-                                <li>Desarrollador Front-End</li>
-                            </ul>
-                        </p>
-                    </article>
-                </div>
-            </section>
         </div>
     </main>
 

@@ -31,7 +31,7 @@
 }
 
 .tabla>h2 {
-    font-size: 30px;
+    font-size: 1.6rem;
     margin-bottom: 35px;
 }
 
@@ -43,6 +43,8 @@
 
 .tabla>p {
     font-weight: 600;
+    text-align: center;
+    font-size: .9rem;
 }
 
 .tabla>h3 {

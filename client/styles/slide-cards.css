@@ -304,7 +304,7 @@
 
     margin-top: 5rem;
     width: 50%;
-    height: 17%;
+    height: 18%;
     position: relative;
     overflow-x: auto;
     overflow: hidden;
@@ -314,8 +314,35 @@
     border-radius: 1rem;
 }
 
+/*Mostrar todas las categorias*/
+#todo:checked ~ .card--container:not([data-category]) {
+  display: block;
+}
+
+
+/* Filtros por categorías */
+#rm:checked + .contenedor__tarjeta .card--container:not([data-category~="rm"]),
+#dc:checked + .contenedor__tarjeta .card--container:not([data-category~="dc"]),
+#td:checked + .contenedor__tarjeta .card--container:not([data-category~="td"]),
+#ee:checked + .contenedor__tarjeta .card--container:not([data-category~="ee"]),
+#aa:checked + .contenedor__tarjeta .card--container:not([data-category~="aa"]),
+#da:checked + .contenedor__tarjeta .card--container:not([data-category~="da"]),
+#hj:checked + .contenedor__tarjeta .card--container:not([data-category~="hj"]),
+#c:checked + .contenedor__tarjeta .card--container:not([data-category~="c"]),
+#me:checked + .contenedor__tarjeta .card--container:not([data-category~="m"]),
+#aa:checked + .contenedor__tarjeta .card--container:not([data-category~="aa"]),
+#do:checked + .contenedor__tarjeta .card--container:not([data-category~="do"]),
+#sb:checked + .contenedor__tarjeta .card--container:not([data-category~="sb"]),
+#cc:checked + .contenedor__tarjeta .card--container:not([data-category~="cc"]),
+#cn:checked + .contenedor__tarjeta .card--container:not([data-category~="cn"]),
+#mb:checked + .contenedor__tarjeta .card--container:not([data-category~="mb"]),
+#et:checked + .contenedor__tarjeta .card--container:not([data-category~="et"]),
+#da:checked + .contenedor__tarjeta .card--container:not([data-category~="da"]) {
+  display: block;
+}
+
 .botones-container {
-    top: 18%; 
+    top: 25%; 
     transform: translateY(-20%);
 }
 
@@ -334,17 +361,17 @@
 width: 5px;
 height: 5px;
 margin: .8rem;
-padding: 3.2rem;
+padding: 2rem;
 text-align: center;
 }
 
 .tarjeta>i {
 padding: .2rem;
-font-size: 1.8rem;
+font-size: 1.5rem;
 }
 
-.tarjeta>p {
+.tarjeta>p
+{
 display: none;
 }
-
 }
