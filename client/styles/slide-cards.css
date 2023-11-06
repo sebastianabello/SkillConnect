@@ -1,3 +1,4 @@
+    
     .contenedor__tarjeta {
         z-index: 1;
         display: flex;
@@ -94,6 +95,39 @@
     margin-top: .5rem;
     text-align: center;
   }
+
+  /* Mantener hover al input que se seleccione */
+input[name="categories"]:checked + label {
+  background-color: #343759;
+  color: #f1f1f2;
+}
+
+  /*Mostrar todas las categorias*/
+#todo:checked ~ .card--container:not([data-category]) {
+  display: block;
+}
+
+
+/* Filtros por categorías */
+#rm:checked + .contenedor__tarjeta .card--container:not([data-category~="rm"]),
+#dc:checked + .contenedor__tarjeta .card--container:not([data-category~="dc"]),
+#td:checked + .contenedor__tarjeta .card--container:not([data-category~="td"]),
+#ee:checked + .contenedor__tarjeta .card--container:not([data-category~="ee"]),
+#aa:checked + .contenedor__tarjeta .card--container:not([data-category~="aa"]),
+#da:checked + .contenedor__tarjeta .card--container:not([data-category~="da"]),
+#hj:checked + .contenedor__tarjeta .card--container:not([data-category~="hj"]),
+#c:checked + .contenedor__tarjeta .card--container:not([data-category~="c"]),
+#me:checked + .contenedor__tarjeta .card--container:not([data-category~="m"]),
+#aa:checked + .contenedor__tarjeta .card--container:not([data-category~="aa"]),
+#do:checked + .contenedor__tarjeta .card--container:not([data-category~="do"]),
+#sb:checked + .contenedor__tarjeta .card--container:not([data-category~="sb"]),
+#cc:checked + .contenedor__tarjeta .card--container:not([data-category~="cc"]),
+#cn:checked + .contenedor__tarjeta .card--container:not([data-category~="cn"]),
+#mb:checked + .contenedor__tarjeta .card--container:not([data-category~="mb"]),
+#et:checked + .contenedor__tarjeta .card--container:not([data-category~="et"]),
+#da:checked + .contenedor__tarjeta .card--container:not([data-category~="da"]) {
+  display: block;
+}
 
   /* RESPONSIVE */
 
@@ -312,33 +346,6 @@
     border: none;
     padding: .2rem;
     border-radius: 1rem;
-}
-
-/*Mostrar todas las categorias*/
-#todo:checked ~ .card--container:not([data-category]) {
-  display: block;
-}
-
-
-/* Filtros por categorías */
-#rm:checked + .contenedor__tarjeta .card--container:not([data-category~="rm"]),
-#dc:checked + .contenedor__tarjeta .card--container:not([data-category~="dc"]),
-#td:checked + .contenedor__tarjeta .card--container:not([data-category~="td"]),
-#ee:checked + .contenedor__tarjeta .card--container:not([data-category~="ee"]),
-#aa:checked + .contenedor__tarjeta .card--container:not([data-category~="aa"]),
-#da:checked + .contenedor__tarjeta .card--container:not([data-category~="da"]),
-#hj:checked + .contenedor__tarjeta .card--container:not([data-category~="hj"]),
-#c:checked + .contenedor__tarjeta .card--container:not([data-category~="c"]),
-#me:checked + .contenedor__tarjeta .card--container:not([data-category~="m"]),
-#aa:checked + .contenedor__tarjeta .card--container:not([data-category~="aa"]),
-#do:checked + .contenedor__tarjeta .card--container:not([data-category~="do"]),
-#sb:checked + .contenedor__tarjeta .card--container:not([data-category~="sb"]),
-#cc:checked + .contenedor__tarjeta .card--container:not([data-category~="cc"]),
-#cn:checked + .contenedor__tarjeta .card--container:not([data-category~="cn"]),
-#mb:checked + .contenedor__tarjeta .card--container:not([data-category~="mb"]),
-#et:checked + .contenedor__tarjeta .card--container:not([data-category~="et"]),
-#da:checked + .contenedor__tarjeta .card--container:not([data-category~="da"]) {
-  display: block;
 }
 
 .botones-container {
