@@ -140,75 +140,114 @@
     <!-- End of Navbar -->
 
     <main class="main">
+
+      <!-- Botones del Slide -->
         <div class="botones-container">
             <div id="prevBtn" class="botones" onclick="scrollCards(-1)"><i class="fa-solid fa-angle-left flecha"></i></div>
             <div id="nextBtn" class="botones" onclick="scrollCards(1)"><i class="fa-solid fa-angle-right flecha"></i></div>
         </div>
+
       <section class="contenedor__tarjeta">
-        <div class="tarjeta">
+
+        <input type="radio" id="todo" name="categories" value="todo" checked style="display: none;">
+        <label for="todo" class="tarjeta">
+          <i class="fa-solid fa-border-all"></i>
+          <p>Seleccionar todo</p>
+        </label>
+
+        <input type="radio" id="rm" name="categories" value="rm" checked style="display: none;">
+        <label for="rm" class="tarjeta">
           <i class="fa-solid fa-screwdriver-wrench"></i>
           <p>Reparaciones y Mantenimiento</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="dc" name="categories" value="dc" checked style="display: none;">
+        <label for="dc" class="tarjeta">
           <i class="fa-solid fa-palette"></i>
           <p>Diseño y Creatividad</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="td" name="categories" value="td" checked style="display: none;">
+        <label for="td" class="tarjeta">
           <i class="fa-solid fa-computer"></i>
           <p>Tecnología y Desarrollo</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="ee" name="categories" value="ee" checked style="display: none;">
+        <label for="ee" class="tarjeta">
           <i class="fa-solid fa-calendar-days"></i>
           <p>Eventos y entretenimiento</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="dp" name="categories" value="dp" checked style="display: none;">
+        <label for="dp" class="tarjeta">
           <i class="fa-regular fa-face-smile-beam"></i>
           <p>Desarrollo Personal</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="sb" name="categories" value="sb" checked style="display: none;">
+        <label for="sb" class="tarjeta">
           <i class="fa-solid fa-user-nurse"></i>
           <p>Salud y bienestar</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="cc" name="categories" value="cc" checked style="display: none;">
+        <label for="cc" class="tarjeta">
           <i class="fa-solid fa-utensils"></i>
           <p>Comida y cocina</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="cn" name="categories" value="cn" checked style="display: none;">
+        <label for="cn" class="tarjeta">
           <i class="fa-solid fa-business-time"></i>
           <p>Consultoría de negocios</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="mb" name="categories" value="mb" checked style="display: none;">
+        <label for="mb" class="tarjeta">
           <i class="fa-solid fa-shirt"></i>
           <p>Moda y Belleza</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="et" name="categories" value="et" checked style="display: none;">
+        <label for="et" class="tarjeta">
           <i class="fa-solid fa-book-open-reader"></i>
           <p>Educacion y Tutorias</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="aa" name="categories" value="aa" checked style="display: none;">
+        <label for="aa" class="tarjeta">
           <i class="fa-solid fa-paintbrush"></i>
           <p>Arte y Artesanías</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="da" name="categories" value="da" checked style="display: none;">
+        <label for="da" class="tarjeta">
           <i class="fa-solid fa-person-hiking"></i>
-          <p>Deportes y aventura              </p>
-        </div>
-        <div class="tarjeta">
+          <p>Deportes y aventura</p>
+        </label>
+
+        <input type="radio" id="hj" name="categories" value="hj" checked style="display: none;">
+        <label for="hj" class="tarjeta">
           <i class="fa-solid fa-people-roof"></i>
           <p>Hogar y jardinería</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="c" name="categories" value="c" checked style="display: none;">
+        <label for="c" class="tarjeta">
           <i class="fa-solid fa-gamepad"></i>
           <p>Ciberdeportes</p>
-        </div>
-        <div class="tarjeta">
+        </label>
+
+        <input type="radio" id="m" name="categories" value="m" checked style="display: none;">
+        <label for="m" class="tarjeta">
           <i class="fa-solid fa-icons"></i>
-          <p>Música y entretenimiento</p>
-        </div>
+          <p>Música</p>
+        </label>
   </section>
 
       <!--First card-->
-      <article class="card--container">
+      <article class="card--container" data-category="aa">
         <header class="card-figures">
           <img
             class="card-profile-picture"
@@ -233,7 +272,7 @@
         </footer>
       </article>
 
-      <article class="card--container">
+      <article class="card--container" data-category="td">
         <header class="card-figures">
           <img
             class="card-profile-picture"
@@ -258,7 +297,7 @@
         </footer>
       </article>
 
-      <article class="card--container">
+      <article class="card--container" data-category="et">
         <header class="card-figures">
           <img
             class="card-profile-picture"
@@ -283,7 +322,7 @@
         </footer>
       </article>
 
-      <article class="card--container">
+      <article class="card--container" data-category="m">
         <header class="card-figures">
           <img
             class="card-profile-picture"
@@ -308,7 +347,7 @@
         </footer>
       </article>
 
-      <article class="card--container">
+      <article class="card--container" data-category="c">
         <header class="card-figures">
           <img
             class="card-profile-picture"
@@ -333,7 +372,7 @@
         </footer>
       </article>
 
-      <article class="card--container">
+      <article class="card--container" data-category="cc">
         <header class="card-figures">
           <img
             class="card-profile-picture"
@@ -358,7 +397,7 @@
         </footer>
       </article>
 
-      <article class="card--container">
+      <article class="card--container" data-category="mb">
         <header class="card-figures">
           <img
             class="card-profile-picture"
@@ -383,7 +422,7 @@
         </footer>
       </article>
 
-      <article class="card--container">
+      <article class="card--container" data-category="cc">
         <header class="card-figures">
           <img
             class="card-profile-picture"
@@ -408,7 +447,7 @@
         </footer>
       </article>
 
-      <article class="card--container">
+      <article class="card--container" data-category="dc">
         <header class="card-figures">
           <img
             class="card-profile-picture"
@@ -433,7 +472,7 @@
         </footer>
       </article>
 
-      <article class="card--container">
+      <article class="card--container" data-category="cn">
         <header class="card-figures">
           <img class="card-profile-picture"src="./assets/perfil10.avif"alt="UserProfile"/>
           <button class="saved--icon btn">
@@ -454,7 +493,7 @@
         </footer>
       </article>
 
-      <article class="card--container">
+      <article class="card--container" data-category="sb">
         <header class="card-figures">
           <img class="card-profile-picture"src="./assets/perfil11.avif"alt="UserProfile"/>
           <button class="saved--icon btn">
@@ -475,7 +514,7 @@
         </footer>
       </article>
 
-      <article class="card--container">
+      <article class="card--container" data-category="rm">
         <header class="card-figures">
           <img class="card-profile-picture"src="./assets/perfil12.avif"alt="UserProfile"/>
           <button class="saved--icon btn">

@@ -1,41 +1,43 @@
 
 
 // Función para mostrar y ocultar los formularios del perfil
-function mostrarFormularioHelpCenter(indice) {
-    const formulariosHelpCenter = document.querySelectorAll('.container__card form');
-    
-    formulariosHelpCenter.forEach((formulario) => {
-        formulario.style.display = 'block';
-    });
-    
-    const formularioAMostrarHelpCenter = document.getElementById(`OcultarForm${indice}`);
-    
-    if (formularioAMostrarHelpCenter) {
-        formularioAMostrarHelpCenter.style.display = 'block';
-    }
-}
-
 document.addEventListener('DOMContentLoaded', function () {
-    mostrarFormularioHelpCenter(1);
-});
+    const links = document.querySelectorAll('.link__card');
+    const forms = document.querySelectorAll('.form__container');
 
-// Animacion en la pagina de planes:
+    function hideAllForms() {
+        forms.forEach(form => {
+            form.style.display = 'none';
+        });
+    }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const tablas = document.querySelectorAll(".tabla");
+    hideAllForms();
+    forms[0].style.display = 'block';
 
-    tablas.forEach((tabla) => {
-        tabla.addEventListener("click", () => {
-            tabla.classList.toggle("flip");
+    links.forEach((link, index) => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            hideAllForms();
+            forms[index].style.display = 'block';
         });
     });
+});
+
+
+
+// Input File - Perfil
+let usersArray=[]
+let idUpdate=0;
+const profileImg = document.getElementById('imgProfile'), input = document.getElementById('fileInputProfile');
+input.addEventListener("change", function() {
+  profileImg.src = URL.createObjectURL(input.files[0]);
 });
 
 
 // Personalización de los botones: mostrar y ocultar, que estan en la seccion de ayuda.
 function mostrarFormulario() {
     let formulario = document.getElementById("hiddenForm");
-    let ocultarDescription = document.querySelector(".help__description");
+    // let ocultarDescription = document.querySelector(".help__description");
     
     if (formulario) {
         formulario.style.display = "block";
@@ -47,12 +49,12 @@ function mostrarFormulario() {
 
 function ocultarFormulario() {
     let formulario = document.getElementById("hiddenForm");
-    let ocultarDescription= document.querySelector(".help__description");
+    let ocultarDescription = document.querySelector(".help__description");
     
-    if (formulario) {
+    if (formulario && ocultarDescription) {
         formulario.style.display = "none";
         ocultarDescription.style.display = "flex";
     } else {
-        console.error("hiddenForm no exite.");
+        console.error("hiddenForm or help__description does not exist.");
     }
 }

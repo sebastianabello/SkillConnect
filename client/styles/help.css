@@ -13,7 +13,7 @@
     /* Diseño del seption */
     .help__description {
       color: var(--dark);
-      display: none;
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -136,6 +136,12 @@
       font-weight: 600;
         
     }
+
+    #hiddenForm {
+      display: none;
+  }
+  
+
 
 
     .textarea::placeholder, .input-group::placeholder {

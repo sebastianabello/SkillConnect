@@ -36,64 +36,43 @@
     <aside class="sidebar">
       <!--Logo-->
       <div class="header__logo">
-        <img class="pag__image" src="../assets/logo.png" alt="logopag" />
-        <a href="./index.html"><span class="pag__name">SkillConnect</span></a>
+          <img class="pag__image" src="../assets/logo.png" alt="logopag">
+          <a href="../index.html"><span class="pag__name">SkillConnect</span></a>
+
+
       </div>
       <ul class="side-menu">
-        <li class="active">
-          <a href="./index.html"><i class="fa-solid fa-house aside-icon show"></i>Home</a>
-        </li>
-        <li>
-          <a href="./views/explore.html" class="aside__link"
-            ><i class="fa-solid fa-compass aside-icon"></i>Explore</a
-          >
-        </li>
-        <li>
-          <a href="./views/saved.html" class="aside__link"
-            ><i class="fa-solid fa-bookmark aside-icon"></i>Saved</a
-          >
-        </li>
-        <li>
-          <a href="./views/plans.html" class="aside__link"
-            ><i class="fa-solid fa-crown aside-icon"></i>Plans</a
-          >
-        </li>
-        <li>
-          <a href="./views/history.html" class="aside__link"
-            ><i class="fa-solid fa-clock-rotate-left aside-icon"></i>History</a
-          >
-        </li>
-        <li>
-          <a href="./views/about.html" class="aside__link"
-            ><i class="fa-solid fa-users aside-icon"></i>About</a
-          >
-        </li>
+          <li><a href="../index.html" class="aside__link"><i class="fa-solid fa-house aside-icon"></i>Home</a></li>
+          <li><a href="explore.html" class="aside__link"><i class="fa-solid fa-compass aside-icon"></i>Explorar</a>
+          </li>
+          <li><a href="saved.html" class="aside__link"><i class="fa-solid fa-bookmark aside-icon"></i>Guardados</a>
+          <li><a href="plans.html" class="aside__link"><i class="fa-solid fa-crown aside-icon"></i>Planes</a></li>
+          <li><a href="history.html" class="aside__link"><i
+                      class="fa-solid fa-clock-rotate-left aside-icon"></i>History</a></li>
+          <li class="active"><a href="#"><i class="fa-solid fa-users aside-icon"></i>Nosotros</a>
+          </li>
       </ul>
 
       <!--Card add-->
       <section class="aside__card">
-        <figure class="card__add">
-          <a href="./client/views/profile.html"
-            ><i class="fa-solid fa-plus logo-add"></i
-          ></a>
-        </figure>
-        <h2 class="card__title">Share Your Skills</h2>
-        <p class="card__text">
-          Share your services, experience and rates. In this way other users can
-          find you and work together using your talents.
-        </p>
-        <button class="card__button">Add Publication</button>
-      </section>
-      <!--
-        <ul class="side-menu">
-            <li>
-                <a href="#" class="logout">
-                    <i class='bx bx-log-out-circle'></i>
-                    Logout
-                </a>
-            </li>
-        </ul>-->
-    </aside>
+        <article class="extra__left__card active" >
+         <figure class="card__add">
+             <a href="/client/views/add--publication.html"><i class="fa-solid fa-plus logo-add"></i></a>
+         </figure>
+
+     </article>
+         <article class="extra__card">
+             <h2 class="card__title">Unete & Conectate</h2>
+             <main class="sub__extra_card">
+             <p class="card__text">
+              Comparte tus services, experiencia y calificaciones. De esta forma otros usuarios pueden contactarte y trabajar juntos usando tus talentos.
+             </p>
+             <button class="card__button">Agregar</button>
+         </main>
+         </article>
+     </section>
+
+  </aside>
     <!-- End of Sidebar -->
 
     <!-- Navbar -->
@@ -103,15 +82,15 @@
         <i class="bx bx-menu"></i>
         <!-- Page name and description  -->
         <div class="header__navigation-text">
-          <h1 class="header__title">Home</h1>
-          <h2 class="header__subtitle">Welcome to SkillConnect</h2>
+          <h1 class="header__title">Inicio</h1>
+          <h2 class="header__subtitle">Bienvenidos a SkillConnect</h2>
         </div>
 
         <!--service search bar-->
 
         <form action="#">
           <div class="form-input">
-            <input type="search" placeholder="Search..." />
+            <input type="search" placeholder="Buscar..." />
             <button class="search-btn" type="submit">
               <i class="bx bx-search"></i>
             </button>
@@ -127,14 +106,10 @@
             <a href="#"><i class="fa-regular fa-envelope alerts-icon"></i></a>
           </div>
           <div class="alerts__icon">
-            <a class="cc" href="./views/profile.html"
-              ><img
-                class="picture-user"
-                src="../assets/perfil1.jpg"
-                alt="foto de usuario"
-            /></a>
+            <a class="cc" href="../client/views/profile.html">L</a>
           </div>
         </div>
+        <button id="logout">logout</button>
 
         <!---Toggle button---->
 
@@ -142,6 +117,7 @@
         <label for="theme-toggle" class="theme-toggle"></label>
       </nav>
     </header>
+
 
     <!-- End of Navbar -->
 
@@ -199,6 +175,7 @@
     <footer class="footer"></footer>
 
     <script src="../scripts/animaciones.js"></script>
+    <script src="../public/plantilla.js"></script>
     <script src="../scripts/Card--Index.js"></script>
 
   </body>
