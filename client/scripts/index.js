@@ -9,3 +9,6 @@ $logout.addEventListener(`click`, () =>{
     localStorage.removeItem(`login_success`)
     window.location.href = `./views/login.html`
 } )
+
+
+
