@@ -1,0 +1,6 @@
+@import url('../public/style.css');
+@import url('../styles/card--index.css');
+.card__text{
+    text-wrap: balance;
+   
+}
