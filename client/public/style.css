@@ -291,10 +291,6 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-
-
-
-
 .card__title {
     font-size: 0.83rem;
     font-weight: 500;
@@ -331,8 +327,8 @@ body {
     border: var(--black-color) solid 0.2rem;
     border-radius: 1rem;
     cursor: pointer;
-
     margin-left: 0.8rem;
+    margin-top: 0.8rem;
 
 }
 
@@ -693,7 +689,7 @@ body {
     }
     .sub__extra_card{
         margin-top: 0;
-        max-height: 20svh;
+        max-height: 22svh;
         min-width: 11svw;
     }
     .extra__card{
