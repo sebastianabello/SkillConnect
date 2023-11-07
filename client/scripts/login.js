@@ -7,9 +7,9 @@ $loginForm.addEventListener(`submit`, (e) => {
 
     const validUser = $Users.find(user => user.$email === $email && user.$password === $password)
     if(!validUser){
-        return alert(`Usuario y/o contraseña incorrectos!`)
+        return alert(`Usuario y/o contraseña incorrectos. ¡Intente de nuevo!`)
     }
-    alert(`Bienvenidos ${validUser.$name}`)
+    alert(`Bienvenid@ a SkillConnect, ${validUser.$name}`)
     localStorage.setItem(`login_success`, JSON.stringify(validUser))
     window.location.href = `../index.html`
 })

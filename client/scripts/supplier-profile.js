@@ -27,3 +27,25 @@ icono.addEventListener('click', function () {
 
   localStorage.setItem('rating', puntaje.toString());
 });
+
+
+
+// Guardar publicaciones tocndo en marcapaginas
+const bookmarkIcon = document.getElementById('bookmarkIcon');
+const guardarOpc = localStorage.getItem('guardarOpc');
+
+if (guardarOpc === 'guardados') {
+  bookmarkIcon.classList.add('guardados');
+}
+
+bookmarkIcon.addEventListener('click', function() {
+  const estaGuardado = bookmarkIcon.classList.contains('guardados');
+
+  if (estaGuardado) {
+    bookmarkIcon.classList.remove('guardados');
+    localStorage.removeItem('guardarOpc');
+  } else {
+    bookmarkIcon.classList.add('guardados');
+    localStorage.setItem('guardarOpc', 'guardados');
+  }
+});

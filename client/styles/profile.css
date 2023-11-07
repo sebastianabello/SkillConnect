@@ -9,6 +9,7 @@
 }
 
 .container__card {
+  margin-bottom: 5%;
   width: 50rem;
   height: auto;
   margin-right: 10rem;

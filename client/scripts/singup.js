@@ -1,4 +1,3 @@
-
 //Creacion de usuario
 const $signupForm = document.querySelector('#signupForm');
 $signupForm.addEventListener('submit', (e) => {
@@ -10,12 +9,12 @@ $signupForm.addEventListener('submit', (e) => {
     const $Users = JSON.parse(localStorage.getItem(`users`)) || []
     const isUserRegister = $Users.find(user => user.$email === $email)
     if(isUserRegister){
-        return alert(`El usuario ya esta registrado!`)
+        return alert(`Usted ya se encuentra registrado.`)
     }
 
     $Users.push({$name, $email, $password})
     localStorage.setItem(`users`, JSON.stringify($Users))
-    alert(`Registro Exitoso!`)
+    alert(`¡Registro Exitoso!`)
 
     //redireccion al Login
     window.location.href = `../views/login.html`
