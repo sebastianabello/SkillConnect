@@ -106,7 +106,7 @@
 }
 
 
-.titulo-usuario a {
+.titulo-usuario .bio-usuario {
   color: var(--highlight-color);
   font-weight: 500;
   padding-right: 8rem;
@@ -272,11 +272,10 @@
 
 .descripcion{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-
-  position: relative;
-  margin-right: 1rem;
+  width: 100%;
+  position: center;
   background-color: #ffcc00;
 }
 

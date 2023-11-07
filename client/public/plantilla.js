@@ -29,7 +29,7 @@ const searchForm = document.querySelector('.header nav ');
 
 searchBtn.addEventListener('click', function (e) {
     if (window.innerWidth < 576) {
-        e.preventDefault;
+        e.preventDefault();
         searchForm.classList.toggle('show');
         if (searchForm.classList.contains('show')) {
             searchBtnIcon.classList.replace('bx-search', 'bx-x');
