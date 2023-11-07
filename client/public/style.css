@@ -259,7 +259,7 @@ body {
 /***/
 .sub__extra_card{
     margin-top: 0rem;
-    height: 14svh;
+    height: 20svh;
     width: 10.5vw;
     background-color: var(--grey);
     border-bottom-left-radius:  10%;
@@ -301,7 +301,7 @@ body {
     padding-left: 1.3rem;
     width: 118px;
     height: 50px;
-    font-size: 0.5rem;
+    font-size: 0.63rem;
     font-weight: 500;
     text-align: justify;
     color: var(--secondary-text-color);
@@ -328,7 +328,7 @@ body {
     border-radius: 1rem;
     cursor: pointer;
     margin-left: 0.8rem;
-    margin-top: 0.8rem;
+    margin-top: 2.2rem;
 
 }
 
