@@ -1,16 +1,19 @@
 // document.addEventListener("DOMContentLoaded", function () {
-//     const loginForm = document.getElementById("loginForm");
-//     loginForm.addEventListener("submit", function (event) {
+//     const registerForm = document.getElementById("registerForm");
+//     registerForm.addEventListener("submit", function (event) {
 //         event.preventDefault();
 //         const username = document.getElementById("username").value;
 //         const password = document.getElementById("password").value;
+//         const firstname = document.getElementById("firstname").value;
+//         const lastname = document.getElementById("lastname").value;
+//         const country = document.getElementById("country").value;
 
-//         fetch("http://localhost:8080/api/auth/login", {
+//         fetch("http://localhost:8080/api/auth/register", {
 //             method: "POST",
 //             headers: {
 //                 "Content-Type": "application/json",
 //             },
-//             body: JSON.stringify({ username, password }),
+//             body: JSON.stringify({ username, password, firstname, lastname, country }),
 //         })
 //             .then((response) => {
 //                 if (!response.ok) {
@@ -21,10 +24,11 @@
 //             .then((data) => {
 //                 // Aquí puedes manejar la respuesta del servidor
 //                 if (data.token) {
-//                     alert("Inicio de sesión exitoso");
-//                     window.location.href = `../index.html`;
+//                     // Redirige al usuario o realiza otras acciones
+//                     alert("Registro exitoso");
+//                     window.location.href = `../views/login.html`;
 //                 } else {
-//                     alert("Error en el inicio de sesión. Verifica tus credenciales.");
+//                     alert("Error en el registro. Verifica tus datos.");
 //                 }
 //             })
 //             .catch((error) => {
@@ -33,5 +37,3 @@
 //             });
 //     });
 // });
-
-
