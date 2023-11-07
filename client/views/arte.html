@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte & Artesanías</title>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/6cb58dcda6.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="../styles/categories.css" />
+
+
+</head>
+<body class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!--Logo-->
+      <div class="header__logo">
+        <img class="pag__image" src="/client/assets/logo.png" alt="logopag" />
+        <a href="#"><span class="pag__name">SkillConnect</span></a>
+      </div>
+      <ul class="side-menu">
+        <li >
+          <a href="/client/index.html" class="aside__link"><i class="fa-solid fa-house aside-icon show"></i>Inicio</a>
+        </li>
+        <li>
+          <a href="/client/views/explore.html" class="aside__link"
+            ><i class="fa-solid fa-compass aside-icon"></i>Explorar</a
+          >
+        </li>
+        <li>
+          <a href="/client/views/saved.html" class="aside__link"
+            ><i class="fa-solid fa-bookmark aside-icon"></i>Guardados</a
+          >
+        </li>
+        <li>
+          <a href="/client/views/plans.html" class="aside__link"
+            ><i class="fa-solid fa-crown aside-icon"></i>Planes</a
+          >
+        </li>
+        <li>
+          <a href="/client/views/history.html" class="aside__link"
+            ><i class="fa-solid fa-clock-rotate-left aside-icon"></i>Historial</a
+          >
+        </li>
+        <li>
+          <a href="/client/views/about.html" class="aside__link"
+            ><i class="fa-solid fa-users aside-icon"></i>Nosotros</a
+          >
+        </li>
+      </ul>
+
+      <!--Card add-->
+      <section class="aside__card">
+        <article class="extra__left__card active" >
+         <figure class="card__add">
+             <a href="/client/views/add--publication.html"><i class="fa-solid fa-plus logo-add"></i></a>
+         </figure>
+
+     </article>
+         <article class="extra__card">
+             <h2 class="card__title">Unete & Conectate</h2>
+             <main class="sub__extra_card">
+             <p class="card__text">
+              Comparte tus servicios y conecta con otros usuarios trabajando juntos usando tus talentos.
+             </p>
+             <button class="card__button">Agregar</button>
+         </main>
+         </article>
+     </section>
+    </aside>
+    <!-- End of Sidebar -->
+
+    <!-- Navbar -->
+    <header class="header">
+      <nav class="header__nav">
+        <!--Settings icon-->
+        <i class="bx bx-menu"></i>
+        <!-- Page name and description  -->
+        <div class="header__navigation-text">
+          <h1 class="header__title">Arte & Artesanías</h1>
+          <h2 class="header__subtitle">Comparte & conecta </h2>
+        </div>
+
+        <!--service search bar-->
+
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Buscar..." />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <!--alerts and profile picture-->
+        <div class="header__alerts">
+            <div class="alerts__icon">
+              <a href="#"><i class="fa-regular fa-bell alerts-icon"></i></a>
+            </div>
+            <div class="alerts__icon">
+              <a href="#"><i class="fa-regular fa-envelope alerts-icon"></i></a>
+            </div>
+            <div class="alerts__icon">
+              <a class="cc" href="../client/views/profile.html"><i class="fa-regular fa-user alerts-icon"></i></a>
+            </div>
+  
+          </div>
+  
+          <!--fa-solid fa-door-open-->
+          
+          <div class="alerts__icon">
+            <a href="#"><i class="fa-solid fa-power-off alerts-icon" id="logout"></i></a>
+          </div>
+
+        <!---Toggle button---->
+
+        <input type="checkbox" id="theme-toggle" hidden />
+        <label for="theme-toggle" class="theme-toggle"></label>
+      </nav>
+    </header>
+
+    <!-- End of Navbar -->
+
+    <main class="main">
+
+      <!--First card-->
+      <article class="card--container">
+        <header class="card-figures">
+          <img
+            class="card-profile-picture"
+            src="/client/assets/perfil1.jpg"
+            alt="UserProfile"
+          />
+          <button class="saved--icon btn">
+            <i class="fa-solid fa-bookmark aside-icon"></i>
+          </button>
+          <!--Icon-->
+        </header>
+        <footer class="card--description">
+          <h3 class="card--user-name">Andres Marin</h3>
+          <span class="card--skill"> Pintor</span>
+          <p class="card--price">Precio $32,000</p>
+          <picture class="card--rate--button--container">
+            <button id="avatar-perfil--button" type="">
+              <i class="fa-solid fa-star"></i> 4.1
+            </button>
+            <button class="card--rate--button">Contactar</button>
+          </picture>
+        </footer>
+      </article>
+
+      <article class="card--container">
+        <header class="card-figures">
+          <img
+            class="card-profile-picture"
+            src="/client/assets/perfil2.avif"
+            alt="UserProfile"
+          />
+          <button class="saved--icon btn">
+            <i class="fa-solid fa-bookmark aside-icon"></i>
+          </button>
+          <!--Icon-->
+        </header>
+        <footer class="card--description">
+          <h3 class="card--user-name">Ana Mejia</h3>
+          <span class="card--skill"> Desarrolladora</span>
+          <p class="card--price">Precio $160,000</p>
+          <picture class="card--rate--button--container">
+            <button id="avatar-perfil--button" type="">
+              <i class="fa-solid fa-star"></i> 4.6
+            </button>
+            <button class="card--rate--button">Contactar</button>
+          </picture>
+        </footer>
+      </article>
+
+      <article class="card--container">
+        <header class="card-figures">
+          <img
+            class="card-profile-picture"
+            src="/client/assets/perfil3.avif"
+            alt="UserProfile"
+          />
+          <button class="saved--icon btn">
+            <i class="fa-solid fa-bookmark aside-icon"></i>
+          </button>
+          <!--Icon-->
+        </header>
+        <footer class="card--description">
+          <h3 class="card--user-name">Maria Rosa</h3>
+          <span class="card--skill"> Tutora</span>
+          <p class="card--price">Precio $35,000</p>
+          <picture class="card--rate--button--container">
+            <button id="avatar-perfil--button" type="">
+              <i class="fa-solid fa-star"></i> 5.0
+            </button>
+            <button class="card--rate--button">Contactar</button>
+          </picture>
+        </footer>
+      </article>
+
+      <article class="card--container">
+        <header class="card-figures">
+          <img
+            class="card-profile-picture"
+            src="/client/assets/perfil4.avif"
+            alt="UserProfile"
+          />
+          <button class="saved--icon btn">
+            <i class="fa-solid fa-bookmark aside-icon"></i>
+          </button>
+          <!--Icon-->
+        </header>
+        <footer class="card--description">
+          <h3 class="card--user-name">Estefany Rojas</h3>
+          <span class="card--skill">Musica</span>
+          <p class="card--price">Precio $40,000</p>
+          <picture class="card--rate--button--container">
+            <button id="avatar-perfil--button" type="">
+              <i class="fa-solid fa-star"></i> 3.9
+            </button>
+            <button class="card--rate--button">Contactar</button>
+          </picture>
+        </footer>
+      </article>
+
+      <article class="card--container">
+        <header class="card-figures">
+          <img
+            class="card-profile-picture"
+            src="/client/assets/perfil5.avif"
+            alt="UserProfile"
+          />
+          <button class="saved--icon btn">
+            <i class="fa-solid fa-bookmark aside-icon"></i>
+          </button>
+          <!--Icon-->
+        </header>
+        <footer class="card--description">
+          <h3 class="card--user-name">Alejandra Martinez</h3>
+          <span class="card--skill"> E-Gamer</span>
+          <p class="card--price">Precio $30,000</p>
+          <picture class="card--rate--button--container">
+            <button id="avatar-perfil--button" type="">
+              <i class="fa-solid fa-star"></i> 4.9
+            </button>
+            <button class="card--rate--button">Contactar</button>
+          </picture>
+        </footer>
+      </article>
+
+      <article class="card--container">
+        <header class="card-figures">
+          <img
+            class="card-profile-picture"
+            src="/client/assets/perfil6.avif"
+            alt="UserProfile"
+          />
+          <button class="saved--icon btn">
+            <i class="fa-solid fa-bookmark aside-icon"></i>
+          </button>
+          <!--Icon-->
+        </header>
+        <footer class="card--description">
+          <h3 class="card--user-name">Diego Sarmiento</h3>
+          <span class="card--skill">Cocinero</span>
+          <p class="card--price">Precio $23,000</p>
+          <picture class="card--rate--button--container">
+            <button id="avatar-perfil--button" type="">
+              <i class="fa-solid fa-star"></i> 3.9
+            </button>
+            <button class="card--rate--button">Contactar</button>
+          </picture>
+        </footer>
+      </article>
+
+      <article class="card--container">
+        <header class="card-figures">
+          <img
+            class="card-profile-picture"
+            src="/client/assets/perfil7.avif"
+            alt="UserProfile"
+          />
+          <button class="saved--icon btn">
+            <i class="fa-solid fa-bookmark aside-icon"></i>
+          </button>
+          <!--Icon-->
+        </header>
+        <footer class="card--description">
+          <h3 class="card--user-name">Martina Ruiz</h3>
+          <span class="card--skill">Asesora de Moda</span>
+          <p class="card--price">Precio $80,000</p>
+          <picture class="card--rate--button--container">
+            <button id="avatar-perfil--button" type="">
+              <i class="fa-solid fa-star"></i> 4.3
+            </button>
+            <button class="card--rate--button">Contactar</button>
+          </picture>
+        </footer>
+      </article>
+
+      <article class="card--container">
+        <header class="card-figures">
+          <img
+            class="card-profile-picture"
+            src="/client/assets/perfil8.avif"
+            alt="UserProfile"
+          />
+          <button class="saved--icon btn">
+            <i class="fa-solid fa-bookmark aside-icon"></i>
+          </button>
+          <!--Icon-->
+        </header>
+        <footer class="card--description">
+          <h3 class="card--user-name">Esteban Sanchez</h3>
+          <span class="card--skill">Panadero</span>
+          <p class="card--price">Precio $50,000</p>
+          <picture class="card--rate--button--container">
+            <button id="avatar-perfil--button" type="">
+              <i class="fa-solid fa-star"></i> 4.1
+            </button>
+            <button class="card--rate--button">Contactar</button>
+          </picture>
+        </footer>
+      </article>
+
+      <article class="card--container">
+        <header class="card-figures">
+          <img
+            class="card-profile-picture"
+            src="/client/assets/perfil9.avif"
+            alt="UserProfile"
+          />
+          <button class="saved--icon btn">
+            <i class="fa-solid fa-bookmark aside-icon"></i>
+          </button>
+          <!--Icon-->
+        </header>
+        <footer class="card--description">
+          <h3 class="card--user-name">Carlos Hernandez</h3>
+          <span class="card--skill"> Diseñador</span>
+          <p class="card--price">Precio $92,000</p>
+          <picture class="card--rate--button--container">
+            <button id="avatar-perfil--button" type="">
+              <i class="fa-solid fa-star"></i> 4.7
+            </button>
+            <button class="card--rate--button">Contactar</button>
+          </picture>
+        </footer>
+      </article>
+
+      <article class="card--container">
+        <header class="card-figures">
+          <img class="card-profile-picture"src="/client/assets/perfil10.avif"alt="UserProfile"/>
+          <button class="saved--icon btn">
+            <i class="fa-solid fa-bookmark aside-icon"></i>
+          </button>
+          <!--Icon-->
+        </header>
+        <footer class="card--description">
+          <h3 class="card--user-name">Zaira Vargas</h3>
+          <span class="card--skill">Asesora Comercial</span>
+          <p class="card--price">Precio $80,000</p>
+          <picture class="card--rate--button--container">
+            <button id="avatar-perfil--button" type="">
+              <i class="fa-solid fa-star"></i> 4.3
+            </button>
+            <button class="card--rate--button">Contactar</button>
+          </picture>
+        </footer>
+      </article>
+
+      <article class="card--container">
+        <header class="card-figures">
+          <img class="card-profile-picture"src="/client/assets/perfil11.avif"alt="UserProfile"/>
+          <button class="saved--icon btn">
+            <i class="fa-solid fa-bookmark aside-icon"></i>
+          </button>
+          <!--Icon-->
+        </header>
+        <footer class="card--description">
+          <h3 class="card--user-name">Santiago Diaz</h3>
+          <span class="card--skill">Nutricionista</span>
+          <p class="card--price">Precio $75,000</p>
+          <picture class="card--rate--button--container">
+            <button id="avatar-perfil--button" type="">
+              <i class="fa-solid fa-star"></i> 4.0
+            </button>
+            <button class="card--rate--button">Contactar</button>
+          </picture>
+        </footer>
+      </article>
+
+      <article class="card--container">
+        <header class="card-figures">
+          <img class="card-profile-picture"src="/client/assets/perfil12.avif"alt="UserProfile"/>
+          <button class="saved--icon btn">
+            <i class="fa-solid fa-bookmark aside-icon"></i>
+          </button>
+          <!--Icon-->
+        </header>
+        <footer class="card--description">
+          <h3 class="card--user-name"> Gloria Martinez</h3>
+          <span class="card--skill"> Constructora</span>
+          <p class="card--price">Precio $200,000</p>
+          <picture class="card--rate--button--container">
+            <button id="avatar-perfil--button" type="">
+              <i class="fa-solid fa-star"></i> 4.5
+            </button>
+            <button class="card--rate--button">Contactar</button>
+          </picture>
+        </footer>
+      </article>
+    </main>
+
+    <footer class="footer"></footer>
+    <script src="/client/public/plantilla.js"></script>
+
+  </body>
+</html>

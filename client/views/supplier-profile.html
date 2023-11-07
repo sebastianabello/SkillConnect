@@ -15,123 +15,132 @@
 
 
     <body class="container">
-        <!-- Sidebar -->
         <aside class="sidebar">
             <!--Logo-->
             <div class="header__logo">
-                <img class="pag__image" src="/client/assets/logo.png" alt="logopag" />
-                <a href="/client/index.html"><span class="pag__name">SkillConnect</span></a>
+              <img class="pag__image" src="/client/assets/logo.png" alt="logopag" />
+              <a href="#"><span class="pag__name">SkillConnect</span></a>
             </div>
             <ul class="side-menu">
                 <li>
-                    <a href="/client/index.html" class="aside__link"><i
-                            class="fa-solid fa-house aside-icon show"></i>Home</a>
-                </li>
-                <li>
-                    <a href="/client/views/explore.html" class="aside__link"><i
-                            class="fa-solid fa-compass aside-icon"></i>Explore</a>
-                </li>
-                <li>
-                    <a href="/client/views/saved.html" class="aside__link"><i
-                            class="fa-solid fa-bookmark aside-icon"></i>Saved</a>
-                </li>
-                <li>
-                    <a href="/client/views/plans.html" class="aside__link"><i
-                            class="fa-solid fa-crown aside-icon"></i>Plans</a>
-                </li>
-                <li>
-                    <a href="/client/views/history.html" class="aside__link"><i
-                            class="fa-solid fa-clock-rotate-left aside-icon"></i>History</a>
-                </li>
-                <li>
-                    <a href="/client/views/about.html" class="aside__link"><i
-                            class="fa-solid fa-users aside-icon"></i>About</a>
-                </li>
+                    <a href="./index.html" class="aside__link"><i class="fa-solid fa-house aside-icon show"></i>Inicio</a>
+                  </li>
+              <li>
+                <a href="./views/explore.html" class="aside__link"
+                  ><i class="fa-solid fa-compass aside-icon"></i>Explorar</a
+                >
+              </li>
+              <li>
+                <a href="./views/saved.html" class="aside__link"
+                  ><i class="fa-solid fa-bookmark aside-icon"></i>Guardados</a
+                >
+              </li>
+              <li>
+                <a href="./views/plans.html" class="aside__link"
+                  ><i class="fa-solid fa-crown aside-icon"></i>Planes</a
+                >
+              </li>
+              <li>
+                <a href="./views/history.html" class="aside__link"
+                  ><i class="fa-solid fa-clock-rotate-left aside-icon"></i>Historial</a
+                >
+              </li>
+              <li>
+                <a href="./views/about.html" class="aside__link"
+                  ><i class="fa-solid fa-users aside-icon"></i>Nosotros</a
+                >
+              </li>
             </ul>
-
+      
             <!--Card add-->
             <section class="aside__card">
-               <article class="extra__left__card active" >
-                <figure class="card__add">
-                    <a href="/client/views/add--publication.html"><i class="fa-solid fa-plus logo-add"></i></a>
-                </figure>
-
-            </article>
-                <article class="extra__card">
-                    <h2 class="card__title">Share Your Skills</h2>
-                    <main class="sub__extra_card">
-                    <p class="card__text">
-                        Share your services, experience and rates. In this way other users can
-                        find you and work together using your talents.
-                    </p>
-                    <button class="card__button">Add Publication</button>
-                </main>
-                </article>
-            </section>
-
-        </aside>
-        <!-- End of Sidebar -->
-
-        <!-- Navbar -->
-        <header class="header">
+              <article class="extra__left__card active" >
+               <figure class="card__add">
+                   <a href="/client/views/add--publication.html"><i class="fa-solid fa-plus logo-add"></i></a>
+               </figure>
+      
+           </article>
+               <article class="extra__card">
+                   <h2 class="card__title">Unete & Conectate</h2>
+                   <main class="sub__extra_card">
+                   <p class="card__text">
+                    Comparte tus services, experiencia y calificaciones. Puedes contactarte y trabajar juntos usando tus talentos.
+                   </p>
+                   <button class="card__button">Agregar</button>
+               </main>
+               </article>
+           </section>
+          </aside>
+          <!-- End of Sidebar -->
+      
+          <!-- Navbar -->
+          <header class="header">
             <nav class="header__nav">
-                <!--Settings icon-->
-                <i class="bx bx-menu"></i>
-                <!-- Page name and description  -->
-                <div class="header__navigation-text">
-                    <h1 class="header__title">Services</h1>
-                    <h2 class="header__subtitle">Add a publication</h2>
+              <!--Settings icon-->
+              <i class="bx bx-menu"></i>
+              <!-- Page name and description  -->
+              <div class="header__navigation-text">
+                <h1 class="header__title">Inicio</h1>
+                <h2 class="header__subtitle">Bienvenidos a SkillConnect</h2>
+              </div>
+      
+              <!--service search bar-->
+      
+              <form action="#">
+                <div class="form-input">
+                  <input type="search" placeholder="Buscar..." />
+                  <button class="search-btn" type="submit">
+                    <i class="bx bx-search"></i>
+                  </button>
                 </div>
-
-                <!--service search bar-->
-
-                <form action="#">
-                    <div class="form-input">
-                        <input type="search" placeholder="Search..." />
-                        <button class="search-btn" type="submit">
-                            <i class="bx bx-search"></i>
-                        </button>
-                    </div>
-                </form>
-
-                <!--alerts and profile picture-->
-                <div class="header__alerts">
-                    <div class="alerts__icon">
-                        <a href="#"><i class="fa-regular fa-bell alerts-icon"></i></a>
-                    </div>
-                    <div class="alerts__icon">
-                        <a href="#"><i class="fa-regular fa-envelope alerts-icon"></i></a>
-                    </div>
-                    <div class="alerts__icon">
-                        <a class="cc" href="./views/profile.html"><img class="picture-user"
-                                src="/client/assets/perfil1.jpg" alt="foto de usuario" /></a>
-                    </div>
+              </form>
+      
+              <!--alerts and profile picture-->
+              <div class="header__alerts">
+                <div class="alerts__icon">
+                  <a href="#"><i class="fa-regular fa-bell alerts-icon"></i></a>
                 </div>
-
-                <!---Toggle button---->
-
-                <input type="checkbox" id="theme-toggle" hidden />
-                <label for="theme-toggle" class="theme-toggle"></label>
+                <div class="alerts__icon">
+                  <a href="#"><i class="fa-regular fa-envelope alerts-icon"></i></a>
+                </div>
+                <div class="alerts__icon">
+                  <a class="cc" href="../client/views/profile.html"><i class="fa-regular fa-user alerts-icon"></i></a>
+                </div>
+      
+              </div>
+      
+              <!--fa-solid fa-door-open-->
+              
+              <div class="alerts__icon">
+                <a href="#"><i class="fa-solid fa-power-off alerts-icon" id="logout"></i></a>
+              </div>
+      
+              <!---Toggle button---->
+      
+              <input type="checkbox" id="theme-toggle" hidden />
+              <label for="theme-toggle" class="theme-toggle"></label>
             </nav>
-        </header>
+          </header>
 
-        <!-- End of Navbar -->
+
         <main class="main">
             <!-- Banner de perfil de usuario -->
             <section class="main__container">
                 <picture class="banner">
         
                     <figure class="avatar-perfil">
-                        <button id="avatar-perfil--button" type=""><i class="fa-solid fa-star"></i> 4.9 </button>
-                        <img src="/img/profile/profile.png" alt="img">
-                        <a href="#" class="cambiar-foto">
+                        <button id="avatar-perfil--button" type=""><i class="fa-solid fa-star" id="estrella"></i> <span id="rating">4</span> </button>
+                        <img src="../assets/profile2.png" alt="img">
+                        <a href="../views/profile.html" class="cambiar-foto">
                             <i class="fas fa-camera"></i>
                             <span>Change Photo</span>
                         </a>
-        
                     </figure>
-                    <button type=""><i class="fas fa-wrench"></i>Change Banner</button>
+
+                    <button><i class="fas fa-wrench"></i>Change Banner</button>
+
                 </picture>
+
                 <section class="datos-perfil">
                     <article class="titulo-usuario">
                         <h4>Maite Delgado</h4>
@@ -167,10 +176,10 @@
                                 </ul>
                             </div>
                             <div class="enlace-redes">
-                                <a href="#"><img src="/img/profile/icons/facebook.svg"></a>
-                                <a href="#"><img src="/img/profile/icons/instagram.svg"></a>
-                                <a href="#"><img src="/img/profile/icons/linkedin.svg"></a>
-                                <a href="#"><img src="/img/profile/icons/icons8-gmail-100.svg"></a>
+                                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope-open-text"></i>
                             </div>
                     </article>
                 </article>
@@ -192,7 +201,7 @@
                             alt="">
                         <label for="" placeholder="">Ingresa tu comentario</label>
                         <button class="enviar"><i class="fa-regular fa-paper-plane"></i></button>
-                        <p class="guardar"><i class="fa-regular        fa-bookmark"></i> Guardar publicacion</p>
+                        <p class="guardar"><i class="fa-regular fa-bookmark"></i> Guardar publicacion</p>
                     </div>
                 </article>
                 <article class="descripcion">
@@ -204,14 +213,14 @@
                 </div>
         
                      
-                    <img src="/img/profile/calendario.png" alt="calendario">
+                <iframe src="https://calendar.google.com/calendar/embed?src=CALENDAR_ID" style="border: 0; width: 20rem; height: 20rem;"></iframe>
                 
                 </article>
             </section>
             </section>
             <script src="/client/public/plantilla.js"></script>
             <script src="/client/scripts/Card--service.js"></script>
-        
+            <script src="../scripts/supplier-profile.js"></script>
         </main>
 
     </body>

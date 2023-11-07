@@ -1,7 +1,9 @@
 @import url('/client/public/style.css');
-.main{
-  padding-left: 12rem;
+.main__container{
+  width: 300vh;
+  background-color: aqua;
 }
+
 .banner{
   display: flex;
   background-size: cover;
@@ -9,16 +11,15 @@
   height: 50vh;
   width: 70vw;
   background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/profile/banner2.jpg");
-  left: 60px;
-  margin-top:2rem;
+  margin: 0 5rem;
   border-radius:0.9rem;
   border: solid var(--black-color) 0.3rem;
-  
 }
+
 .banner button{
   margin: -1rem;
-  height: 5rem;
-  width: 13rem;  
+  height: 4rem;
+  width: 11rem;  
   align-items: center;
   border-radius: 0.6rem;
   color: var(--white-color);
@@ -26,9 +27,9 @@
 }
 
 .avatar-perfil{
-  margin:20rem auto auto 10rem;
-  height: 20rem;
-  width: 20rem;
+  margin:10rem auto auto 5rem;
+  height: 10.3rem;
+  width: 10rem;
   background-color: var(--white-color);
   display: flex;
   flex-direction: column;
@@ -38,13 +39,14 @@
   text-align: center;
 }
 .avatar-perfil img{
-  width: 16rem;
-  height: 16rem;
+  width: 8rem;
+  height: 11rem;
   object-fit: cover;
   border-radius:5% ;
   margin: auto;  
 }
-#avatar-perfil--button{
+
+#avatar-perfil--button {
   height: 3rem;
   width: 5rem;
   background-color: var(--highlight-color);
@@ -54,6 +56,30 @@
   margin: -1.1rem;
   position: relative;
 }
+
+.fa-star {
+  color: var(--light);
+  cursor: pointer;
+}
+
+.fa-star.clicked {
+  color: #ffcc00;
+}
+
+.cambiar-foto {
+  font-size: .8rem;
+  color: var(--highlight-color);
+  padding-top: 0;
+  padding-bottom: .6rem;
+}
+
+.fa-wrench {
+  color: var(--ligth);
+}
+
+
+
+/* 
 .datos-perfil{
   display: flex;
 }
@@ -102,24 +128,27 @@
 
 .publicacion{
   position: relative;
-  height: auto;
-  width: auto;
+  height: 30rem;
+  width: 45rem;
   background-color: rgba(65, 198, 251, 0.798);
   border-radius: 3rem;
   
 }
-
-
 .cont-publicacion{
 
   margin:2rem 2rem 2rem 2rem; 
   border-radius:3rem;
   background-color: var(--white-color);
-  width: 20rem;
-  height: 3rem;
+  width: 10rem;
+  height: 1.5rem;
+}
+.img-publicacion>img {
+  padding-top: 1.5rem;
+  width: 36rem;
+  height: 17rem;
 }
 .reacciones{
-  background-color: var(--white-color);
+  background-color: var(red);
   height: auto;
   width: auto;
 
@@ -133,8 +162,7 @@
 
 }
 .servicios-ubicacion{
-  width: auto;
-  width: 20rem;
+  width: 15rem;
   background-color:rgba(65, 198, 251, 0.798);
   border: 1rem  rgba(65, 198, 251, 0.798);
   text-align: center;
@@ -145,7 +173,7 @@
 
 .servicios-ubicacion h3{
     font-size: xx-large;
-    font-weight: 100;
+    font-weight: 60;
 }
 .servicios-ubicacion a{
   color: var(--black-color);
@@ -187,5 +215,7 @@
   height: 6rem;
   object-fit: cover;
   border-radius: 0.8rem;
-}
+} */
+
+
 

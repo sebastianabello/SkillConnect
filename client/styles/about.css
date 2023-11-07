@@ -128,10 +128,11 @@
   font-size: .9rem;
 }
 
-.rols>li>a {
+.rols li a {
   list-style: none;
   color: var(--highlight-color);
   padding-top: .5rem;
+  cursor: pointer;
 }
 
 .rols i {
