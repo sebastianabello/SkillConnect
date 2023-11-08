@@ -95,6 +95,10 @@
     
     
 }
+.boton_contactar{
+    text-decoration: none;
+    color: var(--white-color);
+}
 #avatar-perfil--button{
     border: none;
     color:var(--highlight-color);
