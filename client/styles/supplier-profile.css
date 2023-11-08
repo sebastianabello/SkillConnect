@@ -1,8 +1,7 @@
 @import url('/client/public/style.css');
 .main__container{
-
-  width: 320vh;
-  background-color: olivedrab;
+  padding-right: 5rem;
+  width: 260vh; 
 }
 
 .banner{
@@ -61,6 +60,7 @@
 
 .fa-wrench {
   margin-right: .5rem;
+  cursor: pointer;
 }
 
 .fa-star {
@@ -80,7 +80,8 @@
 }
 
 .fa-wrench {
-  color: var(--light);
+  color: var(--white-color);
+  cursor: pointer;
 }
 
 .datos-perfil{
@@ -141,6 +142,7 @@
 
 .fa-regular {
   padding-right: .5rem;
+  cursor: pointer;
 }
 
 .seguir {
@@ -191,20 +193,22 @@
 }
 
 .publicacion{
-  padding-left: 1rem;
+  padding: 0 1rem;
+  padding-bottom: 28rem;
   position: relative;
   width: 24rem;
   height: 28rem;
   border: solid var(--dark);
   border-radius: 2rem;
   margin-right: 1rem;
-  background-color: var(--light);
+  background-color: #bdbdbd;
 }
 
 
 
 .img-publicacion>img {
   border: solid var(--dark);
+  background-color: var(--highlight-color);
   border-radius: 1rem;
   padding-bottom: 1rem;
   padding-top: 2rem;
@@ -252,8 +256,8 @@
 .servicios-ubicacion{
   color: var(--text-icons-colo);
   width: 15rem;
-  background-color: #fbb03c;
-  border: solid var(--dark);
+  background-color: var(--highlight-color);
+  border: groove var(--black-color);
   text-align: center;
   margin-left: .7rem;
   border-radius: 1rem;
@@ -274,9 +278,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 95%;
   position: center;
-  background-color: #ffcc00;
 }
 
 .conocerUsuario {
@@ -295,7 +298,7 @@
 }
 .conocerUsuario p {
   padding-top: .5rem;
-  font-size: .8rem;
+  font-size: .96rem;
 }
 
 input[type="text"] {
@@ -305,7 +308,8 @@ input[type="text"] {
 }
 .comentarioInput {
   padding: 1.6rem;
-  width: 12rem;
+  margin: 0 1rem 0 ;
+  width: 15rem;
   height: 1.5rem;
   border-radius: .5rem;
 }
@@ -313,6 +317,7 @@ input[type="text"] {
 .fa-paper-plane, .fa-bookmark {
   margin-top: 1rem;
   color: var(--dark);
+  cursor: pointer;
 }
 
 .guardados {
@@ -325,9 +330,8 @@ input[type="text"] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: .8rem;
-  padding-right: 2rem;
-  margin-bottom: 5rem;
+  padding: .5rem;
+  padding-right: 3rem;
 }
 .comentario img{
   width: 3rem;
@@ -348,16 +352,547 @@ input[type="text"] {
 }
 
 .caption {
-  width: 12rem;
-  font-size: small;
-  padding: 0;
-  margin-right: 2rem;
+  width: 11rem;
+  font-size: .8rem;
+  font-weight: 600;
+  margin: .3rem .3rem ;
   text-decoration: none;
   color: var(--dark);
-  text-align: justify;
+  text-align: right;
 }
 
 .arroba {
-  color: #fbb03c;
+  font-size: .9rem;
+  color: var(--highlight-color);
   margin-left: 1rem;
+}
+
+.calendar {
+  width: 100%;
+  border: none;
+  padding: .5rem;
+  height: 18rem;
+}
+
+.pruebaDescripcion {
+  display: none;
+}
+
+.iconoOculto {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main__container {
+    width: 200vh;
+    padding: 0;
+  }
+  .banner{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 72vw;
+    margin: 0 2rem 0;
+  }
+  .banner button{
+    margin: -1rem 0 0 28rem;
+    height: 3rem;
+    width: 8rem;  
+  }
+ .avatar-perfil{
+    height: 9rem;
+    width: 9rem;
+    margin: 6rem 0 2rem 2rem;
+  }
+  
+  .avatar-perfil img{
+    width: 6.5rem;
+    height: 12rem;
+    padding-top: .2rem;
+  }  
+  #avatar-perfil--button {
+    height: 3rem;
+    width: 3rem;
+    padding-right: .2rem;
+  }
+
+  .cambiar-foto {
+    font-size: .7rem;
+    padding-bottom: 1rem;
+  }
+  
+  .titulo-usuario{
+    color: #323639;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .titulo-usuario h4 {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: .3rem;
+    margin: 0;
+  }
+  
+  .titulo-usuario .bio-usuario {
+    color: var(--highlight-color);
+    font-weight: 500;
+    font-size: .9rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    padding-top: .3rem;
+  }
+  
+  .lista-perfil{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    transform: translateX(20%);
+  }
+  
+  .mensaje{
+    height: 2.5rem;
+    width: 7.4rem;
+    font-size: .8rem;
+  }
+  
+  .seguir {
+    height: 2.5rem;
+    width: 3.5rem;
+    font-size: .8rem;
+  }
+  
+  .seguidores{
+    height: 2.5rem;
+    width: 7rem;
+    font-size: .8rem;
+  }
+
+  .container-content{
+    display: flex;
+    gap:0;
+  }
+
+
+  .servicios-ubicacion {
+    width: 15rem;
+    height: 4.5rem;
+    text-align: center;
+    padding-bottom: .1rem;
+  }
+  
+  .ubicacion {
+    color: var(--light);
+    font-size: .8rem;
+  }
+  
+  .contenedor-perfil{
+    margin: 0 0 0 1rem;
+  }
+  
+  .publicacion{
+  margin: 1rem 2rem 1rem .8rem;
+  }
+
+  .descripcion {
+    display: none;
+  }
+
+  .pruebaDescripcion {
+    display: block;
+  }
+
+  .pruebaDescripcion {
+    margin: 1rem 5rem;
+    width: 40rem;
+    height: auto;
+  }
+
+  .calendar {
+    width: 100%;
+    padding: 2rem;
+    height: 20rem;
+  }
+  .conocerUsuario {
+    width: 80%;
+    height: min-content;
+    padding: .8rem;
+    margin: 0 4.3rem;
+  }
+  
+  .conocerUsuario h5, .conocerUsuario p {
+    font-size: 1rem;
+  }
+
+  .datos-perfil {
+    padding-left: 2rem;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main__container {
+    width: 110vh;
+    padding: 10;
+  }
+
+  .separador1, .separador2 {
+    width: 110vh;
+  }
+
+  .banner {
+    width: 110vh;
+    height: 33vh;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner button {
+    padding: 0;
+    margin: 0;
+    margin: -.7rem 0 0 20rem;
+    width: 6.1rem;
+    height: 2rem;
+  }
+
+  .avatar-perfil {
+    height: 7rem;
+    width: 7rem;
+    margin: 4rem 0 2rem 2rem;
+  }
+
+  .avatar-perfil img {
+    width: 5rem;
+    height: 9rem;
+    padding-top: .2rem;
+  }
+
+  .titulo-usuario{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .titulo-usuario h4 {
+    font-size: .8rem;
+    padding-right: 2rem;
+    padding-top: .3rem;
+    margin: 0;
+  }
+  
+  .titulo-usuario .bio-usuario {
+    font-size: .7rem;
+    padding-left: 0;
+    padding-right: 2rem;
+    padding-top: .6rem;
+  }
+  
+  .lista-perfil{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    transform: translateX(20%);
+  }
+  
+  .mensaje{
+    height: 2.5rem;
+    width: 7.4rem;
+    font-size: .8rem;
+  }
+  
+  .seguir {
+    height: 2.5rem;
+    width: 3.5rem;
+    font-size: .8rem;
+  }
+  
+  .seguidores{
+    height: 2.5rem;
+    width: 7rem;
+    font-size: .8rem;
+  }
+
+
+  .lista-perfil {
+    transform: translateX(0%);
+  }
+
+  .container-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .servicios-ubicacion {
+    height: 4rem;
+    font-size: .8rem;
+  }
+
+  .ubicacion {
+    font-size: .7rem;
+  }
+
+  .contenedor-perfil {
+    margin: 0 0 0 6rem;
+    text-align: center;
+  }
+
+  .publicacion {
+    margin: 0 0 1rem 6rem;
+  }
+
+  .descripcion {
+    display: block;
+    padding: 2rem;
+    margin: 0 0 0 5rem;
+  }
+  .pruebaDescripcion {
+    display: none;
+  }
+
+  .calendar {
+    width: 100%;
+    padding: 0 0 1rem 0;
+    height: 15rem;
+  }
+
+  .conocerUsuario {
+    width: 100%;
+    height: min-content;
+    padding: .5rem;
+    margin: 0;
+  }
+
+  .conocerUsuario h5, .conocerUsuario p {
+    font-size: .9rem;
+  }
+
+  .datos-perfil {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .main__container {
+    width: 60vh;
+    margin: 3rem 4rem 0 0;
+  }
+
+  .separador1, .separador2 {
+    width: 60vh;
+  }
+
+  .banner {
+    width: 60vh;
+    height: 30vh;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner button {
+    padding: 0;
+    margin: 0;
+    margin: -.8rem 0 0 3rem;
+    width: 6.4rem;
+    height: 2rem;
+  }
+
+  .avatar-perfil {
+    height: 8rem;
+    width: 8.5rem;
+    margin: 3rem 0 1rem 2rem;
+  }
+
+  .cambiar-foto {
+    font-size: .7rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .avatar-perfil img {
+    border-radius: 1rem 0;
+    width: 7rem;
+    height: 9rem;
+    padding-top: .6rem;
+    padding-bottom: 0;
+  }
+
+  .titulo-usuario{
+    padding: .3rem;
+    margin: 0 .3rem;
+  
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titulo-usuario h4 {
+    font-size: .8rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .titulo-usuario .bio-usuario {
+    font-size: .7rem;
+    padding: 0;
+  }
+  
+  .lista-perfil{
+    padding-top: 1.2rem;
+    padding-left: 1.6rem;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .ocultar {
+    display: none;
+  }
+
+  .iconoOculto {
+    display: block;
+  }
+  
+  .mensaje{
+    padding-left: .4rem;
+    height: 1.4rem;
+    width: max-content;
+    font-size: .8rem;
+  }
+  
+  .seguir {
+    display: flex;
+    flex-direction: row;
+    padding: 0.3rem .3rem;
+    height: 1.4rem;
+    width: max-content;
+    font-size: .8rem;
+  }
+  
+  .seguidores{
+    padding: 0 .5rem;
+    height: 1.4rem;
+    width: max-content;
+    font-size: .8rem;
+  }
+
+
+  .lista-perfil {
+    transform: translateX(0%);
+  }
+
+  .container-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .servicios-ubicacion {
+    height: 4rem;
+    font-size: .8rem;
+  }
+
+  .ubicacion {
+    font-size: .7rem;
+  }
+
+  .contenedor-perfil {
+    margin: 0 0 0 6rem;
+  }
+
+  .publicacion{
+    padding: .1rem .9rem;
+    padding-bottom: 14rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    margin: 0 0 0 5rem;
+  }
+
+  .img-publicacion>img {
+    border-radius: .5rem;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+    padding-right: .2rem;
+    width: 16rem;
+    height: 9rem;
+  }
+
+  .cont-publicacion{
+    margin: .5rem 0;
+    width: 100%;
+    height: min-content;
+  }
+
+  .caption {
+    width: 6rem;
+    font-size: .6rem;
+    margin: .3rem .3rem ;
+  }
+  
+.elementos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .5rem;
+  padding-right: 3rem;
+}
+.comentario img{
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.comentarioInput {
+  padding: 1.2rem;
+  margin: .2rem .8rem 0;
+  width: 8.6rem;
+  height: 1.5rem;
+}
+
+.fa-paper-plane, .fa-bookmark {
+  margin-top: .8rem;
+}
+  .arroba {
+    font-size: .6rem;
+    margin-left: .5rem;
+  }
+  .descripcion {
+    width: 100%;
+    display: block;
+    padding: .5rem;
+    margin: 0 0 0 5rem;
+  }
+  .pruebaDescripcion {
+    display: none;
+  }
+
+  .calendar {
+    width: 100%;
+    padding: 0 0 1rem 0;
+    height: 15rem;
+  }
+
+  .conocerUsuario {
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    margin: 0;
+  }
+
+  .conocerUsuario h5, .conocerUsuario p {
+    font-size: .9rem;
+  }
+
+  .datos-perfil {
+    padding-left: 1rem;
+  }
+
 }

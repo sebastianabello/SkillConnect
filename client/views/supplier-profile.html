@@ -2,241 +2,246 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/client/styles/supplier-profile.css">
-    <title>Perfil</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
-    <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/client/styles/supplier-profile.css">
+  <title>Perfil</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
+  <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
 </head>
 
 
 
     <body class="container">
-        <aside class="sidebar">
-            <!--Logo-->
-            <div class="header__logo">
-              <img class="pag__image" src="/client/assets/logo.png" alt="logopag" />
-              <a href="#"><span class="pag__name">SkillConnect</span></a>
+      <aside class="sidebar">
+        <!--Logo-->
+        <div class="header__logo">
+          <img class="pag__image" src="/client/assets/logo.png" alt="logopag" />
+          <a href="#"><span class="pag__name">SkillConnect</span></a>
+        </div>
+        <ul class="side-menu">
+          <li>
+            <a href="/client/index.html" class="aside__link"><i class="fa-solid fa-house aside-icon show"></i>Inicio</a>
+          </li>
+          <li>
+            <a href="/client/views/explore.html" class="aside__link"><i
+                class="fa-solid fa-compass aside-icon"></i>Explorar</a>
+          </li>
+          <li>
+            <a href="/client/views/saved.html" class="aside__link"><i
+                class="fa-solid fa-bookmark aside-icon"></i>Guardados</a>
+          </li>
+          <li>
+            <a href="/client/views/plans.html" class="aside__link"><i class="fa-solid fa-crown aside-icon"></i>Planes</a>
+          </li>
+          <li>
+            <a href="/client/views/history.html" class="aside__link"><i
+                class="fa-solid fa-clock-rotate-left aside-icon"></i>Historial</a>
+          </li>
+          <li>
+            <a href="/client/views/about.html" class="aside__link"><i class="fa-solid fa-users aside-icon"></i>Nosotros</a>
+          </li>
+        </ul>
+    
+        <!--Card add-->
+        <section class="aside__card">
+          <article class="extra__left__card active">
+            <figure class="card__add">
+              <a href="/client/views/add--publication.html"><i class="fa-solid fa-plus logo-add"></i></a>
+            </figure>
+    
+          </article>
+          <article class="extra__card">
+            <h2 class="card__title">Unete & Conectate</h2>
+            <main class="sub__extra_card">
+              <p class="card__text">
+                Comparte tus servicios y conecta con otros usuarios trabajando juntos usando tus talentos.
+              </p>
+              <button class="card__button">Agregar</button>
+            </main>
+          </article>
+        </section>
+      </aside>
+      <!-- End of Sidebar -->
+    
+      <!-- Navbar -->
+      <header class="header">
+        <nav class="header__nav">
+          <!--Settings icon-->
+          <i class="bx bx-menu"></i>
+          <!-- Page name and description  -->
+          <div class="header__navigation-text">
+            <h1 class="header__title">Perfil</h1>
+            <h2 class="header__subtitle">Bienvenidos a SkillConnect</h2>
+          </div>
+      
+          <!--service search bar-->
+      
+          <form action="#">
+            <div class="form-input">
+              <input type="search" placeholder="Buscar..." />
+              <button class="search-btn" type="submit">
+                <i class="bx bx-search"></i>
+              </button>
             </div>
-            <ul class="side-menu">
-              <li >
-                <a href="/client/index.html" class="aside__link"><i class="fa-solid fa-house aside-icon show"></i>Inicio</a>
-              </li>
-              <li>
-                <a href="/client/views/explore.html" class="aside__link"
-                  ><i class="fa-solid fa-compass aside-icon"></i>Explorar</a
-                >
-              </li>
-              <li>
-                <a href="/client/views/saved.html" class="aside__link"
-                  ><i class="fa-solid fa-bookmark aside-icon"></i>Guardados</a
-                >
-              </li>
-              <li>
-                <a href="/client/views/plans.html" class="aside__link"
-                  ><i class="fa-solid fa-crown aside-icon"></i>Planes</a
-                >
-              </li>
-              <li>
-                <a href="/client/views/history.html" class="aside__link"
-                  ><i class="fa-solid fa-clock-rotate-left aside-icon"></i>Historial</a
-                >
-              </li>
-              <li>
-                <a href="/client/views/about.html" class="aside__link"
-                  ><i class="fa-solid fa-users aside-icon"></i>Nosotros</a
-                >
-              </li>
-            </ul>
+          </form>
       
-            <!--Card add-->
-            <section class="aside__card">
-              <article class="extra__left__card active" >
-               <figure class="card__add">
-                   <a href="/client/views/add--publication.html"><i class="fa-solid fa-plus logo-add"></i></a>
-               </figure>
+          <!--alerts and profile picture-->
+          <div class="header__alerts">
+            <div class="alerts__icon">
+              <a href="#"><i class="fa-regular fa-bell alerts-icon"></i></a>
+            </div>
+            <div class="alerts__icon">
+              <a href="#"><i class="fa-regular fa-envelope alerts-icon"></i></a>
+            </div>
+            <div class="alerts__icon">
+              <a class="cc" href="/client/views/supplier-profile.html"><i class="fa-regular fa-user alerts-icon"></i></a>
+            </div>
       
-           </article>
-               <article class="extra__card">
-                   <h2 class="card__title">Unete & Conectate</h2>
-                   <main class="sub__extra_card">
-                   <p class="card__text">
-                    Comparte tus servicios y conecta con otros usuarios trabajando juntos usando tus talentos.
-                   </p>
-                   <button class="card__button">Agregar</button>
-               </main>
-               </article>
-           </section>
-          </aside>
-          <!-- End of Sidebar -->
+          </div>
       
-          <!-- Navbar -->
-          <header class="header">
-            <nav class="header__nav">
-              <!--Settings icon-->
-              <i class="bx bx-menu"></i>
-              <!-- Page name and description  -->
-              <div class="header__navigation-text">
-                <h1 class="header__title">Perfil</h1>
-                <h2 class="header__subtitle">Bienvenidos a SkillConnect</h2>
-              </div>
+          <!--fa-solid fa-door-open-->
       
-              <!--service search bar-->
+          <div class="alerts__icon">
+            <a href="#"><i class="fa-solid fa-power-off alerts-icon" id="logout"></i></a>
+          </div>
       
-              <form action="#">
-                <div class="form-input">
-                  <input type="search" placeholder="Buscar..." />
-                  <button class="search-btn" type="submit">
-                    <i class="bx bx-search"></i>
-                  </button>
-                </div>
-              </form>
+          <!---Toggle button---->
       
-              <!--alerts and profile picture-->
-              <div class="header__alerts">
-                <div class="alerts__icon">
-                  <a href="#"><i class="fa-regular fa-bell alerts-icon"></i></a>
-                </div>
-                <div class="alerts__icon">
-                  <a href="#"><i class="fa-regular fa-envelope alerts-icon"></i></a>
-                </div>
-                <div class="alerts__icon">
-                  <a class="cc" href="/client/views/supplier-profile.html"><i class="fa-regular fa-user alerts-icon"></i></a>
-                </div>
-      
-              </div>
-      
-              <!--fa-solid fa-door-open-->
-              
-              <div class="alerts__icon">
-                <a href="#"><i class="fa-solid fa-power-off alerts-icon" id="logout"></i></a>
-              </div>
-      
-              <!---Toggle button---->
-      
-              <input type="checkbox" id="theme-toggle" hidden />
-              <label for="theme-toggle" class="theme-toggle"></label>
-            </nav>
-          </header>
+          <input type="checkbox" id="theme-toggle" hidden />
+          <label for="theme-toggle" class="theme-toggle"></label>
+        </nav>
+      </header>
 
 
         <main class="main">
-            <!-- Banner de perfil de usuario -->
-            <section class="main__container">
-                              <picture class="banner">
-
-                                  <figure class="avatar-perfil">
-                                      <button id="avatar-perfil--button" type=""><i class="fa-solid fa-star" id="estrella"></i> <span id="rating">4</span> </button>
-                                      <img src="../assets/profile2.png" alt="img">
-                                      <a href="../views/profile.html" class="cambiar-foto">
-                                          <i class="fas fa-camera"></i>
-                                          <span>Change Photo</span>
-                                      </a>
-                                  </figure>
-
-                                  <button><i class="fas fa-wrench"></i>Change Banner</button>
-
-                              </picture>
-
-                                  <hr class="separador1"size="2" >
-
-                                            <section class="datos-perfil">
-                                                <article class="titulo-usuario">
-                                                    <h4>MAITE DELGADO</h4>
-                                                    <a href="#" class="bio-usuario">@maite.delgado</a>
-                                                </article>
-                                                <article class="lista-perfil">
-                                                    <button class="mensaje" type=""><i class="fa-regular fa-envelope alerts-icon"></i>
-                                                        Send message </button>
-                                                    <button class="seguidores" type="">Seguidores | 1k </button>
-                                                    <button class="seguir" type=""> Seguir </button>
-                                                </article>
-                                            </section>
-
-                                    <hr class="separador2" size="2">
-
-                      <section class="container-content">
-                          <article class="contenedor-perfil">
-                              <div class="portada-perfil">
-                              </div> 
-                              <article class="servicios__container">
-                                  
-                                      <div class="servicios-ubicacion">
-                                          <h3> Servicios </h3>
-                                          <a href="#"><span class="ubicacion">Medellín, Colombia</span></a>
-                                      </div>
-                                      <div class="detalle-servicios">
-                                          <ul class="lista-servicios">
-                                              <li>❦ Maquillaje de día</li>
-                                              <hr>
-                                              <li>Maquillaje de efectos especiales ❦</li>
-                                              <hr>
-                                              <li>❦ Para pasarela</li>
-                                              <hr>
-                                              <li>Maquillaje de noche ❦</li>
-                                              <hr>
-                                              <li>❦ Maquillaje de novia</li>
-                                              <hr>
-                                              <li>Sesión fotográfica ❦</li>
-                                              <hr>
-                                          </ul>
-                                      </div>
-                                      
-
-                                      <div class="enlace-redes">
-                                          <a href="#"><i class="fa-brands fa-square-facebook rs"></i></a>
-                                          <a href="#"><i class="fa-brands fa-square-instagram rs"></i></a>
-                                          <a href="#"><i class="fa-brands fa-linkedin rs"></i></a>
-                                          <a href="#"><i class="fa-solid fa-envelope-open-text rs"></i></a>
-                                      </div>
-                              </article>
-                          </article>
-                  
-                          <article class="publicacion">
-
-                              <div class="cont-publicacion">
-                                  <h6 class="arroba">@maite.delgado</h6> 
-                                <p class="caption">
-                                  Otro dia especial, haciendo felices a mis clientas <i class="fas fa-heart" style="color: orange;"></i>
-                                </p>
-                              </div>
-
-                              <div class="img-publicacion">
-                                  
-                                  <img src="https://www.okchicas.com/wp-content/uploads/2017/11/maquillaje-ojos-tutoriales-730x381.jpg"
-                                      alt="">
-                              </div>
-                              <div class="comentario">
-                                <div class="elementos">
-                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYS164-xau6ek2pBGXYlBLyowEIfXdYQuq67wtNrM6ykzteqMXi9zw1atwxE3w3nuBwdU&usqp=CAU"
-                                      alt="">
-                                    <input type="text" placeholder="Expresate..." class="comentarioInput">
-                                    <i class="fa-regular fa-paper-plane"></i>
-                                    <i class="fas fa-bookmark" id="bookmarkIcon"></i>
-                                </div>
-                              </div>
-                          </article>
-
-                          <article class="descripcion">        
-                            <iframe src="https://calendar.google.com/calendar/embed?src=CALENDAR_ID" style="border: 0; width: 100%; padding: .5rem; height: 18rem;"></iframe>
-                            <div class="conocerUsuario">
-                              <h3>Sobre mi</h3>
-                              <h5>Maquilladora</h5>
-                              <hr>
-                              <p>Artista del color que crea looks únicos para resaltar la belleza natural de sus clientes.</p>
-                            </div>
-                          </article>
-                          
-                    </section>
+          <!-- Banner de perfil de usuario -->
+          <section class="main__container">
+            <picture class="banner">
+        
+              <figure class="avatar-perfil">
+                <button id="avatar-perfil--button" type=""><i class="fa-solid fa-star" id="estrella"></i> <span
+                    id="rating">4</span> </button>
+                <img src="../assets/profile2.png" alt="img">
+                <a href="../views/profile.html" class="cambiar-foto">
+                  <i class="fas fa-camera"></i>
+                  <span>Cambiar</span>
+                </a>
+              </figure>
+        
+              <button><i class="fas fa-wrench"></i>Cambiar</button>
+        
+            </picture>
+        
+            <hr class="separador1" size="2">
+        
+            <section class="datos-perfil">
+              <article class="titulo-usuario">
+                <h4>MAITE DELGADO</h4>
+                <a href="#" class="bio-usuario">@maite.delgado</a>
+              </article>
+              <article class="lista-perfil">
+                <button class="mensaje" type=""><i class="fa-regular fa-envelope alerts-icon"></i>
+                <span class="ocultar">Contactame</span></button>
+                <button class="seguidores " type=""><span class="ocultar">Seguidores |</span> 1k </button>
+                <button class="seguir" type=""> <span class="ocultar">Seguir</span> <i class="fas fa-user iconoOculto"></i><i class="fa-plus iconoOculto"></i> </button>
+              </article>
             </section>
-            <script src="/client/public/plantilla.js"></script>
-            <script src="../scripts/Card--service.js"></script>
-            <script src="../scripts/supplier-profile.js"></script>
-        </main>
+        
+            <hr class="separador2" size="2">
+        
+            <section class="container-content">
+              <article class="contenedor-perfil">
+                <div class="portada-perfil">
+                </div>
+                <article class="servicios__container">
+        
+                  <div class="servicios-ubicacion">
+                    <h3> Servicios </h3>
+                    <a href="#"><span class="ubicacion">Medellín, Colombia</span></a>
+                  </div>
+                  <div class="detalle-servicios">
+                    <ul class="lista-servicios">
+                      <li>Maquillaje de día</li>
+                      <hr>
+                      <li>Maquillaje de efectos especiales</li>
+                      <hr>
+                      <li>Para pasarela</li>
+                      <hr>
+                      <li>Maquillaje de noche</li>
+                      <hr>
+                      <li>Maquillaje de novia</li>
+                      <hr>
+                      <li>Sesión fotográfica</li>
+                      <hr>
+                    </ul>
+                  </div>
+        
+        
+                  <div class="enlace-redes">
+                    <a href="#"><i class="fa-brands fa-square-facebook rs"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram rs"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin rs"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope-open-text rs"></i></a>
+                  </div>
+                </article>
+              </article>
+        
+              <article class="publicacion">
+        
+                <div class="cont-publicacion">
+                  <h6 class="arroba">@maite.delgado</h6>
+                  <p class="caption">
+                    Otro dia especial, haciendo felices a mis clientas <i class="fas fa-heart" style="color: orange;"></i>
+                  </p>
+                </div>
+        
+                <div class="img-publicacion">
+        
+                  <img src="https://www.okchicas.com/wp-content/uploads/2017/11/maquillaje-ojos-tutoriales-730x381.jpg" alt="">
+                </div>
+                <div class="comentario">
+                  <div class="elementos">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYS164-xau6ek2pBGXYlBLyowEIfXdYQuq67wtNrM6ykzteqMXi9zw1atwxE3w3nuBwdU&usqp=CAU"
+                      alt="">
+                    <input type="text" placeholder="Expresate..." class="comentarioInput">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <i class="fas fa-bookmark" id="bookmarkIcon"></i>
+                  </div>
+                </div>
+              </article>
+                <article class="descripcion">
+                  <iframe src="https://calendar.google.com/calendar/embed?src=CALENDAR_ID" class="calendar"></iframe>
+                  <div class="conocerUsuario">
+                    <h3>Sobre mi</h3>
+                    <h5>Maquilladora</h5>
+                    <hr>
+                    <p>Artista del color que crea looks únicos para resaltar la belleza natural de sus clientes.</p>
+                  </div>
+                </article>              
+            </section>
 
-    </body>
+            <div class="prueba">
+              <article class="pruebaDescripcion">
+                <iframe src="https://calendar.google.com/calendar/embed?src=CALENDAR_ID" class="calendar"></iframe>
+                <div class="conocerUsuario">
+                  <h3>Sobre mi</h3>
+                  <h5>Maquilladora</h5>
+                  <hr>
+                  <p>Artista del color que crea looks únicos para resaltar la belleza natural de sus clientes.</p>
+                </div>
+              </article>
+            </div>
+
+          </section>
+          <script src="/client/public/plantilla.js"></script>
+          <script src="../scripts/Card--service.js"></script>
+          <script src="../scripts/supplier-profile.js"></script>
+        </main>
+</body>
+
 </html>
 
