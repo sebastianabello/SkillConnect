@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Crear Publicación</title>
+		<link rel="stylesheet" href="../public/style.css" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css"
+		/>
+        <link rel="stylesheet" href="../public/style2.css">
+		<script
+			src="https://kit.fontawesome.com/6cb58dcda6.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+	</head>
+	<body class="container">
+		<!-- Sidebar -->
+		<aside class="sidebar">
+			<!--Logo-->
+			<div class="header__logo">
+				<img class="pag__image" src="/client/assets/logo.png" alt="logopag" />
+				<a href="/client/index.html"
+					><span class="pag__name">SkillConnect</span></a
+				>
+			</div>
+			<ul class="side-menu">
+				<li>
+					<a href="/client/index.html" class="aside__link"
+						><i class="fa-solid fa-house aside-icon show"></i>Inicio</a
+					>
+				</li>
+				<li>
+					<a href="/client/views/explore.html" class="aside__link"
+						><i class="fa-solid fa-compass aside-icon"></i>Explorar</a
+					>
+				</li>
+				<li>
+					<a href="/client/views/saved.html" class="aside__link"
+						><i class="fa-solid fa-bookmark aside-icon"></i>Guardados</a
+					>
+				</li>
+				<li>
+					<a href="/client/views/plans.html" class="aside__link"
+						><i class="fa-solid fa-crown aside-icon"></i>Planes</a
+					>
+				</li>
+				<li>
+					<a href="/client/views/history.html" class="aside__link"
+						><i class="fa-solid fa-clock-rotate-left aside-icon"></i
+						>Historial</a
+					>
+				</li>
+				<li>
+					<a href="/client/views/about.html" class="aside__link"
+						><i class="fa-solid fa-users aside-icon"></i>Nosotros</a
+					>
+				</li>
+			</ul>
+
+			<!--Card add-->
+			<section class="aside__card">
+				<article class="extra__left__card active">
+					<figure class="card__add">
+						<a href="../views/create_post.html"
+							><i class="fa-solid fa-plus logo-add"></i
+						></a>
+					</figure>
+				</article>
+				<article class="extra__card">
+					<h2 class="card__title">Unete & Conectate</h2>
+					<main class="sub__extra_card">
+						<p class="card__text">
+							Comparte tus servicios y conecta con otros usuarios trabajando
+							juntos usando tus talentos.
+						</p>
+						<button class="card__button">Agregar</button>
+					</main>
+				</article>
+			</section>
+		</aside>
+		<!-- End of Sidebar -->
+
+		<!-- Navbar -->
+		<header class="header">
+			<nav class="header__nav">
+				<!--Settings icon-->
+				<i class="bx bx-menu"></i>
+				<!-- Page name and description  -->
+				<div class="header__navigation-text">
+					<h1 class="header__title">Servicios</h1>
+					<h2 class="header__subtitle">Agrega publicaciones</h2>
+				</div>
+
+				<!--service search bar-->
+
+				<form action="#">
+					<div class="form-input">
+						<input type="search" placeholder="Buscar..." />
+						<button class="search-btn" type="submit">
+							<i class="bx bx-search"></i>
+						</button>
+					</div>
+				</form>
+
+				<!--alerts and profile picture-->
+				<div class="header__alerts">
+					<div class="alerts__icon">
+						<a href="#"><i class="fa-regular fa-bell alerts-icon"></i></a>
+					</div>
+					<div class="alerts__icon">
+						<a href="#"><i class="fa-regular fa-envelope alerts-icon"></i></a>
+					</div>
+					<div class="alerts__icon">
+						<a class="cc" href="/client/views/supplier-profile.html"
+							><i class="fa-regular fa-user alerts-icon"></i
+						></a>
+					</div>
+				</div>
+
+				<!--fa-solid fa-door-open-->
+
+				<div class="alerts__icon">
+					<a href="#"
+						><i class="fa-solid fa-power-off alerts-icon" id="logout"></i
+					></a>
+				</div>
+				<!---Toggle button---->
+
+				<input type="checkbox" id="theme-toggle" hidden />
+				<label for="theme-toggle" class="theme-toggle"></label>
+			</nav>
+		</header>
+
+		<!-- End of Navbar -->
+
+		<main class="main">
+			<!-- Add service card -->
+			<section class="add-service-container">
+				<h2 class="service-title">Comparte y conecta tus habilidades</h2>
+				<article class="columns-service">
+					<main class="left-card-service">
+						<label for="inputCategory">Categorías</label>
+						<select name="categories" id="inputCategory" multiple>
+							<option value="Repair & Maintance">Repair & Maintance</option>
+							<option value="Desing & Creativity">Desing & Creativity</option>
+							<option value="Tecnology $ development">
+								Tecnology $ development
+							</option>
+							<option value="Education & Tutoring">Education & Tutoring</option>
+							<option value="Home & Gardening">Home & Gardening</option>
+							<option value="Events & Entretaiment">
+								Events & Entretaiment
+							</option>
+							<option value="Health & Wellness">Health & Wellness</option>
+							<option value="Business Consulting">Business Consulting</option>
+							<option value="Arts & Crafts">Arts & Crafts</option>
+							<option value="Music & Entertainment">
+								Music & Entertainment
+							</option>
+							<option value="Automotive">Automotive</option>
+							<option value="Food & Cooking">Food & Cooking</option>
+							<option value="Fashion & Beauty">Fashion & Beauty</option>
+							<option value="Sports & adventure">Sports & adventure</option>
+						</select>
+						<label for="serviceName">Habilidad</label>
+						<input
+							id="serviceName"
+							type="text"
+							placeholder="Ingresa tu habilidad"
+						/>
+						<label for="servicePrice">Precio</label>
+						<input
+							id="servicePrice"
+							type="text"
+							placeholder="Valora tu esfuerzo"
+						/>
+						<label for="serviceDescription">Descripción</label>
+						<input
+							id="serviceDescription"
+							type="text"
+							placeholder="Agrega información extra"
+						/>
+					</main>
+					<aside class="right-card-service">
+						<img
+							id="addImg"
+							class="service-img"
+							src="/client/assets/img-default.avif"
+							alt="serviceImage"
+						/>
+						<input id="add-service-img" type="file" />
+					</aside>
+				</article>
+				<button id="btn" class="service-btn" onclick="addInfoForm()">
+					Agregar Servicio
+				</button>
+			</section>
+		</main>
+
+		<script>
+			function addInfoForm() {
+				// Obtén los valores del formulario
+				var category = document.getElementById('inputCategory').value;
+				var serviceName = document.getElementById('serviceName').value;
+				var servicePrice = document.getElementById('servicePrice').value;
+				var serviceDescription =
+					document.getElementById('serviceDescription').value;
+
+				// Crea un objeto de publicación
+				var newPost = {
+					category: category,
+					name: serviceName,
+					price: servicePrice,
+					description: serviceDescription,
+				};
+
+				// Obtiene la lista de publicaciones existentes en LocalStorage
+				var existingPosts = JSON.parse(localStorage.getItem('posts')) || [];
+
+				// Agrega la nueva publicación a la lista
+				existingPosts.push(newPost);
+
+				// Guarda la lista actualizada en LocalStorage
+				localStorage.setItem('posts', JSON.stringify(existingPosts));
+			}
+		</script>
+		<script src="../public/plantilla.js"></script>
+	</body>
+</html>
