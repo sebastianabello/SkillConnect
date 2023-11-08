@@ -35,3 +35,33 @@
 // });
 
 
+// Obtiene una referencia al formulario de inicio de sesión
+const loginForm = document.getElementById("loginForm");
+
+// Agrega un evento de escucha para el envío del formulario
+loginForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  // Comprueba si el usuario existe en el localStorage
+  const userData = JSON.parse(localStorage.getItem("userData"));
+
+  if (userData && userData.username === username && userData.password === password) {
+    // Inicio de sesión exitoso, marca al usuario como autenticado en el localStorage
+    localStorage.setItem("isLoggedIn", "true");
+
+    // Agrega un console.log para verificar que se ha llegado a este punto
+    console.log("Redirigiendo al usuario a la página de inicio...");
+
+    // Redirige al usuario a la página de inicio
+    window.location.href = "../index.html";
+  } else {
+    alert("Nombre de usuario o contraseña incorrectos");
+  }
+});
+
+
+
+
