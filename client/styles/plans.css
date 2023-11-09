@@ -1,10 +1,7 @@
 @import url(../public/style.css);
-.main {
-    padding-top: 3rem;
-}
 
 .contenedor {
-    width: 90%;
+    width: 100%;
     max-width: 900px;
     margin: auto;
     height: 100vh;
@@ -13,6 +10,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding-top: .5rem;
+    padding-bottom: 2rem;
 }
 
 .tabla {
