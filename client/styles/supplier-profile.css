@@ -1,9 +1,23 @@
-@import url('/client/public/style.css');
+@import url('../public/style.css');
+
+/* Iconos del Header */
+.alerts__icon {
+  padding-left: .5rem;
+}
+.alerts__icon:hover {
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.fa-power-off{
+  padding: 0;
+  margin-right: .6rem;
+}
+
+
+/* Personalización del perfil del proveedor */
 .main__container{
   padding-right: 5rem;
   width: 260vh; 
 }
-
 .banner{
   display: flex;
   background-size: cover;
@@ -125,7 +139,7 @@
   gap:1rem;
 }
 
-.alerts-icon {
+.mensajes-icon {
   color: var(--white-color);
 }
 
@@ -314,10 +328,15 @@ input[type="text"] {
   border-radius: .5rem;
 }
 
-.fa-paper-plane, .fa-bookmark {
+.fa-paper-plane, .guardar {
   margin-top: 1rem;
-  color: var(--dark);
+  color: var(--light);
   cursor: pointer;
+}
+
+.cambiarBanner {
+  text-decoration: none;
+  color: var(--white-color);
 }
 
 .guardados {
