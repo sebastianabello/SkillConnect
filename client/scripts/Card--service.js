@@ -31,14 +31,21 @@ let usersArray= [ // Uso los brackets por que para el for each tiene que ser sol
 
 console.log(usersArray)
 
+const existingPosts = JSON.parse(localStorage.getItem('posts')) || [];
+existingPosts.push(...usersArray); // Agregar nuevas publicaciones al array existente
+
+// Guardar el array actualizado en el localStorage
+localStorage.setItem('posts', JSON.stringify(existingPosts));
+
 let listUsers =[];
 //Init function
-   usersArray.forEach((user, key)=>{
+   usersArray.forEach((user)=>{
    let newInfo = document.createElement('article');
+   existingPosts.push(user);
    newInfo.innerHTML = `<article class="card--container">
    <header class="card-figures">
    <img class="card-profile-picture" src="${user.img}">
-     <button class="saved--icon">
+     <button class="saved--icon btn">
        <i class="fa-solid fa-bookmark aside-icon"></i>
      </button>
    </header>
@@ -57,6 +64,8 @@ let listUsers =[];
   list.appendChild(newInfo);
         
 });
+// Guarda la lista actualizada en LocalStorage
+
 const jsonButton = document.getElementById('btn');
 jsonButton.addEventListener('click', function() {
   const key = 0; 
