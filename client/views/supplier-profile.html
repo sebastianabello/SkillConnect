@@ -2,14 +2,25 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/client/styles/supplier-profile.css">
+  <!--Documento permita caracteres especiales-->
+  <meta charset="UTF-8" />
+  <!--Contenido se podra visualizar en diferentes dispositivos-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Descripción breve que se mostrará en los resultados de búsqueda-->
+  <meta name="description"
+    content="SkillConnect es una red social de servicios profesionales que conecta a proveedores de servicios y usuarios que buscan habilidades específicas." />
+  <!--Autor o empresa-->
+  <meta name="author" content="BugBusters" />
+  <!--Palabras clave relevantes para la plataforma-->
+  <meta name="keywords" content="servicios profesionales, red social, habilidades, proveedores de servicios" />
+
+  <!--Especificamos el título de proyecto web-->
   <title>Perfil</title>
+
+  <!--Link a la hoja de estilos-->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
   <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+  <link rel="stylesheet" href="../styles/supplier-profile.css">
 </head>
 
 
@@ -131,7 +142,7 @@
                 </a>
               </figure>
         
-              <button><i class="fas fa-wrench"></i>Cambiar</button>
+              <button><i class="fas fa-wrench"></i><a href="../views/profile.html" class="cambiarBanner">Cambiar</a></button>
         
             </picture>
         
@@ -143,7 +154,7 @@
                 <a href="#" class="bio-usuario">@maite.delgado</a>
               </article>
               <article class="lista-perfil">
-                <button class="mensaje" type=""><i class="fa-regular fa-envelope alerts-icon"></i>
+                <button class="mensaje" type=""><i class="fa-regular fa-envelope mensajes-icon"></i>
                 <span class="ocultar">Contactame</span></button>
                 <button class="seguidores " type=""><span class="ocultar">Seguidores |</span> 1k </button>
                 <button class="seguir" type=""> <span class="ocultar">Seguir</span> <i class="fas fa-user iconoOculto"></i><i class="fa-plus iconoOculto"></i> </button>
@@ -209,7 +220,7 @@
                       alt="">
                     <input type="text" placeholder="Expresate..." class="comentarioInput">
                     <i class="fa-regular fa-paper-plane"></i>
-                    <i class="fas fa-bookmark" id="bookmarkIcon"></i>
+                    <i class="fas fa-bookmark guardar" id="bookmarkIcon"></i>
                   </div>
                 </div>
               </article>
