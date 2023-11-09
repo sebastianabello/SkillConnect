@@ -20,7 +20,7 @@ SkillConnect es una plataforma de red social que te permite mostrar tus habilida
 
 ## Configuración Local
 
-1. Clona el repositorio: `git clone https://github.com/tuusuario/skillconnect.git`
+1. Clona el repositorio: `https://github.com/sebastianabello/SkillConnect.git`
 2. Configura la base de datos MySQL.
 3. Ejecuta el backend usando Spring Boot.
 4. Abre el archivo `frontend/index.html` en tu navegador.
