@@ -44,12 +44,13 @@
     
 }
 .service-img {
-    height: auto;
+    height: 32svh;
     width: 15vw; /*15vw*/
     border-radius: 2rem;
     margin: auto;
     border: 0.2rem var(--dark) dashed;
     margin-left: 2rem;
+    object-fit: cover;
 
 }
 
@@ -75,6 +76,7 @@
     color: var(--dark);
     margin: auto;
     padding-left: 2rem;
+    
 }
 input{
 
