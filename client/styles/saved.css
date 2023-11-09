@@ -3,3 +3,7 @@
 .saved--icon{
 background-color: #e79f03 !important; 
 }
+.fa-trash{
+    margin-left: 0.6rem;
+    font-size: medium
+}
