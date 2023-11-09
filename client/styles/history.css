@@ -32,16 +32,19 @@
 }
 .card--title {
     color: var(--dark);
+    font-size: 1rem;
 }
 .cardUser {
     font-style: italic;
     color: var(--highlight-color);
+    font-size: .8rem;
     font-weight: 600;
 }
 .card--stateOne {
     color: var(--dark);
     font-weight:500;
-    width: auto;
+    font-size: .8rem;
+    width: 100vh;
 }
 .card--state{
     color:blue;
@@ -49,6 +52,7 @@
 }
 .sortService {
     color: var(--dark);
+    font-size: .8rem;
     font-weight: 500;
 }
 .aside--Card {
@@ -59,10 +63,11 @@
 }
 .card--Price {
     color: var(--dark);
+    font-weight: 1rem;
     transform: translateX(-10%);
 }
 .card--buttons {
-    padding-top: 5svh;
+    padding-top: 2svh;
     align-items:start;
 }
 .card--buttons > button{
