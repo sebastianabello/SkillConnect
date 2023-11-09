@@ -24,7 +24,7 @@
   background-position: center;
   height: 50vh;
   width: 70vw;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/logiinMontaña.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/banner-maquillaje.jpg");
   margin: 0 5rem;
   border-radius:0.9rem;
   border: solid var(--dark) 0.3rem;
