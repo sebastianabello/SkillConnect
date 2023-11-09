@@ -12,5 +12,5 @@ const $logout = document.querySelector(`#logout`)
 $logout.addEventListener(`click`, () =>{
     alert(`Hasta pronto!`)
     localStorage.removeItem(`login_success`)
-    window.location.href = `./views/login.html`
+    window.location.href = `./client/views/login.html`
 } )

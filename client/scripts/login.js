@@ -56,7 +56,7 @@ loginForm.addEventListener("submit", function (event) {
     console.log("Redirigiendo al usuario a la página de inicio...");
 
     // Redirige al usuario a la página de inicio
-    window.location.href = "../index.html";
+    window.location.href = "../../index.html";
   } else {
     alert("Nombre de usuario o contraseña incorrectos");
   }
