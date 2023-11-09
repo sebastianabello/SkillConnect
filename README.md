@@ -33,8 +33,12 @@ Para la ejecucion de la aplicacion, tienes que tener prendido el puerto 8080, y 
 
 ## Contribuir
 
+Creadores:
+TkDevk Duvan
+sebastianabello 
+GabrielaAguiarMarquez
+erickhdamianduarte
+
 Si deseas contribuir al proyecto, crea un fork y envía un pull request. Agradecemos tus contribuciones.
 
-## Licencia
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
