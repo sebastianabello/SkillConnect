@@ -207,6 +207,7 @@
 }
 
 .publicacion{
+  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.3);
   padding: 0 1rem;
   padding-bottom: 28rem;
   position: relative;
@@ -215,7 +216,7 @@
   border: solid var(--dark);
   border-radius: 2rem;
   margin-right: 1rem;
-  background-color: #bdbdbd;
+  background-color: var(--light);
 }
 
 
@@ -316,8 +317,8 @@
 }
 
 input[type="text"] {
-  border: none;
-  box-shadow: none;
+  border: 1px solid var(--dark-grey);
+  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.3);
   outline: none; 
 }
 .comentarioInput {
@@ -330,7 +331,7 @@ input[type="text"] {
 
 .fa-paper-plane, .guardar {
   margin-top: 1rem;
-  color: var(--light);
+  color: var(--dark);
   cursor: pointer;
 }
 
@@ -355,8 +356,10 @@ input[type="text"] {
 .comentario img{
   width: 3rem;
   height: 3rem;
+  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.3);
   object-fit: cover;
   border-radius: 0.8rem;
+  border: 1px solid var(--dark-grey);
 } 
 
 

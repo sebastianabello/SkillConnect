@@ -4,23 +4,25 @@
 .history--card {
     height: 20svh;
     width: 72vw;
-    background-color: rgba(8, 183, 169, 0.838);
+    background-color: var(--light);
     border-radius: 0.7rem;
     padding: 0.9rem;
     display: flex;
     flex-direction: row;
     row-gap: 2rem;
-    border: 0.2rem solid var( --black-color);
+    border: 0.2rem solid var(--dark);
+    box-shadow: 6px 3px 3px var(--dark);
 }
 .img--Profile > img{
-    width: 9svw;
-    min-height: 15svh;
+    width: 6rem;
+    height: 5.5rem;
     object-fit: cover;
     border-radius: 0.5rem;
+    border: solid var(--dark);
     justify-content: center;
     align-items: center;
-    
 }
+
 .history--card--info {
     display: flex;
     flex-direction: column;
@@ -29,12 +31,15 @@
     text-align: left;
 }
 .card--title {
-    color: black;
+    color: var(--dark);
 }
 .cardUser {
     font-style: italic;
+    color: var(--highlight-color);
+    font-weight: 600;
 }
 .card--stateOne {
+    color: var(--dark);
     font-weight:500;
     width: auto;
 }
@@ -43,6 +48,7 @@
     width: auto;
 }
 .sortService {
+    color: var(--dark);
     font-weight: 500;
 }
 .aside--Card {
@@ -52,14 +58,12 @@
 
 }
 .card--Price {
-    font-weight:700;
+    color: var(--dark);
     transform: translateX(-10%);
 }
 .card--buttons {
     padding-top: 5svh;
     align-items:start;
-
-
 }
 .card--buttons > button{
     background-color: var(--highlight-color);

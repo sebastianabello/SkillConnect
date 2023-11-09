@@ -1,4 +1,7 @@
 @import url(../public/style.css);
+.main {
+    padding-top: 3rem;
+}
 
 .contenedor {
     width: 90%;
